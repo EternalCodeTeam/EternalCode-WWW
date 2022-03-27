@@ -36,6 +36,10 @@ html {
     height: 100%;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -96,7 +100,6 @@ header {
 .skill {
     animation: animateLogotype 10s ease-in-out infinite;
 }
-
 
 @keyframes animateLogotype {
     0% {
@@ -163,8 +166,8 @@ header {
 }
 
 .card-ab {
-    background: -webkit-linear-gradient(to right, #ed60ff 4%, #01add2); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #ed60ff 4%, #01add2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ffe000 4%, #0aff00); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #eeff00 4%, #3cff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 12px;
     padding: 5% 5% 4%;
 }
@@ -318,6 +321,7 @@ footer a {
     text-decoration: none;
     outline: 0;
     box-shadow: none !important;
+    background: #0aff00;
 }
 
 /* Responsive */
