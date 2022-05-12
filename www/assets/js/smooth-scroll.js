@@ -42,7 +42,7 @@
         excluded          : ''
     };
 
-    var options = defaultOptions;
+    let options = defaultOptions;
 
 
     // Other Variables
@@ -208,8 +208,8 @@
             return;
         }
 
-        var scrollRoot = getScrollRoot();
-        var isWindowScroll = (elem === scrollRoot || elem === document.body);
+        let scrollRoot = getScrollRoot();
+        let isWindowScroll = (elem === scrollRoot || elem === document.body);
 
         // if we haven't already fixed the behavior,
         // and it needs fixing for this sesh
