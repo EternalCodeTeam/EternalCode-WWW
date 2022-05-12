@@ -46,21 +46,21 @@
 
 
     // Other Variables
-    var isExcluded = false;
-    var isFrame = false;
-    var direction = { x: 0, y: 0 };
-    var initDone  = false;
-    var root = document.documentElement;
-    var activeElement;
-    var observer;
-    var refreshSize;
-    var deltaBuffer = [];
-    var deltaBufferTimer;
-    var isMac = /^Mac/.test(navigator.platform);
-
-    var key = { left: 37, up: 38, right: 39, down: 40, spacebar: 32,
+    const key = { left: 37, up: 38, right: 39, down: 40, spacebar: 32,
         pageup: 33, pagedown: 34, end: 35, home: 36 };
-    var arrowKeys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+        const arrowKeys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+
+    const isExcluded = false;
+    const isFrame = false;
+    const direction = { x: 0, y: 0 };
+    const initDone = false;
+    const root = document.documentElement
+    let activeElement;
+    let observer;
+    let deltaBuffer = [];
+    let deltaBufferTimer;
+    let isMac = /^Mac/.test(navigator.platform)
 
     /***********************************************
      * INITIALIZE
@@ -84,10 +84,10 @@
 
         initDone = true;
 
-        var body = document.body;
-        var html = document.documentElement;
-        var windowHeight = window.innerHeight;
-        var scrollHeight = body.scrollHeight;
+        const body = document.body;
+        const html = document.documentElement;
+        const windowHeight = window.innerHeight;
+        const scrollHeight = body.scrollHeight;
 
         // check compat mode for root element
         root = (document.compatMode.indexOf('CSS') >= 0) ? html : body;
@@ -95,30 +95,23 @@
 
         initTest();
 
+
         // Checks if this script is running in a frame
         if (top != self) {
             isFrame = true;
-        }
-
-        /**
-         * Safari 10 fixed it, Chrome fixed it in v45:
-         * This fixes a bug where the areas left and right to
-         * the content does not trigger the onmousewheel event
-         * on some pages. e.g.: html, body { height: 100% }
-         */
-        else if (isOldSafari &&
+        } else if (isOldSafari &&
             scrollHeight > windowHeight &&
             (body.offsetHeight <= windowHeight ||
                 html.offsetHeight <= windowHeight)) {
 
-            var fullPageElem = document.createElement('div');
+            const fullPageElem = document.createElement('div');
             fullPageElem.style.cssText = 'position:absolute; z-index:-10000; ' +
                 'top:0; left:0; right:0; height:' +
                 root.scrollHeight + 'px';
             document.body.appendChild(fullPageElem);
 
             // DOM changed (throttled) to fix height
-            var pendingRefresh;
+            let pendingRefresh;
             refreshSize = function () {
                 if (pendingRefresh) return; // could also be: clearTimeout(pendingRefresh);
                 pendingRefresh = setTimeout(function () {
@@ -141,11 +134,12 @@
                 // subtree: true
             };
 
+
             observer = new MutationObserver(refreshSize);
             observer.observe(body, config);
 
             if (root.offsetHeight <= windowHeight) {
-                var clearfix = document.createElement('div');
+                let clearfix = document.createElement('div');
                 clearfix.style.clear = 'both';
                 body.appendChild(clearfix);
             }
@@ -175,9 +169,9 @@
      * SCROLLING
      ************************************************/
 
-    var que = [];
-    var pending = false;
-    var lastScroll = Date.now();
+    let que = [];
+    let pending = false;
+    let lastScroll = Date.now();
 
     /**
      * Pushes scroll actions to the scrolling queue.
@@ -187,10 +181,10 @@
         directionCheck(left, top);
 
         if (options.accelerationMax != 1) {
-            var now = Date.now();
-            var elapsed = now - lastScroll;
+            let now = Date.now();
+            let elapsed = now - lastScroll;
             if (elapsed < options.accelerationDelta) {
-                var factor = (1 + (50 / elapsed)) / 2;
+                let factor = (1 + (50 / elapsed)) / 2;
                 if (factor > 1) {
                     factor = Math.min(factor, options.accelerationMax);
                     left *= factor;
