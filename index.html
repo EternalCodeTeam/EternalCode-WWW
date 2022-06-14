@@ -52,6 +52,8 @@
     })(window, document, "script", "dataLayer", "GTM-KPTPJBN");</script>
     <!-- End Google Tag Manager -->
 
+    <script src="https://cdn.websitepolicies.io/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init({"colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#f9f9f9"},"button":{"background":"#f9f9f9","text":"#000000"}},"padding":"large","margin":"large","transparency":"10","content":{"href":"https://eternalcode.pl/cookie-policy.html","message":"Używamy plików cookie i innych technologii śledzenia, aby poprawić jakość przeglądania naszej witryny, wyświetlać spersonalizowane treści i reklamy, analizować ruch w naszej witrynie i wiedzieć, skąd pochodzą nasi użytkownicy.","button":"Zgoda!","link":"Dowiedz się więcej!"},"position":"bottom-right","corners":"large","fontsize":"small"})});</script>
+
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -80,6 +82,38 @@
             width="0"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<!-- Messenger Wtyczka czatu Code -->
+<div id="fb-root"></div>
+
+<!-- Your Wtyczka czatu code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "110694988217180");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v14.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
@@ -96,6 +130,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://status.eternalcode.pl/">Status usług</a>
                     </li>
                 </ul>
             </div>
