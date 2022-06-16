@@ -1,28 +1,20 @@
 /* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
     background: #000000;
     box-shadow: inset 0 0 5px rgb(0, 0, 0);
-    border-radius: 0;
+    border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(22, 22, 22);
-    border-radius: 0;
-}
-
-::-moz-selection {
-    background: #ffffff;
-}
-
-::selection {
-    background: #ffffff;
+    border-radius: 0px;
 }
 
 /* Website style */
@@ -34,10 +26,8 @@
 html {
     width: 100%;
     height: 100%;
-}
-
-a:link {
-    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -51,8 +41,14 @@ body {
 }
 
 
+a:link {
+    text-decoration: none;
+}
+
 .container-fluid {
-    padding: 3% 8%;
+    padding: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
     z-index: 999;
     position: absolute;
     top: 0;
@@ -61,7 +57,7 @@ body {
 .nav-link {
     color: #d3d4d5 !important;
     margin-right: 19px;
-    font-size: 23px;
+    font-size: 15px;
 }
 
 nav .btn-priamry {
@@ -93,25 +89,26 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: 0 0;
+    background-position: 0% 0%;
     background-repeat: no-repeat;
 }
 
 .skill {
-    animation: animateLogotype 10s ease-in-out infinite;
+    animation: animateLogotype 6s ease-in-out infinite;
 }
+
 
 @keyframes animateLogotype {
     0% {
-        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
         transform: translatey(0px);
     }
     50% {
-        box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0);
-        transform: translatey(-30px);
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+        transform: translatey(-20px);
     }
     100% {
-        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
         transform: translatey(0px);
     }
 }
@@ -121,7 +118,10 @@ header {
 }
 
 .flex {
-    padding: 15% 12% 10% 8%;
+    padding: 8%;
+    padding-right: 12%;
+    padding-top: 15%;
+    padding-bottom: 10%;
 }
 
 .cent {
@@ -145,12 +145,6 @@ header {
 
 }
 
-.flex h3 {
-    color: white;
-    font-weight: 800;
-    font-size: 20px;
-}
-
 .social {
     margin-top: 5%;
 }
@@ -161,15 +155,24 @@ header {
     color: rgb(190, 190, 190);
 }
 
+.social a:hover {
+    color: #666666;
+    cursor: url('../img/CL.png'), auto;
+}
+
 #about {
-    padding: 0 12% 3% 8%;
+    padding: 8%;
+    padding-right: 12%;
+    padding-top: 0%;
+    padding-bottom: 3%;
 }
 
 .card-ab {
-    background: -webkit-linear-gradient(to right, #ffe000 4%, #0aff00); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #eeff00 4%, #3cff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #666666;
     border-radius: 12px;
-    padding: 5% 5% 4%;
+    padding: 5%;
+    padding-left: 5%;
+    padding-bottom: 4%;
 }
 
 .card-ab h1 {
@@ -180,11 +183,13 @@ header {
 
 .card-ab p {
     margin-top: 3%;
-    color: #000000;
 }
 
 #skills {
-    padding: 3% 12% 3% 8%;
+    padding: 8%;
+    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #skills h1 {
@@ -203,7 +208,8 @@ header {
 .card-info {
     background-color: #1e1f1f;
     border-radius: 12px;
-    padding: 10% 10% 8%;
+    padding: 10%;
+    padding-bottom: 8%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -229,7 +235,10 @@ header {
 }
 
 #projects {
-    padding: 3% 12% 3% 8%;
+    padding: 8%;
+    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #projects h1 {
@@ -255,17 +264,16 @@ header {
 }
 
 #projects .card-pro {
-    background-color: #1e1f1f;
+    background: #3C3B3F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605c3c59, #3C3B3F); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605c3c59, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 12px;
-    padding: 10% 10% 8%;
-    transition: 0.4s;
-    margin-bottom: 5%;
+    padding: 6%;
+    padding-left: 10%;
+    margin-bottom: 2%;
+    padding-right: 10%;
 }
 
-#projects .card-pro:hover {
-    background-color: #292b2b;
-    transition: 0.4s;
-}
 
 .card-pro h5 {
     color: rgb(114, 114, 114);
@@ -286,16 +294,13 @@ header {
 
 footer {
     background-color: #111111;
+    margin: 2%;
     border-radius: 12px;
-    margin: 2% 11% 2% 8%;
+    margin-left: 8%;
+    margin-right: 11%;
     padding: 2%;
     font-size: small;
     color: #444444;
-}
-
-footer:hover {
-    color: rgb(100, 100, 100);
-    transition: 0.4s;
 }
 
 .sociale a {
@@ -312,6 +317,10 @@ footer a {
     color: rgb(133, 133, 133);
 }
 
+footer a:hover {
+    color: rgb(100, 100, 100);
+}
+
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, .55);
     border-color: rgba(0, 0, 0, 0) !important;
@@ -321,7 +330,6 @@ footer a {
     text-decoration: none;
     outline: 0;
     box-shadow: none !important;
-    background: #0aff00;
 }
 
 /* Responsive */
@@ -340,7 +348,8 @@ footer a {
         margin-top: 5%;
         background-color: #111111;
         border-radius: 12px;
-        padding: 8% 12% 8% 8%;
+        padding: 8%;
+        padding-right: 12%;
     }
 
     .container-fluid {
@@ -356,7 +365,7 @@ footer a {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-position: 0 0;
+        background-position: 0% 0%;
         background-repeat: no-repeat;
     }
 
@@ -365,7 +374,10 @@ footer a {
     }
 
     .flex {
-        padding: 52% 12% 20% 8%;
+        padding: 8%;
+        padding-right: 12%;
+        padding-top: 52%;
+        padding-bottom: 20%;
     }
 
     .flex p {
@@ -377,13 +389,19 @@ footer a {
         margin-bottom: 4%;
     }
 
+
     #about {
-        padding: 0 7% 3% 8%;
+        padding: 8%;
+        padding-right: 7%;
+        padding-top: 0%;
+        padding-bottom: 3%;
     }
 
     .card-ab {
         border-radius: 12px;
-        padding: 15% 15% 4% 10%;
+        padding: 15%;
+        padding-left: 10%;
+        padding-bottom: 4%;
     }
 
     .card-ab h1 {
@@ -395,7 +413,10 @@ footer a {
     }
 
     #skills {
-        padding: 10% 7% 3% 8%;
+        padding: 8%;
+        padding-right: 7%;
+        padding-top: 10%;
+        padding-bottom: 3%;
     }
 
     #skills h1 {
@@ -404,7 +425,11 @@ footer a {
     }
 
     #projects {
-        padding: 3% 8%;
+        padding: 20%;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
 
     #projects h1 {
@@ -422,8 +447,10 @@ footer a {
     }
 
     #projects .card-pro {
+        padding: 15%;
+        padding-left: 12%;
         margin-bottom: 5%;
-        padding: 15% 10% 15% 12%;
+        padding-right: 10%;
     }
 
 
