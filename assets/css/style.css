@@ -1,5 +1,6 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -55,6 +56,8 @@ a:link {
 }
 
 .nav-link {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
     color: #d3d4d5 !important;
     margin-right: 19px;
     font-size: 15px;
