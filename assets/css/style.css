@@ -1,5 +1,6 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 /* Scrollbar */
@@ -36,11 +37,14 @@ body {
     font-weight: 500;
     height: 100%;
     overflow-x: hidden;
-    background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(30, 31, 31), #020202); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1e1f1f, #020202); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(30, 31, 31), #020202);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1e1f1f, #020202);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
 }
-
 
 a:link {
     text-decoration: none;
@@ -100,16 +104,17 @@ header {
     animation: animateLogotype 6s ease-in-out infinite;
 }
 
-
 @keyframes animateLogotype {
     0% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
         transform: translatey(0px);
     }
+
     50% {
         box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
         transform: translatey(-20px);
     }
+
     100% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
         transform: translatey(0px);
@@ -145,7 +150,6 @@ header {
     color: white;
     font-weight: 800;
     font-size: 50px;
-
 }
 
 .social {
@@ -267,16 +271,18 @@ header {
 }
 
 #projects .card-pro {
-    background: #3C3B3F; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #605c3c59, #3C3B3F); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #605c3c59, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #3C3B3F;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605c3c59, #3C3B3F);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605c3c59, #3C3B3F);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 12px;
     padding: 6%;
     padding-left: 10%;
     margin-bottom: 2%;
     padding-right: 10%;
 }
-
 
 .card-pro h5 {
     color: rgb(114, 114, 114);
@@ -392,7 +398,6 @@ footer a:hover {
         margin-bottom: 4%;
     }
 
-
     #about {
         padding: 8%;
         padding-right: 7%;
@@ -455,7 +460,6 @@ footer a:hover {
         margin-bottom: 5%;
         padding-right: 10%;
     }
-
 
     .card-pro h5 {
         color: rgb(167, 167, 167);
