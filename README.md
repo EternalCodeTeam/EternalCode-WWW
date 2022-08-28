@@ -1,6 +1,7 @@
 # Vue 3 + Vite
 
 ## To run dev
+
 ```bash
 yarn install
 yarn run dev

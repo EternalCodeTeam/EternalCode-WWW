@@ -1,17 +1,16 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
     <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
 
-      <a class="navbar-brand js-scroll-trigger" href="https://eternalcode.pl" data-aos="fade-down">EternalCode.pl</a>
-
-      <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-              class="navbar-toggler"
+      <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
               data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-        <i class="fas fa-bars"></i>
+        <span class="custom-toggler">
+          <font-awesome-icon icon="fa-solid fa-bars"/>
+        </span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-
+      <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto" data-aos="fade-down">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projekty</a>
@@ -32,7 +31,6 @@
             <a class="nav-link" href="https://docs.eternalcode.pl/">Dokumentacje</a>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>
@@ -40,8 +38,9 @@
 
 <style>
 .container-fluid {
-  padding: 3% 8%;
-  z-index: 999;
+  padding: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
   position: absolute;
   top: 0;
 }
@@ -54,19 +53,9 @@
   font-size: 15px;
 }
 
-nav .btn-priamry {
-  background-color: #54c53e;
-  border-radius: 50px;
-  width: 20%;
-  color: white;
-  transition: 1s;
-}
 
-nav .btn-priamry:hover {
-  color: #666666 !important;
-  background-color: #fdfdfd;
-  width: 130%;
-  transition: 1s;
+.custom-toggler {
+  color: #d3d4d5;
 }
 
 .nav-link:hover {

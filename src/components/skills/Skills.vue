@@ -28,7 +28,8 @@
         <div class="card-info">
           <img alt="" src="assets/img/javascript.png">
           <h5>JavaScript</h5>
-          <p>Możesz zamówić u nas aplikacje napisane w tym języku, bądź boty przeznaczone na discorda (node. Js)&nbsp;</p>
+          <p>Możesz zamówić u nas aplikacje napisane w tym języku, bądź boty przeznaczone na discorda (node.
+            Js)&nbsp;</p>
         </div>
       </div>
 
@@ -96,6 +97,34 @@ export default {
   font-size: x-large;
   border: 2px;
   margin-bottom: 2%;
+}
+
+.card-info {
+  background-color: #2a2c2c;
+  border-radius: 12px;
+  padding: 10% 10% 8%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+  margin-bottom: 5%;
+}
+
+.card-info:hover {
+  background-color: #292b2b;
+  transition: 0.4s;
+}
+
+.card-info h5 {
+  color: rgb(196, 196, 196);
+  font-weight: 700;
+  margin-top: 4%;
+}
+
+.card-info p {
+  color: #666666;
+  font-size: small;
 }
 
 .zap {
