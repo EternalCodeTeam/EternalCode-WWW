@@ -16,12 +16,15 @@
 
         <p>Skontaktuj się z nami przez <a href=https://discord.gg/FQ7jmGBd6c>discorda</a>
         </p>
+
+        <p>{{ $t('message.hello') }}</p>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+
 export default {
   name: "about"
 };

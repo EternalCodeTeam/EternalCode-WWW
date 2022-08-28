@@ -13,6 +13,11 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto" data-aos="fade-down">
           <li class="nav-item">
+            <select v-model="$i18n.locale">
+              <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+            </select>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projekty</a>
           </li>
           <li class="nav-item">
