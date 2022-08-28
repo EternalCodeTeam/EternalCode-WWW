@@ -1,31 +1,77 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/header/Navbar.vue'
+import Flex from './components/header/Flex.vue'
+import About from './components/about/About.vue'
+import Skills from './components/skills/Skills.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <Navbar />
+    <Flex />
+    <About />
+    <Skills />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+::-webkit-scrollbar {
+  width: 8px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  border-radius: 0;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(22, 22, 22);
+  border-radius: 0;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  height: 100%;
+  overflow-x: hidden;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, rgb(30, 31, 31), #020202);
+  background: linear-gradient(to right, #1e1f1f, #020202);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+header {
+  background-image: url('/assets/img/bg.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 </style>
+
+
+
+
+
