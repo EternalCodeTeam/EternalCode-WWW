@@ -1,6 +1,6 @@
 <template>
   <section id="about">
-    <div class="card-ab" data-aos="fade-up">
+    <div class="card-ab">
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <h1>&nbsp;O nas 🎉</h1>

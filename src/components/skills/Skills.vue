@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" data-aos="fade-up">
+  <section id="skills">
 
     <h1>
       <span class="skills-icon">
