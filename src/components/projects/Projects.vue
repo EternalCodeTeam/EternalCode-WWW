@@ -10,7 +10,7 @@
           <div class="row cent">
 
             <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="assets/img/infinity.png">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/infinity.png">
             </div>
 
             <div class="col-lg-9">
@@ -31,7 +31,7 @@
           <div class="row cent">
 
             <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="assets/img/fireworks.png">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/fireworks.png">
             </div>
 
             <div class="col-lg-9">
@@ -50,7 +50,7 @@
         <div class="card-pro">
           <div class="row cent">
             <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="assets/img/chat.png">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/chat.png">
             </div>
             <div class="col-lg-9">
               <h5>ChatFormatter</h5>
@@ -68,7 +68,7 @@
         <div class="card-pro">
           <div class="row cent">
             <div class="col-lg-3">
-              <img alt="" class="img-fluid rounded" src="assets/img/treasure-map.png">
+              <img alt="" class="img-fluid rounded" src="/assets/img/treasure-map.png">
             </div>
             <div class="col-lg-9">
               <h5>EternalRTP</h5>
