@@ -15,15 +15,9 @@
             A może potrzebujesz mapy, bądź spawna pod serwer Minecraft? Wszystko możemy bez większego trudu
             zrealizować!</p>
 
-          <!--        <p>{{ $t("message.hello") }}</p>
-
-                  <select v-model="$i18n.locale">
-                    <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale.toUpperCase() }}</option>
-                  </select>-->
-
         </div>
         <div class="intellij-container col-lg-6 col-md-12">
-          <img class="intellij" src="/assets/img/eternalcore-intellij.png" alt="intellij">
+          <img alt="intellij" class="intellij" src="/assets/img/eternalcore-intellij.png">
         </div>
       </div>
     </div>
@@ -57,21 +51,6 @@ export default {
   }
 }
 
-select {
-  width: 5%;
-  height: 40px;
-  border-radius: 5px;
-  padding: 0 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #2d2929;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-
 .card-ab {
   border-radius: 12px;
   padding: 5% 6%;
@@ -103,6 +82,7 @@ select {
   justify-content: center;
   margin-top: 10px !important;
 }
+
 
 .intellij {
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 15px;

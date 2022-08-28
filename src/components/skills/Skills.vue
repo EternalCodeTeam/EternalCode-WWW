@@ -2,7 +2,9 @@
   <section id="skills" data-aos="fade-up">
 
     <h1>
-      <font-awesome-icon icon="fa-solid fa-meteor"/>
+      <span class="skills-icon">
+              <font-awesome-icon icon="fa-solid fa-meteor"/>
+      </span>
       Nasze magiczne moce!
     </h1>
 
@@ -62,6 +64,9 @@ export default {
   }
 }
 
+.skills-icon {
+  color: #ffa600;
+}
 
 #skills {
   padding: 3% 12% 3% 8%;

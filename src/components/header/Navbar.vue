@@ -12,12 +12,12 @@
       </button>
 
       <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">{{ $t("message.projects") }}</a>
-          </li>
+        <ul class="navbar-nav custom-navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about">O nas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">{{ $t("message.projects") }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://status.eternalcode.pl/">Monitor usług</a>
@@ -31,6 +31,14 @@
           <li class="nav-item">
             <a class="nav-link" href="https://docs.eternalcode.pl/">Dokumentacje</a>
           </li>
+
+          <snap class="locale-changer">
+            <select v-model="$i18n.locale">
+              <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
+                {{ locale.toUpperCase() }}
+              </option>
+            </select>
+          </snap>
         </ul>
       </div>
     </div>
@@ -41,20 +49,45 @@
 
 @media only screen and (max-width: 1000px) {
   .navbar-nav {
-    margin-top: 5%;
-    background-color: #111111;
+    margin-top: 2%;
+    background-color: #232323;
     border-radius: 12px;
-    padding: 8% 12% 8% 8%;
-  }
-
-  .navbar-nav {
-    margin-top: 5%;
-    background-color: #111111;
-    border-radius: 12px;
-    padding: 8% 12% 8% 8%;
+    text-align: center;
   }
 }
 
+
+.locale-changer {
+  padding-top: 4px;
+}
+
+select {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent !important;
+  color: #d3d4d5;
+  padding: 5px;
+  border-radius: 12px;
+  margin-left: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+select:hover {
+  color: #666666;
+}
+
+select option {
+  background: #232323;
+
+
+  border: none;
+  outline: none;
+
+  border-radius: 20px;
+}
 
 .container {
   padding: 3% 8%;
