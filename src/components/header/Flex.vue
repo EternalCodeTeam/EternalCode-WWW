@@ -3,8 +3,8 @@
 
     <div class="row cent">
       <div class="col-lg-6" data-aos="fade-right">
-        <h1>EternalCode wita! 👋</h1>
-        <p>Polskie wsparcie dla serwerów Minecraft oraz Programistów!</p>
+        <h1>SIEMA! 👋</h1>
+        <p>Wsparcie dla serwerów Minecraft oraz Programistów!</p>
         <p></p>
 
         <div class="social">
@@ -62,6 +62,34 @@
 </template>
 
 <style>
+@media only screen and (max-width: 1000px) {
+  .skill {
+    animation: animateLogotype 6s ease-in-out infinite;
+    width: 100%;
+    position: relative;
+    opacity: 0.1;
+    margin-top: -100%;
+    z-index: -99;
+  }
+
+  .skill {
+    animation: animateLogotype 6s ease-in-out infinite;
+  }
+
+  .flex {
+    padding: 52% 12% 20% 8%;
+  }
+
+  .flex p {
+    font-size: small;
+  }
+
+  .flex h1 {
+    font-size: 40px;
+    margin-bottom: 4%;
+  }
+}
+
 .flex {
   padding: 15% 12% 10% 8%;
 }
@@ -99,7 +127,6 @@
 
 .social a:hover {
   color: #666666;
-  cursor: url('/assets/img/CL.png'), auto;
 }
 
 .skill {

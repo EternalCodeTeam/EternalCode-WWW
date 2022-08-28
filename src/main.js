@@ -1,42 +1,46 @@
 import { createApp } from "vue";
-import { createI18n } from 'vue-i18n'
+import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
 
-import "./style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap-utilities.css";
 import "bootstrap";
-
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import { faDiscord, faGithub, faYoutube, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { faDiscord, faGithub, faInstagram, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRightLong, faBars, faMeteor } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faDiscord, faGithub, faYoutube, faTiktok, faInstagram, faBars, faArrowRightLong);
+
+library.add(faDiscord, faGithub, faYoutube, faTiktok, faInstagram, faBars, faArrowRightLong, faMeteor);
 
 const app = createApp(App);
 
 const messages = {
     en: {
         message: {
-            hello: 'hello world'
+            hello: "hello world",
+            more: "See more",
+            projects: "Projects"
         }
     },
     pl: {
         message: {
-            hello: 'siema swiat'
+            hello: "SIEMA!",
+            more: "Zobacz więcej",
+            projects: "Projekty"
         }
     }
-}
+};
 
 const i18n = createI18n({
-    locale: 'en',
-    fallbackLocale: 'pn',
-    messages,
-})
+    locale: "en",
+    allowComposition: true,
+    messages
+});
 
-app.use(i18n)
-app.component("font-awesome-icon", FontAwesomeIcon)
+app.use(i18n);
+app.component("font-awesome-icon", FontAwesomeIcon);
 app.mount("#app");

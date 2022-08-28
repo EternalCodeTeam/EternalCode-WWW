@@ -19,13 +19,23 @@
     </div>
 
     <div class="info">
-      &copy; 2021-2022 EternalCode.pl. Wszelkie prawa zastrzeżone.<br>
+      &copy; 2021-2022 EternalCode.pl Wszelkie prawa zastrzeżone.<br>
       All icons created by Freepik - Flaticon
     </div>
   </footer>
 </template>
 
 <style>
+@media only screen and (max-width: 1000px) {
+  footer {
+    background-color: #11111100;
+    margin: 7% 11% 7% 8%;
+    padding: 2%;
+    font-size: small;
+    color: #444444;
+  }
+}
+
 footer {
   background-color: #111111;
   border-radius: 12px;
@@ -38,11 +48,13 @@ footer {
 footer .info {
   margin-top: 15px;
   transition: 0.5s;
-  color: #a29d9d;
+  color: #d3d4d5 !important;
+  margin-right: 19px;
+  font-size: 14px;
 }
 
 footer .info:hover {
-  color: #a2a2a2;
+  color: #666666 !important;
 }
 
 footer a {
@@ -58,7 +70,6 @@ footer a:hover {
   margin: 5px;
   font-size: large;
 }
-
 
 </style>
 

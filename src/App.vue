@@ -76,6 +76,17 @@ header {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 1000px) {
+  header {
+    background-image: url('/assets/img/bg.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
 </style>
 
 

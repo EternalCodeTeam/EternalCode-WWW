@@ -1,7 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">EternalCode.pl</a>
 
       <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
               data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
@@ -11,17 +12,12 @@
       </button>
 
       <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto" data-aos="fade-down">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <select v-model="$i18n.locale">
-              <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
-            </select>
+            <a class="nav-link" href="#projects">{{ $t("message.projects") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projekty</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">O nas</a>
+            <a class="nav-link" href="#about">O nas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://status.eternalcode.pl/">Monitor usług</a>
@@ -42,12 +38,30 @@
 </template>
 
 <style>
-.container-fluid {
-  padding: 3%;
-  padding-left: 8%;
-  padding-right: 8%;
-  position: absolute;
+
+@media only screen and (max-width: 1000px) {
+  .navbar-nav {
+    margin-top: 5%;
+    background-color: #111111;
+    border-radius: 12px;
+    padding: 8% 12% 8% 8%;
+  }
+
+  .navbar-nav {
+    margin-top: 5%;
+    background-color: #111111;
+    border-radius: 12px;
+    padding: 8% 12% 8% 8%;
+  }
+}
+
+
+.container {
+  padding: 3% 8%;
   top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
 .nav-link {
@@ -57,7 +71,6 @@
   margin-right: 19px;
   font-size: 15px;
 }
-
 
 .custom-toggler {
   color: #d3d4d5;

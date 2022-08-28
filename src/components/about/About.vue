@@ -1,23 +1,30 @@
 <template>
   <section id="about">
-    <div id="gradient" class="card-ab" data-aos="fade-up">
-      <div class="col-lg-8">
-        <h1>&nbsp;O nas 🎉</h1>
-        <p>Jesteśmy zespołem programistów z wieloletnim doświadczeniem, oferującym mnóstwo usług związanych z branżą
-          IT!</p>
+    <div class="card-ab" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h1>&nbsp;O nas 🎉</h1>
+          <p>Jesteśmy zespołem programistów z wieloletnim doświadczeniem, oferującym mnóstwo usług związanych z branżą
+            IT!</p>
 
-        <p>Zgrany zespół to coś, co nas wyróżnia, jesteśmy pionierem tego typu usług na rynku. Oferujemy między
-          innymi pomoc dotyczącą serwerów Minecraft & Linux, wsparcie związane z wyborem hostingu, zabezpieczeń
-          serwerowych oraz uwielbiamy się dzielić wiedzą na temat programowania!</p>
+          <p>Zgrany zespół to coś, co nas wyróżnia, jesteśmy pionierem tego typu usług na rynku. Oferujemy między
+            innymi pomoc dotyczącą serwerów Minecraft & Linux, wsparcie związane z wyborem hostingu, zabezpieczeń
+            serwerowych oraz uwielbiamy się dzielić wiedzą na temat programowania!</p>
 
-        Potrzebujesz czegoś więcej? A może chcesz, abyśmy wykonali Ci projekt na najwyższym poziomie na zlecenie?
-        A może potrzebujesz mapy, bądź spawna pod serwer Minecraft? Wszystko możemy bez większego trudu
-        zrealizować! Więcej znajdziesz <a href=#skills>tutaj</a>
+          <p>Potrzebujesz czegoś więcej? A może chcesz, abyśmy wykonali Ci projekt na najwyższym poziomie na zlecenie?
+            A może potrzebujesz mapy, bądź spawna pod serwer Minecraft? Wszystko możemy bez większego trudu
+            zrealizować!</p>
 
-        <p>Skontaktuj się z nami przez <a href=https://discord.gg/FQ7jmGBd6c>discorda</a>
-        </p>
+          <!--        <p>{{ $t("message.hello") }}</p>
 
-        <p>{{ $t('message.hello') }}</p>
+                  <select v-model="$i18n.locale">
+                    <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale.toUpperCase() }}</option>
+                  </select>-->
+
+        </div>
+        <div class="intellij-container col-lg-6 col-md-12">
+          <img class="intellij" src="/assets/img/eternalcore-intellij.png" alt="intellij">
+        </div>
       </div>
     </div>
   </section>
@@ -31,20 +38,55 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 1000px) {
+  #about {
+    padding: 0 7% 3% 8%;
+  }
+
+  .card-ab {
+    border-radius: 12px;
+    padding: 15% 15% 4% 10%;
+  }
+
+  .card-ab h1 {
+    border-left: 5px solid #0f0f0f;
+  }
+
+  .card-ab p {
+    margin-top: 8%;
+  }
+}
+
+select {
+  width: 5%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2d2929;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
 .card-ab {
   border-radius: 12px;
-  padding: 5% 5% 4%;
+  padding: 5% 6%;
 
-  background: rgb(171, 171, 255);
-  background: -moz-linear-gradient(90deg, rgba(171, 171, 255, 1) 12%, rgba(0, 212, 255, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(171, 171, 255, 1) 12%, rgba(0, 212, 255, 1) 100%);
-  background: linear-gradient(90deg, rgba(171, 171, 255, 1) 12%, rgba(0, 212, 255, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ababff", endColorstr="#00d4ff", GradientType=1);
+  background: rgb(63, 94, 251);
+  background: -moz-linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#fc466b", GradientType=1);
+  color: #ffffff;
 }
 
 .card-ab h1 {
   font-weight: 800;
-  border-left: 5px solid #0f0f0f;
+  border-left: 5px solid #ffffff;
 }
 
 .card-ab p {
@@ -54,4 +96,18 @@ export default {
 #about {
   padding: 0 12% 3% 8%;
 }
+
+.intellij-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px !important;
+}
+
+.intellij {
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 15px;
+  width: 100%;
+  border-radius: 15px;
+}
+
 </style>
