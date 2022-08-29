@@ -27,12 +27,12 @@ const messages = {
                 status: "Status page",
                 repository: "Repository",
                 paste: "Paste",
-                docs: "Documentations",
+                docs: "Documentations"
             },
 
             heading: {
                 hello: "Hello there! 👋",
-                motto: "EternalCode is a fantastic community of developers",
+                motto: "EternalCode is a fantastic community of developers!"
             },
 
             about: {
@@ -54,7 +54,7 @@ const messages = {
             projects: {
                 title: "Our projects",
                 subtitle: "Our projects are not only our services, but also our hobby! We offer many open source products!",
-                more: "See more",
+                more: "See more"
             }
         }
     },
@@ -67,12 +67,12 @@ const messages = {
                 status: "Monitor usług",
                 repository: "Repozytorium",
                 paste: "Serwis wklejania",
-                docs: "Dokumentacje",
+                docs: "Dokumentacje"
             },
 
             heading: {
                 hello: "Witaj! 👋",
-                motto: "EternalCode to fantastyczna społeczność programistów",
+                motto: "EternalCode to fantastyczna społeczność programistów!"
             },
 
             about: {
@@ -94,7 +94,7 @@ const messages = {
             projects: {
                 title: "Nasze projekty",
                 subtitle: "Nasze projekty to nie tylko nasze usługi, ale również nasze hobby! Oferujemy wiele produktów z otwartym kodem źródłowym!",
-                more: "Zobacz więcej",
+                more: "Zobacz więcej"
             }
         }
     }
