@@ -1,5 +1,7 @@
 # Vue 3 + Vite
 
+#### Live preview: https://eternal-code-www.vercel.app/
+
 ## To run dev
 
 ```bash
