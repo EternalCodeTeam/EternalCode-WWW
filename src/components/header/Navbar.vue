@@ -14,31 +14,32 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav custom-navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">O nas</a>
+            <a class="nav-link" href="#about">{{ $t("message.navbar.about") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">{{ $t("message.projects") }}</a>
+            <a class="nav-link" href="#projects">{{ $t("message.navbar.projects") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://status.eternalcode.pl/">Monitor usług</a>
+            <a class="nav-link" href="https://status.eternalcode.pl/">{{ $t("message.navbar.status") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://repo.eternalcode.pl/">Repozytorium</a>
+            <a class="nav-link" href="https://repo.eternalcode.pl/">{{ $t("message.navbar.repository") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://paste.eternalcode.pl/">Serwis wklejania</a>
+            <a class="nav-link" href="https://paste.eternalcode.pl/">{{ $t("message.navbar.paste") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://docs.eternalcode.pl/">Dokumentacje</a>
+            <a class="nav-link" href="https://docs.eternalcode.pl/">{{ $t("message.navbar.docs") }}</a>
           </li>
 
-          <snap class="locale-changer">
-            <select v-model="$i18n.locale">
-              <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
-                {{ locale.toUpperCase() }}
-              </option>
-            </select>
-          </snap>
+          <li class="navbar-nav-lang nav-item" @click="$i18n.locale = 'pl'">
+            <img alt="PL" src="/assets/img/icon_pl.webp">
+          </li>
+
+          <li class="navbar-nav-lang nav-item" @click="$i18n.locale = 'en'">
+            <img alt="EN" src="/assets/img/icon_en.webp">
+          </li>
+
         </ul>
       </div>
     </div>
@@ -47,6 +48,22 @@
 
 <style>
 
+.navbar-nav-lang {
+  margin: 9px;
+  top: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navbar-nav-lang:hover {
+  transform: scale(1.2);
+}
+
+.navbar-nav-lang img {
+  border-radius: 15%;
+}
+
 @media only screen and (max-width: 1000px) {
   .navbar-nav {
     margin-top: 2%;
@@ -54,39 +71,6 @@
     border-radius: 12px;
     text-align: center;
   }
-}
-
-
-.locale-changer {
-  padding-top: 4px;
-}
-
-select {
-  border: none;
-  outline: none;
-  width: 100%;
-  background-color: transparent !important;
-  color: #d3d4d5;
-  padding: 5px;
-  border-radius: 12px;
-  margin-left: 10px;
-  transition: 0.5s;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-select:hover {
-  color: #666666;
-}
-
-select option {
-  background: #232323;
-
-
-  border: none;
-  outline: none;
-
-  border-radius: 20px;
 }
 
 .container {
@@ -103,6 +87,7 @@ select option {
   color: #d3d4d5 !important;
   margin-right: 19px;
   font-size: 15px;
+  transition: 0.5s;
 }
 
 .custom-toggler {
@@ -110,7 +95,9 @@ select option {
 }
 
 .nav-link:hover {
+  transition: 0.5s;
   color: #666666 !important;
+  transform: scale(1.1);
 }
 
 .navbar-brand {

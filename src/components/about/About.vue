@@ -3,17 +3,12 @@
     <div class="card-ab">
       <div class="row">
         <div class="col-lg-6 col-md-12">
-          <h1>&nbsp;O nas 🎉</h1>
-          <p>Jesteśmy zespołem programistów z wieloletnim doświadczeniem, oferującym mnóstwo usług związanych z branżą
-            IT!</p>
+          <h1>&nbsp;{{ $t("message.about.title") }}</h1>
+          <p>{{ $t("message.about.p1") }}</p>
 
-          <p>Zgrany zespół to coś, co nas wyróżnia, jesteśmy pionierem tego typu usług na rynku. Oferujemy między
-            innymi pomoc dotyczącą serwerów Minecraft & Linux, wsparcie związane z wyborem hostingu, zabezpieczeń
-            serwerowych oraz uwielbiamy się dzielić wiedzą na temat programowania!</p>
+          <p>{{ $t("message.about.p2") }}</p>
 
-          <p>Potrzebujesz czegoś więcej? A może chcesz, abyśmy wykonali Ci projekt na najwyższym poziomie na zlecenie?
-            A może potrzebujesz mapy, bądź spawna pod serwer Minecraft? Wszystko możemy bez większego trudu
-            zrealizować!</p>
+          <p>{{ $t("message.about.p3") }}</p>
 
         </div>
         <div class="intellij-container col-lg-6 col-md-12">

@@ -5,7 +5,7 @@
       <span class="skills-icon">
               <font-awesome-icon icon="fa-solid fa-meteor"/>
       </span>
-      Nasze magiczne moce!
+      {{ $t("message.skills.title") }}
     </h1>
 
     <div class="row">
@@ -14,7 +14,7 @@
         <div class="card-info">
           <img alt="" class="img-fluid rounded" src="/assets/img/java.png">
           <h5>Java</h5>
-          <p>W naszym składzie znajdziesz wielu programistów specjalizujących się w języku Java!</p>
+          <p>{{ $t("message.skills.java") }}</p>
         </div>
       </div>
 
@@ -22,7 +22,7 @@
         <div class="card-info">
           <img alt="" src="/assets/img/php.png">
           <h5>PHP</h5>
-          <p>Potrzebujesz autorskiego ItemShopu bądź? Wykonujemy profesjonalny back-end!</p>
+          <p>{{ $t("message.skills.php") }}</p>
         </div>
       </div>
 
@@ -30,7 +30,7 @@
         <div class="card-info">
           <img alt="" src="/assets/img/javascript.png">
           <h5>JavaScript</h5>
-          <p>Możesz zamówić u nas aplikacje oraz boty przeznaczone na discorda!</p>
+          <p>{{ $t("message.skills.javascript") }}</p>
         </div>
       </div>
 
@@ -38,7 +38,7 @@
         <div class="card-info">
           <img alt="" src="/assets/img/linux64.png">
           <h5>Linux</h5>
-          <p>Skonfigurujemy Dedyka/VPS specjalnie dla ciebie, instalacja baz danych, panelów typu. pterodactyl!</p>
+          <p>{{ $t("message.skills.linux") }}</p>
         </div>
       </div>
 

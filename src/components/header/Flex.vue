@@ -3,8 +3,8 @@
 
     <div class="row cent">
       <div class="col-lg-6">
-        <h1>SIEMA! 👋</h1>
-        <p>Wsparcie dla serwerów Minecraft oraz Programistów!</p>
+        <h1>{{ $t("message.heading.hello") }}</h1>
+        <p>{{ $t("message.heading.motto") }}</p>
         <p></p>
 
         <div class="social">
