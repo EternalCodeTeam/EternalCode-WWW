@@ -33,7 +33,7 @@
 
       <div class="col-lg-6">
         <div class="skill">
-          <img src="/assets/img/floating-icons.svg" alt="Floating icons">
+          <img alt="Floating icons" src="/assets/img/floating-icons.svg">
         </div>
       </div>
     </div>

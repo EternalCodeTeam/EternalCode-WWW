@@ -4,103 +4,103 @@
     <h1>Nasze projekty</h1>
     <p>Poniżej znajdziesz nasze przykładowe projekty z otwartym kodem źródłowym!</p>
 
-      <div class="row flex-container">
-        <div class="col-lg-6">
-          <div class="card-pro">
-            <div class="row cent">
+    <div class="row flex-container">
+      <div class="col-lg-6">
+        <div class="card-pro">
+          <div class="row cent">
 
-              <div class="col-lg-3">
-                <img alt="512" class="img-fluid rounded" src="/assets/img/infinity.png">
-              </div>
+            <div class="col-lg-3">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/infinity.png">
+            </div>
 
-              <div class="col-lg-9">
-                <h5>EternalCore</h5>
-                <h6>♾️ All the most important server functions in one!</h6>
-                <a href="">
-                  <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                  {{ $t("message.more") }}
-                </a>
-              </div>
+            <div class="col-lg-9">
+              <h5>EternalCore</h5>
+              <h6>♾️ All the most important server functions in one!</h6>
+              <a href="">
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
+                {{ $t("message.more") }}
+              </a>
+            </div>
 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-pro">
+          <div class="row cent">
+
+            <div class="col-lg-3">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/fireworks.png">
+            </div>
+
+            <div class="col-lg-9">
+              <h5>EternalCheck</h5>
+              <h6>🎇 Simple plugin to check players!</h6>
+              <a href="">
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
+                {{ $t("message.more") }}
+              </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-6">
-          <div class="card-pro">
-            <div class="row cent">
+      <div class="col-lg-6">
+        <div class="card-pro">
+          <div class="row cent">
 
-              <div class="col-lg-3">
-                <img alt="512" class="img-fluid rounded" src="/assets/img/fireworks.png">
-              </div>
+            <div class="col-lg-3">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/fireworks.png">
+            </div>
 
-              <div class="col-lg-9">
-                <h5>EternalCheck</h5>
-                <h6>🎇 Simple plugin to check players!</h6>
-                <a href="">
-                  <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                  {{ $t("message.more") }}
-                </a>
-              </div>
+            <div class="col-lg-9">
+              <h5>EternalCheck</h5>
+              <h6>🎇 Simple plugin to check players!</h6>
+              <a href="">
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
+                {{ $t("message.more") }}
+              </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-6">
-          <div class="card-pro">
-            <div class="row cent">
-
-              <div class="col-lg-3">
-                <img alt="512" class="img-fluid rounded" src="/assets/img/fireworks.png">
-              </div>
-
-              <div class="col-lg-9">
-                <h5>EternalCheck</h5>
-                <h6>🎇 Simple plugin to check players!</h6>
-                <a href="">
-                  <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                  {{ $t("message.more") }}
-                </a>
-              </div>
+      <div class="col-lg-6">
+        <div class="card-pro">
+          <div class="row cent">
+            <div class="col-lg-3">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/chat.png">
+            </div>
+            <div class="col-lg-9">
+              <h5>ChatFormatter</h5>
+              <h6>📝 Free chat formatting plugin with minimessages support!</h6>
+              <a href="">
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
+                {{ $t("message.more") }}
+              </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-6">
-          <div class="card-pro">
-            <div class="row cent">
-              <div class="col-lg-3">
-                <img alt="512" class="img-fluid rounded" src="/assets/img/chat.png">
-              </div>
-              <div class="col-lg-9">
-                <h5>ChatFormatter</h5>
-                <h6>📝 Free chat formatting plugin with minimessages support!</h6>
-                <a href="">
-                  <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                  {{ $t("message.more") }}
-                </a>
-              </div>
+      <div class="col-lg-6">
+        <div class="card-pro">
+          <div class="row cent">
+            <div class="col-lg-3">
+              <img alt="" class="img-fluid rounded" src="/assets/img/treasure-map.png">
+            </div>
+            <div class="col-lg-9">
+              <h5>EternalRTP</h5>
+              <h6>🗺️ A random teleport plugin that doesn't give you a headache.</h6>
+              <a href="">
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
+                {{ $t("message.more") }}
+              </a>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-6">
-          <div class="card-pro">
-            <div class="row cent">
-              <div class="col-lg-3">
-                <img alt="" class="img-fluid rounded" src="/assets/img/treasure-map.png">
-              </div>
-              <div class="col-lg-9">
-                <h5>EternalRTP</h5>
-                <h6>🗺️ A random teleport plugin that doesn't give you a headache.</h6>
-                <a href="">
-                  <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                  {{ $t("message.more") }}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
     </div>
   </section>
 </template>
