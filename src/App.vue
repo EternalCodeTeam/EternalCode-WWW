@@ -4,7 +4,9 @@ import Flex from "./components/header/Flex.vue";
 import About from "./components/about/About.vue";
 import Skills from "./components/skills/Skills.vue";
 import Projects from "./components/projects/Projects.vue";
-import Footer from "./components/footer/Footer.vue";</script>
+import Footer from "./components/footer/Footer.vue";
+import Team from "./components/team/Team.vue";
+</script>
 
 <template>
   <div>
@@ -16,6 +18,7 @@ import Footer from "./components/footer/Footer.vue";</script>
     <About/>
     <Skills/>
     <Projects/>
+    <Team/>
 
     <Footer/>
   </div>

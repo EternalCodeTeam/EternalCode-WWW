@@ -10,11 +10,11 @@ import "bootstrap";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import { faDiscord, faGithub, faInstagram, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub, faInstagram, faTiktok, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRightLong, faBars, faMeteor } from "@fortawesome/free-solid-svg-icons";
 
 
-library.add(faDiscord, faGithub, faYoutube, faTiktok, faInstagram, faBars, faMeteor, faArrowRightLong);
+library.add(faDiscord, faGithub, faYoutube, faTiktok, faInstagram, faLinkedin, faBars, faMeteor, faArrowRightLong);
 
 const app = createApp(App);
 
