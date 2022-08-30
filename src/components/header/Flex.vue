@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex" data-aos="fade-right">
 
     <div class="row cent">
       <div class="col-lg-6">

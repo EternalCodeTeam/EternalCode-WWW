@@ -2,7 +2,9 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
+import AOS from "aos";
 
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-utilities.css";
 import "bootstrap";
@@ -10,7 +12,7 @@ import "bootstrap";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import { faDiscord, faGithub, faInstagram, faTiktok, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub, faInstagram, faLinkedin, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRightLong, faBars, faMeteor } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -59,7 +61,7 @@ const messages = {
 
             team: {
                 title: "Our team",
-                subtitle: "Below you will find all the members of our team!",
+                subtitle: "Below you will find all the members of our team!"
             }
         }
     },
@@ -104,7 +106,7 @@ const messages = {
 
             team: {
                 title: "Nasz Team",
-                subtitle: "Poniżej znajdziesz wszystkich członków naszego zespołu!",
+                subtitle: "Poniżej znajdziesz wszystkich członków naszego zespołu!"
             }
         }
     }
@@ -116,6 +118,8 @@ const i18n = createI18n({
     messages
 });
 
+app.AOS = new AOS.init();
 app.use(i18n);
+app.use(AOS);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.mount("#app");
