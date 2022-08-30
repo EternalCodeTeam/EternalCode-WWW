@@ -55,6 +55,11 @@ const messages = {
                 title: "Our projects",
                 subtitle: "Our projects are not only our services, but also our hobby! We offer many open source products!",
                 more: "See more"
+            },
+
+            team: {
+                title: "Our team",
+                subtitle: "Below you will find all the members of our team!",
             }
         }
     },
@@ -95,6 +100,11 @@ const messages = {
                 title: "Nasze projekty",
                 subtitle: "Nasze projekty to nie tylko nasze usługi, ale również nasze hobby! Oferujemy wiele produktów z otwartym kodem źródłowym!",
                 more: "Zobacz więcej"
+            },
+
+            team: {
+                title: "Nasz Team",
+                subtitle: "Poniżej znajdziesz wszystkich członków naszego zespołu!",
             }
         }
     }

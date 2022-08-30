@@ -1,7 +1,7 @@
 <template>
   <section id="team">
-    <h1>Nasz team!</h1>
-    <p>Poniżej znajdziesz wszystkich członków naszego teamu!</p>
+    <h1>{{ $t("message.team.title") }}</h1>
+    <p>{{ $t("message.team.subtitle") }}</p>
 
     <div class="container py-5">
       <div class="row team-container text-center">

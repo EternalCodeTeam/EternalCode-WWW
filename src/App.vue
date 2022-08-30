@@ -9,7 +9,8 @@ import Team from "./components/team/Team.vue";
 </script>
 
 <template>
-  <div>
+  <div id="app">
+
     <header>
       <Navbar/>
       <Flex/>
