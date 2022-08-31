@@ -3,7 +3,6 @@ import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
 
-import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-utilities.css";
 import "bootstrap";
