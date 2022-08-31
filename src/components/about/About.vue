@@ -1,5 +1,5 @@
 <template>
-  <section id="about" data-aos="fade-up">
+  <section id="about">
     <div class="card-ab">
       <div class="row">
         <div class="col-lg-6 col-md-12">
@@ -48,7 +48,7 @@ export default {
 
 .card-ab {
   border-radius: 12px;
-  padding: 5% 6%;
+  padding: 5% 5%;
 
   background: rgb(63, 94, 251);
   background: -moz-linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
@@ -64,7 +64,7 @@ export default {
 }
 
 .card-ab p {
-  margin-top: 3%;
+  margin-top: 6%;
 }
 
 #about {

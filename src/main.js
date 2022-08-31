@@ -2,7 +2,6 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 
 import App from "./App.vue";
-import AOS from "aos";
 
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -113,13 +112,10 @@ const messages = {
 };
 
 const i18n = createI18n({
-    locale: "en",
     allowComposition: true,
     messages
 });
 
-app.AOS = new AOS.init();
 app.use(i18n);
-app.use(AOS);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.mount("#app");

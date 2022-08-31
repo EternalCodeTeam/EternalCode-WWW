@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
 
-    <div class="row cent" data-aos="fade-right">
+    <div class="row cent">
       <div class="col-lg-6">
         <h1>{{ $t("message.heading.hello") }}</h1>
         <p>{{ $t("message.heading.motto") }}</p>
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="col-lg-6" data-aos="fade-left">
+      <div class="col-lg-6">
         <div class="skill">
           <img alt="Floating icons" src="/assets/img/floating-icons.svg">
         </div>

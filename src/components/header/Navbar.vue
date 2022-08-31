@@ -71,6 +71,10 @@
     border-radius: 12px;
     text-align: center;
   }
+
+  .navbar-nav-lang {
+    align-items: center;
+  }
 }
 
 .container {
