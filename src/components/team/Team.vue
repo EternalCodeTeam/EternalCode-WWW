@@ -8,7 +8,8 @@
 
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm" src="https://avatars.githubusercontent.com/u/65517973?v=4"
+              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
+              src="https://avatars.githubusercontent.com/u/65517973?v=4"
               width="100">
             <h5 class="mb-0 team-card-title">Martin Sulikowski</h5><span
                 class="small team-card-subtitle">Lead Team</span>
@@ -25,7 +26,8 @@
 
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm" src="https://avatars.githubusercontent.com/u/49173834?s=100&v=4"
+              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
+              src="https://avatars.githubusercontent.com/u/49173834?s=100&v=4"
               width="100">
             <h5 class="mb-0 team-card-title">Rollczi</h5><span class="small team-card-subtitle">Lead Team</span>
             <ul class="social mb-0 list-inline mt-3">
@@ -41,7 +43,8 @@
 
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm" src="https://avatars.githubusercontent.com/u/60399586?s=100&v=4"
+              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
+              src="https://avatars.githubusercontent.com/u/60399586?s=100&v=4"
               width="100">
             <h5 class="mb-0 team-card-title">Krzysztof Haller</h5><span
                 class="small team-card-subtitle">Lead Team</span>
@@ -58,7 +61,8 @@
 
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm" src="https://avatars.githubusercontent.com/u/77621271?s=100&v=4"
+              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
+              src="https://avatars.githubusercontent.com/u/77621271?s=100&v=4"
               width="100">
             <h5 class="mb-0 team-card-title">Osnixer</h5><span class="small team-card-subtitle">Lead Team</span>
             <ul class="social mb-0 list-inline mt-3">
@@ -74,7 +78,8 @@
 
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm" src="https://avatars.githubusercontent.com/u/28400410?v=4"
+              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
+              src="https://avatars.githubusercontent.com/u/28400410?v=4"
               width="100">
             <h5 class="mb-0 team-card-title">Vetther</h5><span class="small team-card-subtitle">Lead Team</span>
             <ul class="social mb-0 list-inline mt-3">

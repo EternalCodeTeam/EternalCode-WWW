@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg">
-    <div class="navbar-container">
+    <div class="container">
 
       <a class="navbar-brand" href="#">EternalCode.pl</a>
 
@@ -54,17 +54,14 @@
   border-radius: 12px;
   cursor: pointer;
   transition: 0.5s;
-  filter: grayscale(0%);
 }
 
-.navbar-nav-lang:is(:hover, :focus) {
+.navbar-nav-lang:hover {
   transform: scale(1.2);
-  filter: grayscale(100%);
 }
 
 .navbar-nav-lang img {
   border-radius: 15%;
-  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -76,12 +73,11 @@
   }
 }
 
-.navbar-container {
+.container {
   padding: 3% 8%;
   top: 0;
   left: 0;
   right: 0;
-  position: absolute;
 }
 
 .nav-link {
@@ -100,7 +96,7 @@
 .nav-link:hover {
   transition: 0.5s;
   color: #666666 !important;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .navbar-brand {

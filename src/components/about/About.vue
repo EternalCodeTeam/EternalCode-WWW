@@ -1,7 +1,7 @@
 <template>
   <section id="about" data-aos="fade-up">
-    <div class="card-ab" >
-      <div class="row" >
+    <div class="card-ab">
+      <div class="row">
         <div class="col-lg-6 col-md-12">
           <h1>&nbsp;{{ $t("message.about.title") }}</h1>
           <p>{{ $t("message.about.p1") }}</p>
