@@ -102,6 +102,46 @@
         </div>
       </div>
 
+      <div class="col-lg-6">
+        <div class="card-pro">
+          <div class="row cent">
+
+            <div class="col-lg-3">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/folder.png">
+            </div>
+
+            <div class="col-lg-9">
+              <h5>Docs</h5>
+              <h6>📖 All documentations of EternalCodeTeam Projects & Tutorials 😍</h6>
+              <a href="https://github.com/EternalCodeTeam/Docs">
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
+                {{ $t("message.projects.more") }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-pro">
+          <div class="row cent">
+
+            <div class="col-lg-3">
+              <img alt="512" class="img-fluid rounded" src="/assets/img/web.png">
+            </div>
+
+            <div class="col-lg-9">
+              <h5>EternalCode-WWW</h5>
+              <h6>🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!</h6>
+              <a href="https://github.com/EternalCodeTeam/EternalCode-WWW">
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
+                {{ $t("message.projects.more") }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>
