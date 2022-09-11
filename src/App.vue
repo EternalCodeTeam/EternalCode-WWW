@@ -5,8 +5,7 @@ import About from "./components/about/About.vue";
 import Skills from "./components/skills/Skills.vue";
 import Projects from "./components/projects/Projects.vue";
 import Footer from "./components/footer/Footer.vue";
-import Team from "./components/team/Team.vue";
-</script>
+import Team from "./components/team/Team.vue";</script>
 
 <template>
   <div id="app">
