@@ -49,7 +49,7 @@
 <style>
 
 .navbar-nav-lang {
-  margin: 9px;
+  margin: 7px;
   top: 0;
   border-radius: 12px;
   cursor: pointer;
@@ -57,14 +57,17 @@
 }
 
 .navbar-nav-lang:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+  filter: grayscale(100%);
+  border-radius: 12px;
+
 }
 
 .navbar-nav-lang img {
   border-radius: 15%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 600px) {
   .navbar-nav {
     margin-top: 2%;
     background-color: #232323;
@@ -74,6 +77,11 @@
 
   .navbar-nav-lang {
     align-items: center;
+  }
+
+  .navbar-brand {
+    color: white !important;
+    font-weight: bold;
   }
 }
 
@@ -85,7 +93,6 @@
 }
 
 .nav-link {
-  font-family: 'IBM Plex Sans', sans-serif;
   text-transform: uppercase;
   color: #d3d4d5 !important;
   margin-right: 19px;
@@ -100,12 +107,12 @@
 .nav-link:hover {
   transition: 0.5s;
   color: #666666 !important;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .navbar-brand {
   color: white !important;
-  font-weight: 700;
+  font-weight: bold;
 }
 </style>
 

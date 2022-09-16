@@ -8,7 +8,7 @@ import Footer from "./components/footer/Footer.vue";
 import Team from "./components/team/Team.vue";</script>
 
 <template>
-  <div id="app">
+  <div>
 
     <header>
       <Navbar/>
@@ -47,6 +47,7 @@ import Team from "./components/team/Team.vue";</script>
 * {
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 html {
