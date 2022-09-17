@@ -5,150 +5,60 @@
     <p>{{ $t("message.projects.subtitle") }}</p>
 
     <div class="row flex-container">
-      <div class="col-lg-6">
-        <div class="card-pro">
-          <div class="row cent">
-
-            <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="/assets/img/infinity.png">
-            </div>
-
-            <div class="col-lg-9">
-              <h5>EternalCore</h5>
-              <h6>♾️ All the most important server functions in one!</h6>
-              <a href="https://github.com/EternalCodeTeam/EternalCore">
-                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                {{ $t("message.projects.more") }}
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card-pro">
-          <div class="row cent">
-
-            <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="/assets/img/fireworks.png">
-            </div>
-
-            <div class="col-lg-9">
-              <h5>EternalCheck</h5>
-              <h6>🎇 Simple plugin to check players!</h6>
-              <a href="https://github.com/EternalCodeTeam/EternalCheck">
-                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                {{ $t("message.projects.more") }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card-pro">
-          <div class="row cent">
-            <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="/assets/img/chat.png">
-            </div>
-            <div class="col-lg-9">
-              <h5>ChatFormatter</h5>
-              <h6>📝 The most intelligent chat formatting plugin with minimessages support!</h6>
-              <a href="https://github.com/EternalCodeTeam/ChatFormatter">
-                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                {{ $t("message.projects.more") }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card-pro">
-          <div class="row cent">
-            <div class="col-lg-3">
-              <img alt="" class="img-fluid rounded" src="/assets/img/treasure-map.png">
-            </div>
-            <div class="col-lg-9">
-              <h5>EternalRTP</h5>
-              <h6>🗺️ A random teleport plugin that doesn't give you a headache.</h6>
-              <a href="https://github.com/EternalCodeTeam/EternalRTP">
-                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                {{ $t("message.projects.more") }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card-pro">
-          <div class="row cent">
-
-            <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="/assets/img/police-officer.png">
-            </div>
-
-            <div class="col-lg-9">
-              <h5>DiscordOfficer</h5>
-              <h6>👮‍♂️ EternalCode discord community officer!</h6>
-              <a href="https://github.com/EternalCodeTeam/DiscordOfficer">
-                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                {{ $t("message.projects.more") }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card-pro">
-          <div class="row cent">
-
-            <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="/assets/img/folder.png">
-            </div>
-
-            <div class="col-lg-9">
-              <h5>Docs</h5>
-              <h6>📖 All documentations of EternalCodeTeam Projects & Tutorials 😍</h6>
-              <a href="https://github.com/EternalCodeTeam/Docs">
-                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                {{ $t("message.projects.more") }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="card-pro">
-          <div class="row cent">
-
-            <div class="col-lg-3">
-              <img alt="512" class="img-fluid rounded" src="/assets/img/web.png">
-            </div>
-
-            <div class="col-lg-9">
-              <h5>EternalCode-WWW</h5>
-              <h6>🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!</h6>
-              <a href="https://github.com/EternalCodeTeam/EternalCode-WWW">
-                <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-                {{ $t("message.projects.more") }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Project
+        name="EternalCore"
+        description="♾️ All the most important server functions in one!"
+        githubUrl="https://github.com/EternalCodeTeam/EternalCore"
+        imageUrl="/assets/img/infinity.png"
+      />
+      <Project
+        name="EternalCheck"
+        description="🎇 Simple plugin to check players!"
+        githubUrl="https://github.com/EternalCodeTeam/EternalCheck"
+        imageUrl="/assets/img/fireworks.png"
+      />
+      <Project
+        name="ChatFormatter"
+        description="📝 The most intelligent chat formatting plugin with minimessages support!"
+        githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
+        imageUrl="/assets/img/chat.png"
+      />
+      <Project
+        name="EternalRTP"
+        description="🗺️ A random teleport plugin that doesn't give you a headache."
+        githubUrl="https://github.com/EternalCodeTeam/EternalRTP"
+        imageUrl="/assets/img/treasure-map.png"
+      />
+      <Project
+        name="DiscordOfficer"
+        description="👮‍♂️ EternalCode discord community officer!"
+        githubUrl="https://github.com/EternalCodeTeam/DiscordOfficer"
+        imageUrl="/assets/img/police-officer.png"
+      />
+      <Project
+        name="Docs"
+        description="📖 All documentations of EternalCodeTeam Projects & Tutorials 😍"
+        githubUrl="https://github.com/EternalCodeTeam/Docs"
+        imageUrl="/assets/img/folder.png"
+      />
+      <Project
+        name="EternalCode-WWW"
+        description="🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!"
+        githubUrl="https://github.com/EternalCodeTeam/Docs"
+        imageUrl="/assets/img/web.png"
+      />
 
     </div>
   </section>
 </template>
 
 <script>
+import Project from "./components/Project.vue"
 export default {
-  name: "Projects"
+  name: "Projects",
+  components: {
+    Project
+  }
 };
 </script>
 
