@@ -6,82 +6,52 @@
     <div class="container py-5">
       <div class="row team-container text-center">
 
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
-              src="https://avatars.githubusercontent.com/u/65517973?v=4"
-              width="100">
-            <h5 class="mb-0 team-card-title">Martin Sulikowski</h5><span
-                class="small team-card-subtitle">Lead Team</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-github"/>
-              </a></li>
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-linkedin"/>
-              </a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
-              src="https://avatars.githubusercontent.com/u/49173834?s=100&v=4"
-              width="100">
-            <h5 class="mb-0 team-card-title">Rollczi</h5><span class="small team-card-subtitle">Lead Team</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-github"/>
-              </a></li>
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-linkedin"/>
-              </a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
-              src="https://avatars.githubusercontent.com/u/60399586?s=100&v=4"
-              width="100">
-            <h5 class="mb-0 team-card-title">Krzysztof Haller</h5><span
-                class="small team-card-subtitle">Lead Team</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-github"/>
-              </a></li>
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-linkedin"/>
-              </a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="team-card rounded shadow-sm py-5 px-4"><img
-              alt="" class="img-fluid rounded-circle mb-3 shadow-sm"
-              src="https://avatars.githubusercontent.com/u/77621271?s=100&v=4"
-              width="100">
-            <h5 class="mb-0 team-card-title">Osnixer</h5><span class="small team-card-subtitle">Lead Team</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-github"/>
-              </a></li>
-              <li class="list-inline-item"><a class="social-link" href="#">
-                <font-awesome-icon icon="fa-brands fa-linkedin"/>
-              </a></li>
-            </ul>
-          </div>
-        </div>
+        <Member
+          name="Martin Sulikowski"
+          role="Lead Team"
+          githubUrl="https://github.com/vLuckyyy"
+          linkedinUrl="https://www.linkedin.com/in/vlucky"
+          imageUrl="https://avatars.githubusercontent.com/u/65517973?v=4"
+        />
+        <Member
+          name="Norbert Dejlich"
+          role="Lead Team"
+          githubUrl="https://github.com/Rollczi/"
+          linkedinUrl="https://www.linkedin.com/in/rollczi/"
+          imageUrl="https://avatars.githubusercontent.com/u/49173834?v=4"
+        />
+        <Member
+          name="Krzysztof Haller"
+          role="Lead Team"
+          githubUrl="https://github.com/Hyd3r1/"
+          linkedinUrl="https://www.linkedin.com/in/khallercom/"
+          imageUrl="https://avatars.githubusercontent.com/u/60399586?v=4"
+        />
+        <Member
+          name="Piotr Zych"
+          role="Lead Team"
+          githubUrl="https://github.com/Osnixer/"
+          imageUrl="https://avatars.githubusercontent.com/u/77621271?v=4"
+        />
 
       </div>
     </div>
   </section>
 </template>
+<script>
+  import Member from "./components/Member.vue"
+  export default {
+    components: {
+      Member
+    }
+  }
+</script>
 
 <style>
+.list-inline-item {
+  margin-right: 0rem !important;
+}
+
 
 @media only screen and (max-width: 1000px) {
   #team h1 {
