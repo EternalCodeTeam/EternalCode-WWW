@@ -46,7 +46,7 @@ const messages = {
             skills: {
                 title: "Our magic powers!",
                 java: "In our lineup you will find many programmers specializing in Java!",
-                php: "Do you need a proprietary Itemshop or? We can do a professional back-end!",
+                php: "Do you need a proprietary Itemshop? We can do a professional back-end!",
                 javascript: "You can order professional applications and discord bots in JavaScript from us!",
                 linux: "We will configure a Dedicated/VPS Server specifically for you, install database and panels etc."
             },
@@ -91,7 +91,7 @@ const messages = {
             skills: {
                 title: "Nasze magiczne moce!",
                 java: "W naszym składzie znajdziesz wielu programistów specjalizujących się w języku Java!",
-                php: "Potrzebujesz autorskiego ItemShopu bądź? Wykonujemy profesjonalny back-end!",
+                php: "Potrzebujesz autorskiego ItemShopu? Wykonujemy profesjonalny back-end!",
                 javascript: "U nas możesz zamówić profesjonalne aplikacje, discord boty w javascript!",
                 linux: "Skonfigurujemy serwer dedykowany/VPS specjalnie dla ciebie, zainstalujemy bazy danych i panele typu Pterodactyl."
             },
