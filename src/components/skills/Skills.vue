@@ -1,54 +1,79 @@
 <template>
   <section id="skills">
-
     <h1>
       <span class="skills-icon">
-              <font-awesome-icon icon="fa-solid fa-meteor"/>
+        <font-awesome-icon icon="fa-solid fa-meteor" />
       </span>
-      {{ $t("message.skills.title") }}
+      {{ $t('message.skills.title') }}
     </h1>
 
     <div class="row">
-
-      <div class="col-lg-3">
+      <div
+        class="col-lg-3"
+        @mouseover="hover['java'] = true"
+        @mouseleave="hover['java'] = false"
+        v-bind:class="{ 'animate__animated animate__tada': hover['java'] }"
+      >
         <div class="card-info">
-          <img alt="" class="img-fluid rounded" src="/assets/img/java.png">
+          <img alt="" class="img-fluid rounded" src="/assets/img/java.png" />
           <h5>Java</h5>
-          <p>{{ $t("message.skills.java") }}</p>
+          <p>{{ $t('message.skills.java') }}</p>
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div
+        class="col-lg-3"
+        @mouseover="hover['php'] = true"
+        @mouseleave="hover['php'] = false"
+        v-bind:class="{ 'animate__animated animate__tada': hover['php'] }"
+      >
         <div class="card-info">
-          <img alt="" src="/assets/img/php.png">
+          <img alt="" src="/assets/img/php.png" />
           <h5>PHP</h5>
-          <p>{{ $t("message.skills.php") }}</p>
+          <p>{{ $t('message.skills.php') }}</p>
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div
+        class="col-lg-3"
+        @mouseover="hover['javascript'] = true"
+        @mouseleave="hover['javascript'] = false"
+        v-bind:class="{ 'animate__animated animate__tada': hover['javascript'] }"
+      >
         <div class="card-info">
-          <img alt="" src="/assets/img/javascript.png">
+          <img alt="" src="/assets/img/javascript.png" />
           <h5>JavaScript</h5>
-          <p>{{ $t("message.skills.javascript") }}</p>
+          <p>{{ $t('message.skills.javascript') }}</p>
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div
+        class="col-lg-3"
+        @mouseover="hover['linux'] = true"
+        @mouseleave="hover['linux'] = false"
+        v-bind:class="{ 'animate__animated animate__tada': hover['linux'] }"
+      >
         <div class="card-info">
-          <img alt="" src="/assets/img/linux64.png">
+          <img alt="" src="/assets/img/linux64.png" />
           <h5>Linux</h5>
-          <p>{{ $t("message.skills.linux") }}</p>
+          <p>{{ $t('message.skills.linux') }}</p>
         </div>
       </div>
-
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: "Skills"
+  name: 'Skills',
+  data: () => ({
+    hover: {
+      java: false,
+      php: false,
+      javascript: false,
+      linux: false,
+    },
+  }),
 };
 </script>
 
