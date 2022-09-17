@@ -33,6 +33,12 @@
           githubUrl="https://github.com/Osnixer/"
           imageUrl="https://avatars.githubusercontent.com/u/77621271?v=4"
         />
+        <Member
+          name="Jakubk15"
+          role="Moderator"
+          githubUrl="https://github.com/Jakubk15"
+          imageUrl="https://avatars.githubusercontent.com/u/77227023?v=4"
+        />
 
       </div>
     </div>
