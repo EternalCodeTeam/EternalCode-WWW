@@ -12,7 +12,7 @@
       </button>
 
       <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav custom-navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about">{{ $t("message.navbar.about") }}</a>
           </li>
@@ -67,10 +67,9 @@
   border-radius: 15%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .navbar-nav {
     margin-top: 2%;
-    background-color: #232323;
     border-radius: 12px;
     text-align: center;
   }
@@ -93,15 +92,12 @@
 }
 
 .nav-link {
+  font-family: 'IBM Plex Sans', sans-serif;
   text-transform: uppercase;
   color: #d3d4d5 !important;
   margin-right: 19px;
   font-size: 15px;
   transition: 0.5s;
-}
-
-.custom-toggler {
-  color: #d3d4d5;
 }
 
 .nav-link:hover {
@@ -110,9 +106,13 @@
   transform: scale(1.05);
 }
 
+.custom-toggler {
+  color: #d3d4d5;
+}
+
 .navbar-brand {
   color: white !important;
-  font-weight: bold;
+  font-weight: 700;
 }
 </style>
 
