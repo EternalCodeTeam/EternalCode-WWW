@@ -38,6 +38,7 @@
           role="Moderator"
           githubUrl="https://github.com/Jakubk15"
           imageUrl="https://avatars.githubusercontent.com/u/77227023?v=4"
+          discord="Jakubk15#0524"
         />
 
       </div>
