@@ -55,7 +55,7 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-3.0.1.tgz#ced35cefc52b364f7db973f2fe9f50c3dd160715"
   integrity sha512-CdXZJoCS+aEPec26ZP7hWWU3SaJlQPZSCGdgpQ2qGl2HUmtUUNrI3zC4XWdn1JUmh3t5OuDeRG1qB4eGRNSD4A==
 
-"@intlify/bundle-utils@next":
+"@intlify/bundle-utils@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@intlify/bundle-utils/-/bundle-utils-3.2.1.tgz#f1a00fb31716567c8da63fbb351c3199ca12d467"
   integrity sha512-rf4cLBOnbqmpXVcCdcYHilZpMt1m82syh3WLBJlZvGxN2KkH9HeHVH4+bnibF/SDXCHNh6lM6wTpS/qw+PkcMg==
@@ -109,12 +109,12 @@
   resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.3.0-beta.6.tgz#0f79e96f6f278d55ad0206def25f1335b219decc"
   integrity sha512-ITA1R4tvJYwZXT5x6QCSwxcwQ4dU52zrzVm/EUbgsp8oWzYS1xexBrxyNM80PSQudYvL2rvcZJKQ7yBh7b0LkQ==
 
-"@intlify/unplugin-vue-i18n@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@intlify/unplugin-vue-i18n/-/unplugin-vue-i18n-0.4.0.tgz#50fc976d03dfa709345b3c6e10c7314521eb359c"
-  integrity sha512-IdnDu4X4Iw+8+kJCYByq1l/1gx4Scd18AwFWLcHUKlqO6rVC/MYscERN1JKVTlpqm5D5hHzjf8WTCeNMYrFmZQ==
+"@intlify/unplugin-vue-i18n@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@intlify/unplugin-vue-i18n/-/unplugin-vue-i18n-0.7.0.tgz#10ebcf634921da9661c7a5880a5d0d6844773a00"
+  integrity sha512-FmkQQdTsKINH9KqeKYxOlumxBLD0v6TAMac3+4iqmFTyqqE1pH5Seqta0QQBSAgsJXzsbASkEnHdlsoCC2DfNA==
   dependencies:
-    "@intlify/bundle-utils" next
+    "@intlify/bundle-utils" "^3.2.1"
     "@intlify/shared" next
     "@rollup/pluginutils" "^4.2.0"
     "@vue/compiler-sfc" "^3.2.23"
@@ -123,8 +123,9 @@
     js-yaml "^4.1.0"
     json5 "^2.2.0"
     pathe "^0.2.0"
+    picocolors "^1.0.0"
     source-map "0.6.1"
-    unplugin "^0.6.2"
+    unplugin "^0.8.0"
 
 "@intlify/vue-devtools@9.2.2":
   version "9.2.2"
@@ -277,6 +278,11 @@ acorn@^7.1.1, acorn@^7.4.1:
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
+
+acorn@^8.8.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
+  integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
 
 anymatch@~3.1.2:
   version "3.1.2"
@@ -732,14 +738,15 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-unplugin@^0.6.2:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.6.3.tgz#b8721e2b163a410a7efed726e6a0fc6fbadf975a"
-  integrity sha512-CoW88FQfCW/yabVc4bLrjikN9HC8dEvMU4O7B6K2jsYMPK0l6iAnd9dpJwqGcmXJKRCU9vwSsy653qg+RK0G6A==
+unplugin@^0.8.0:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.8.1.tgz#4517b6a8ec3d944e838f9c346921d9777cd159e1"
+  integrity sha512-o7rUZoPLG1fH4LKinWgb77gDtTE6mw/iry0Pq0Z5UPvZ9+HZ1/4+7fic7t58s8/CGkPrDpGq+RltO+DmswcR4g==
   dependencies:
+    acorn "^8.8.0"
     chokidar "^3.5.3"
     webpack-sources "^3.2.3"
-    webpack-virtual-modules "^0.4.3"
+    webpack-virtual-modules "^0.4.4"
 
 vite@3.1.4:
   version "3.1.4"
@@ -779,7 +786,7 @@ webpack-sources@^3.2.3:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.3.tgz#2d4daab8451fd4b240cc27055ff6a0c2ccea0cde"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
-webpack-virtual-modules@^0.4.3:
+webpack-virtual-modules@^0.4.4:
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/webpack-virtual-modules/-/webpack-virtual-modules-0.4.5.tgz#e476842dab5eafb7beb844aa2f747fc12ebbf6ec"
   integrity sha512-8bWq0Iluiv9lVf9YaqWQ9+liNgXSHICm+rg544yRgGYaR8yXZTVBaHZkINZSB2yZSWo4b0F6MIxqJezVfOEAlg==
