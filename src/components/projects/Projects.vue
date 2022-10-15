@@ -71,7 +71,7 @@ export default {
 
 @media only screen and (max-width: 1000px) {
   #projects {
-    padding: 3% 8%;
+    padding: 3% 12%;
   }
 
   #projects h1 {
@@ -106,7 +106,7 @@ export default {
 }
 
 #projects {
-  padding: 3% 12% 3% 8%;
+  padding: 3% 12% 3% 12%;
 }
 
 #projects h1 {
