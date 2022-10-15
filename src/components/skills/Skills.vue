@@ -10,9 +10,6 @@
     <div class="row">
       <div
         class="col-lg-3"
-        @mouseover="hover['java'] = true"
-        @mouseleave="hover['java'] = false"
-        v-bind:class="{ 'animate__animated animate__tada': hover['java'] }"
       >
         <div class="card-info">
           <img alt="" class="img-fluid rounded" src="/assets/img/java.png" />
@@ -23,9 +20,6 @@
 
       <div
         class="col-lg-3"
-        @mouseover="hover['php'] = true"
-        @mouseleave="hover['php'] = false"
-        v-bind:class="{ 'animate__animated animate__tada': hover['php'] }"
       >
         <div class="card-info">
           <img alt="" src="/assets/img/php.png" />
@@ -36,9 +30,6 @@
 
       <div
         class="col-lg-3"
-        @mouseover="hover['javascript'] = true"
-        @mouseleave="hover['javascript'] = false"
-        v-bind:class="{ 'animate__animated animate__tada': hover['javascript'] }"
       >
         <div class="card-info">
           <img alt="" src="/assets/img/javascript.png" />
@@ -49,9 +40,6 @@
 
       <div
         class="col-lg-3"
-        @mouseover="hover['linux'] = true"
-        @mouseleave="hover['linux'] = false"
-        v-bind:class="{ 'animate__animated animate__tada': hover['linux'] }"
       >
         <div class="card-info">
           <img alt="" src="/assets/img/linux64.png" />
@@ -66,14 +54,6 @@
 <script>
 export default {
   name: 'Skills',
-  data: () => ({
-    hover: {
-      java: false,
-      php: false,
-      javascript: false,
-      linux: false,
-    },
-  }),
 };
 </script>
 
