@@ -94,7 +94,7 @@ export default {
 }
 
 #skills {
-  padding: 3% 12% 3% 8%;
+  padding: 3% 12% 3% 12%;
 }
 
 #skills h1 {

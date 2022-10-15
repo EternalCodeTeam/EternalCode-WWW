@@ -68,7 +68,7 @@ export default {
 }
 
 #about {
-  padding: 0 12% 3% 8%;
+  padding: 0 12% 3% 12%;
 }
 
 .intellij-container {
