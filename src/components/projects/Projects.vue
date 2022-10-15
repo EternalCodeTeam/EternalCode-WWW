@@ -4,7 +4,7 @@
     <h1>{{ $t("message.projects.title") }}</h1>
     <p>{{ $t("message.projects.subtitle") }}</p>
 
-    <div class="row flex-container">
+    <div class="row projects-row">
       <Project
         name="EternalCore"
         description="♾️ All the most important server functions in one!"
@@ -64,9 +64,14 @@ export default {
 
 <style>
 
-.flex-container {
+.projects-row {
   display: flex;
   justify-content: space-around;
+  align-items: stretch;
+}
+
+.projects-row > div {
+  margin: 10px 0;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -137,6 +142,7 @@ export default {
   margin-bottom: 2%;
   padding: 6% 10%;
   transition: 0.5s;
+  height: 100%;
 }
 
 .card-pro a:hover {
