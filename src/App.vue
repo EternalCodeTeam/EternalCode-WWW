@@ -62,7 +62,6 @@ body {
   font-weight: 500;
   height: 100%;
   overflow-x: hidden;
-  background: -webkit-linear-gradient(right, rgb(30, 31, 31), #020202);
   background: linear-gradient(to right, #1e1f1f, #020202);
 }
 
