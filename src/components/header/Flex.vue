@@ -106,7 +106,13 @@
 
 .skill {
   animation: animateLogotype 6s ease-in-out infinite;
-  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .skill {
+    animation: animateLogotype 6s ease-in-out infinite;
+    display: none;
+  }
 }
 
 @keyframes animateLogotype {
