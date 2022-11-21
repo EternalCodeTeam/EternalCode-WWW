@@ -77,11 +77,6 @@
 </script>
 
 <style>
-.list-inline-item {
-  margin-right: 0rem !important;
-}
-
-
 @media only screen and (max-width: 1000px) {
   #team h1 {
     font-size: 30px;
@@ -114,22 +109,4 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.team-card {
-  background: #2a2c2c;
-  transition: 0.3s;
-}
-
-.team-card:hover {
-  transform: scale(1.03);
-}
-
-.team-card-title {
-  color: #fff;
-}
-
-.team-card-subtitle {
-  color: #fff;
-}
-
 </style>
