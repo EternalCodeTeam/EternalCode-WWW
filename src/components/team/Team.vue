@@ -43,9 +43,26 @@
             name="eripe14"
             role="Team Developer"
             githubUrl="https://github.com/eripe14"
-            imageUrl="https://avatars.githubusercontent.com/u/80169196?s=400&u=f9969427902f511c9bb8f78460dcb9cf49754c2e&v=4"
+            imageUrl="https://avatars.githubusercontent.com/u/80169196?s=400"
         />
-
+        <Member
+            name="WhiteClawConeseur"
+            role="Team Developer"
+            githubUrl="https://github.com/VelvetDuck"
+            imageUrl="https://avatars.githubusercontent.com/u/44951860?v=4"
+        />
+        <Member
+            name="Nyatix"
+            role="Team Developer"
+            githubUrl="https://github.com/iNyatix"
+            imageUrl="https://avatars.githubusercontent.com/u/69016068?v=4"
+        />
+        <Member
+            name="Kamicjusz"
+            role="Student"
+            githubUrl="https://github.com/Kamicjusz"
+            imageUrl="https://avatars.githubusercontent.com/u/66566758?v=4"
+        />
       </div>
     </div>
   </section>
@@ -60,11 +77,6 @@
 </script>
 
 <style>
-.list-inline-item {
-  margin-right: 0 !important;
-}
-
-
 @media only screen and (max-width: 1000px) {
   #team h1 {
     font-size: 30px;
@@ -97,22 +109,4 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.team-card {
-  background: #2a2c2c;
-  transition: 0.3s;
-}
-
-.team-card:hover {
-  transform: scale(1.03);
-}
-
-.team-card-title {
-  color: #fff;
-}
-
-.team-card-subtitle {
-  color: #fff;
-}
-
 </style>

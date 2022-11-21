@@ -36,3 +36,26 @@ export default {
   }
 };
 </script>
+
+<style>
+.team-card {
+  background: #2a2c2c;
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+.team-card-title {
+  color: #fff;
+}
+
+.team-card-subtitle {
+  color: #fff;
+}
+
+.list-inline-item {
+  margin-right: 0rem !important;
+}
+</style>
