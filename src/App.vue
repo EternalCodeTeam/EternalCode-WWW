@@ -5,7 +5,8 @@ import About from "./components/about/About.vue";
 import Skills from "./components/skills/Skills.vue";
 import Projects from "./components/projects/Projects.vue";
 import Footer from "./components/footer/Footer.vue";
-import Team from "./components/team/Team.vue";</script>
+import Team from "./components/team/Team.vue";
+</script>
 
 <template>
   <div>
@@ -62,6 +63,7 @@ body {
   font-weight: 500;
   height: 100%;
   overflow-x: hidden;
+  background: -webkit-linear-gradient(right, rgb(30, 31, 31), #020202);
   background: linear-gradient(to right, #1e1f1f, #020202);
 }
 
@@ -71,21 +73,11 @@ a:link {
 
 header {
   background-image: url('/assets/img/bg.png');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1000px) {
   header {
     background-image: url('/assets/img/bg.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 }
 

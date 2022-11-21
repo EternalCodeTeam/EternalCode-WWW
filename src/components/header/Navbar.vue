@@ -26,9 +26,6 @@
             <a class="nav-link" href="https://repo.eternalcode.pl/">{{ $t("message.navbar.repository") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://paste.eternalcode.pl/">{{ $t("message.navbar.paste") }}</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="https://docs.eternalcode.pl/">{{ $t("message.navbar.docs") }}</a>
           </li>
 

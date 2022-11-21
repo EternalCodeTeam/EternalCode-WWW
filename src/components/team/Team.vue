@@ -61,7 +61,7 @@
 
 <style>
 .list-inline-item {
-  margin-right: 0rem !important;
+  margin-right: 0 !important;
 }
 
 

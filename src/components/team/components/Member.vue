@@ -33,6 +33,6 @@ export default {
     githubUrl: String,
     linkedinUrl: String,
     imageUrl: String
-  },
+  }
 };
 </script>
