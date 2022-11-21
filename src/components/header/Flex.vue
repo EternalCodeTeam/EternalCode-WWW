@@ -84,7 +84,7 @@
 }
 
 .flex h1 {
-  color: white;
+  color: #ffffff;
   font-weight: 800;
   font-size: 50px;
 }
@@ -95,7 +95,7 @@
 
 .social a {
   position: -ms-device-fixed;
-  color: rgb(190, 190, 190) !important;
+  color: #b8b8b8 !important;
   margin: 10px;
   font-size: large;
 }
@@ -106,6 +106,7 @@
 
 .skill {
   animation: animateLogotype 6s ease-in-out infinite;
+  display: none;
 }
 
 @keyframes animateLogotype {
