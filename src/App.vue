@@ -13,7 +13,6 @@ import Team from "./components/team/Team.vue";
 
     <header>
       <Navbar/>
-      <Flex/>
     </header>
 
     <About/>
