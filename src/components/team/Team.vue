@@ -34,31 +34,31 @@
           imageUrl="https://avatars.githubusercontent.com/u/77621271?v=4"
         />
         <Member
-          name="Jakubk15"
+          name="Jakub"
           role="Moderator"
           githubUrl="https://github.com/Jakubk15"
           imageUrl="https://avatars.githubusercontent.com/u/77227023?v=4"
         />
         <Member
-            name="eripe14"
+            name="Karol"
             role="Team Developer"
             githubUrl="https://github.com/eripe14"
             imageUrl="https://avatars.githubusercontent.com/u/80169196?s=400"
         />
         <Member
-            name="WhiteClawConeseur"
+            name="Michał"
             role="Team Developer"
             githubUrl="https://github.com/VelvetDuck"
             imageUrl="https://avatars.githubusercontent.com/u/44951860?v=4"
         />
         <Member
-            name="Nyatix"
+            name="Mateusz"
             role="Team Developer"
             githubUrl="https://github.com/iNyatix"
             imageUrl="https://avatars.githubusercontent.com/u/69016068?v=4"
         />
         <Member
-            name="Kamicjusz"
+            name="Kamil"
             role="Student"
             githubUrl="https://github.com/Kamicjusz"
             imageUrl="https://avatars.githubusercontent.com/u/66566758?v=4"

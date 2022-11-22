@@ -104,9 +104,4 @@ export default {
   color: #666666;
   font-size: small;
 }
-
-.zap {
-  color: gold;
-  margin-right: 10px;
-}
 </style>
