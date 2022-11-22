@@ -48,7 +48,6 @@
 
   .skill {
     animation: animateLogotype 6s ease-in-out infinite;
-/*    display: none;*/
   }
 
   .flex {
