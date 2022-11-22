@@ -65,8 +65,8 @@ body {
   overflow-x: hidden;
   background: rgb(30,31,31);
   background: -moz-linear-gradient(146deg, rgba(30,31,31,1) 45%, rgba(2,2,2,1) 100%);
-  background: -webkit-linear-gradient(146deg, rgba(30,31,31,1) 45%, rgba(2,2,2,1) 100%);
-  background: linear-gradient(146deg, rgba(30,31,31,1) 45%, rgba(2,2,2,1) 100%);
+  background: -webkit-linear-gradient(right, rgb(30, 31, 31), #020202);
+  background: linear-gradient(to right, #1e1f1f, #020202);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1f1f",endColorstr="#020202",GradientType=1);
 
 }

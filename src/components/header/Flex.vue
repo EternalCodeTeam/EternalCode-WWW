@@ -41,7 +41,6 @@
   .skill {
     animation: animateLogotype 6s ease-in-out infinite;
     width: 100%;
-    position: relative;
     opacity: 0.1;
     margin-top: -100%;
     z-index: -99;
