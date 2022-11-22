@@ -44,7 +44,7 @@
       <Project
         name="EternalCode-WWW"
         description="🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!"
-        githubUrl="https://github.com/EternalCodeTeam/Docs"
+        githubUrl="https://github.com/EternalCodeTeam/EternalCode-WWW"
         imageUrl="/assets/img/web.png"
       />
 
