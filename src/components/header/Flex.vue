@@ -77,7 +77,7 @@
 }
 
 .skill {
-  float: right;
+  float: right !important;
 }
 
 .flex p {
