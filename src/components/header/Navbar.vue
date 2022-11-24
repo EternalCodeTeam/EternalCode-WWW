@@ -121,7 +121,6 @@
 .navbar-brand {
   color: white !important;
   font-weight: 700;
-  margin-top: 29px;
 }
 </style>
 

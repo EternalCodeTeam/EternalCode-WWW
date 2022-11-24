@@ -42,13 +42,13 @@
         <Member
             githubUrl="https://github.com/eripe14"
             imageUrl="https://avatars.githubusercontent.com/u/80169196?s=400"
-            name="Karol"
+            name="Karol Dronia"
             role="Team Developer"
         />
         <Member
             githubUrl="https://github.com/VelvetDuck"
             imageUrl="https://avatars.githubusercontent.com/u/44951860?v=4"
-            name="Michał"
+            name="Michał Wysocki"
             role="Team Developer"
         />
         <Member
@@ -60,7 +60,7 @@
         <Member
             githubUrl="https://github.com/Kamicjusz"
             imageUrl="https://avatars.githubusercontent.com/u/66566758?v=4"
-            name="Kamil"
+            name="Kamil Jęczeń"
             role="Student"
         />
       </div>
