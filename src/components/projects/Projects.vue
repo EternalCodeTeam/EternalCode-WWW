@@ -6,46 +6,46 @@
 
     <div class="row projects-row">
       <Project
-        name="EternalCore"
-        description="♾️ All the most important server functions in one!"
-        githubUrl="https://github.com/EternalCodeTeam/EternalCore"
-        imageUrl="/assets/img/infinity.png"
+          description="♾️ All the most important server functions in one!"
+          githubUrl="https://github.com/EternalCodeTeam/EternalCore"
+          imageUrl="/assets/img/infinity.png"
+          name="EternalCore"
       />
       <Project
-        name="EternalCheck"
-        description="🎇 Simple plugin to check players!"
-        githubUrl="https://github.com/EternalCodeTeam/EternalCheck"
-        imageUrl="/assets/img/fireworks.png"
+          description="🎇 Simple plugin to check players!"
+          githubUrl="https://github.com/EternalCodeTeam/EternalCheck"
+          imageUrl="/assets/img/fireworks.png"
+          name="EternalCheck"
       />
       <Project
-        name="ChatFormatter"
-        description="📝 The most intelligent chat formatting plugin with minimessages support!"
-        githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
-        imageUrl="/assets/img/chat.png"
+          description="📝 The most intelligent chat formatting plugin with minimessages support!"
+          githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
+          imageUrl="/assets/img/chat.png"
+          name="ChatFormatter"
       />
       <Project
-        name="EternalRTP"
-        description="🗺️ A random teleport plugin that doesn't give you a headache."
-        githubUrl="https://github.com/EternalCodeTeam/EternalRTP"
-        imageUrl="/assets/img/treasure-map.png"
+          description="🗺️ A random teleport plugin that doesn't give you a headache."
+          githubUrl="https://github.com/EternalCodeTeam/EternalRTP"
+          imageUrl="/assets/img/treasure-map.png"
+          name="EternalRTP"
       />
       <Project
-        name="DiscordOfficer"
-        description="👮‍♂️ EternalCode discord community officer!"
-        githubUrl="https://github.com/EternalCodeTeam/DiscordOfficer"
-        imageUrl="/assets/img/police-officer.png"
+          description="👮‍♂️ EternalCode discord community officer!"
+          githubUrl="https://github.com/EternalCodeTeam/DiscordOfficer"
+          imageUrl="/assets/img/police-officer.png"
+          name="DiscordOfficer"
       />
       <Project
-        name="Docs"
-        description="📖 All documentations of EternalCodeTeam Projects & Tutorials 😍"
-        githubUrl="https://github.com/EternalCodeTeam/Docs"
-        imageUrl="/assets/img/folder.png"
+          description="📖 All documentations of EternalCodeTeam Projects & Tutorials 😍"
+          githubUrl="https://github.com/EternalCodeTeam/Docs"
+          imageUrl="/assets/img/folder.png"
+          name="Docs"
       />
       <Project
-        name="EternalCode-WWW"
-        description="🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!"
-        githubUrl="https://github.com/EternalCodeTeam/EternalCode-WWW"
-        imageUrl="/assets/img/web.png"
+          description="🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!"
+          githubUrl="https://github.com/EternalCodeTeam/EternalCode-WWW"
+          imageUrl="/assets/img/web.png"
+          name="EternalCode-WWW"
       />
 
     </div>
@@ -53,12 +53,13 @@
 </template>
 
 <script>
-import Project from "./components/Project.vue"
+import Project from "./components/Project.vue";
+
 export default {
   name: "Projects",
   components: {
-    Project
-  }
+    Project,
+  },
 };
 </script>
 

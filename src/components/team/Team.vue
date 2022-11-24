@@ -7,73 +7,74 @@
       <div class="row team-container text-center">
 
         <Member
-          name="Martin Sulikowski"
-          role="Lead Team"
-          githubUrl="https://github.com/vLuckyyy"
-          linkedinUrl="https://www.linkedin.com/in/vlucky"
-          imageUrl="https://avatars.githubusercontent.com/u/65517973?v=4"
+            githubUrl="https://github.com/vLuckyyy"
+            imageUrl="https://avatars.githubusercontent.com/u/65517973?v=4"
+            linkedinUrl="https://www.linkedin.com/in/vlucky"
+            name="Martin Sulikowski"
+            role="Lead Team"
         />
         <Member
-          name="Norbert Dejlich"
-          role="Lead Team"
-          githubUrl="https://github.com/Rollczi/"
-          linkedinUrl="https://www.linkedin.com/in/rollczi/"
-          imageUrl="https://avatars.githubusercontent.com/u/49173834?v=4"
+            githubUrl="https://github.com/Rollczi/"
+            imageUrl="https://avatars.githubusercontent.com/u/49173834?v=4"
+            linkedinUrl="https://www.linkedin.com/in/rollczi/"
+            name="Norbert Dejlich"
+            role="Lead Team"
         />
         <Member
-          name="Krzysztof Haller"
-          role="Lead Team"
-          githubUrl="https://github.com/Hyd3r1/"
-          linkedinUrl="https://www.linkedin.com/in/khallercom/"
-          imageUrl="https://avatars.githubusercontent.com/u/60399586?v=4"
+            githubUrl="https://github.com/Hyd3r1/"
+            imageUrl="https://avatars.githubusercontent.com/u/60399586?v=4"
+            linkedinUrl="https://www.linkedin.com/in/khallercom/"
+            name="Krzysztof Haller"
+            role="Lead Team"
         />
         <Member
-          name="Piotr Zych"
-          role="Lead Team"
-          githubUrl="https://github.com/Osnixer/"
-          imageUrl="https://avatars.githubusercontent.com/u/77621271?v=4"
+            githubUrl="https://github.com/Osnixer/"
+            imageUrl="https://avatars.githubusercontent.com/u/77621271?v=4"
+            name="Piotr Zych"
+            role="Lead Team"
         />
         <Member
-          name="Jakub"
-          role="Moderator"
-          githubUrl="https://github.com/Jakubk15"
-          imageUrl="https://avatars.githubusercontent.com/u/77227023?v=4"
+            githubUrl="https://github.com/Jakubk15"
+            imageUrl="https://avatars.githubusercontent.com/u/77227023?v=4"
+            name="Jakub"
+            role="Moderator"
         />
         <Member
-            name="Karol"
-            role="Team Developer"
             githubUrl="https://github.com/eripe14"
             imageUrl="https://avatars.githubusercontent.com/u/80169196?s=400"
+            name="Karol"
+            role="Team Developer"
         />
         <Member
-            name="Michał"
-            role="Team Developer"
             githubUrl="https://github.com/VelvetDuck"
             imageUrl="https://avatars.githubusercontent.com/u/44951860?v=4"
+            name="Michał"
+            role="Team Developer"
         />
         <Member
-            name="Mateusz"
-            role="Team Developer"
             githubUrl="https://github.com/iNyatix"
             imageUrl="https://avatars.githubusercontent.com/u/69016068?v=4"
+            name="Mateusz"
+            role="Team Developer"
         />
         <Member
-            name="Kamil"
-            role="Student"
             githubUrl="https://github.com/Kamicjusz"
             imageUrl="https://avatars.githubusercontent.com/u/66566758?v=4"
+            name="Kamil"
+            role="Student"
         />
       </div>
     </div>
   </section>
 </template>
 <script>
-  import Member from "./components/Member.vue"
-  export default {
-    components: {
-      Member
-    }
-  }
+import Member from "./components/Member.vue";
+
+export default {
+  components: {
+    Member,
+  },
+};
 </script>
 
 <style>

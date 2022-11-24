@@ -21,12 +21,12 @@ const app = createApp(App);
 
 
 const i18n = createI18n({
-  legacy: false,
-  globalInjection: true,
-  locale: "en",
-  fallbackLocale: "en",
-  availableLocales: ["en", "pl"],
-  messages: messages,
+    legacy: false,
+    globalInjection: true,
+    locale: "en",
+    fallbackLocale: "en",
+    availableLocales: ["en", "pl"],
+    messages: messages,
 });
 
 
