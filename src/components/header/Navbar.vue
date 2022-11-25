@@ -83,7 +83,8 @@
 
   .navbar-brand {
     color: white !important;
-    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 10px
   }
 
   .navbar-toggler {
