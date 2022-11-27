@@ -41,7 +41,6 @@
   .skill {
     animation: animateLogotype 6s ease-in-out infinite;
     width: 100%;
-    position: relative;
     opacity: 0.1;
     margin-top: -100%;
     z-index: -99;
@@ -76,7 +75,7 @@
 }
 
 .skill {
-  float: right;
+  float: right !important;
 }
 
 .flex p {
@@ -108,26 +107,30 @@
   animation: animateLogotype 6s ease-in-out infinite;
 }
 
-@media only screen and (max-width: 1000px) {
-  .skill {
-    animation: animateLogotype 6s ease-in-out infinite;
-    display: none;
+@-webkit-keyframes animateLogotype {
+  0% {
+    -webkit-box-shadow: 0 5px 15px 0 #0000;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 25px 15px 0 #0000;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 5px 15px 0 #0000;
   }
 }
 
 @keyframes animateLogotype {
   0% {
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0);
     transform: translatey(0px);
   }
 
   50% {
-    box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0);
     transform: translatey(-20px);
   }
 
   100% {
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0);
     transform: translatey(0px);
   }
 }
