@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-lg-3 d-flex align-items-stretch">
         <div class="card-info">
-          <img alt="" class="img-fluid rounded" src="/assets/img/java.png"/>
+          <img alt="" class="img-fluid rounded" src="/assets/img/skills/java.png"/>
           <h5>Java</h5>
           <p>{{ $t("message.skills.java") }}</p>
         </div>
@@ -18,7 +18,7 @@
 
       <div class="col-lg-3 d-flex align-items-stretch">
         <div class="card-info">
-          <img alt="" src="/assets/img/php.png"/>
+          <img alt="" src="/assets/img/skills/php.png"/>
           <h5>PHP</h5>
           <p>{{ $t("message.skills.php") }}</p>
         </div>
@@ -26,7 +26,7 @@
 
       <div class="col-lg-3 d-flex align-items-stretch">
         <div class="card-info">
-          <img alt="" src="/assets/img/javascript.png"/>
+          <img alt="" src="/assets/img/skills/javascript.png"/>
           <h5>JavaScript</h5>
           <p>{{ $t("message.skills.javascript") }}</p>
         </div>
@@ -34,7 +34,7 @@
 
       <div class="col-lg-3 d-flex align-items-stretch">
         <div class="card-info">
-          <img alt="" src="/assets/img/linux64.png"/>
+          <img alt="" src="/assets/img/skills/linux64.png"/>
           <h5>Linux</h5>
           <p>{{ $t("message.skills.linux") }}</p>
         </div>

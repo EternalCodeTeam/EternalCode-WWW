@@ -30,11 +30,11 @@
           </li>
 
           <li class="nav-item navbar-nav-lang" @click="$i18n.locale = 'pl'">
-            <img alt="PL" src="/assets/webp/icon_pl.webp">
+            <img alt="PL" src="/assets/img/lang/icon_pl.webp">
           </li>
 
           <li class="nav-item navbar-nav-lang" @click="$i18n.locale = 'en'">
-            <img alt="EN" src="/assets/webp/icon_en.webp">
+            <img alt="EN" src="/assets/img/lang/icon_en.webp">
           </li>
 
         </ul>

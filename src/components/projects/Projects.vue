@@ -8,43 +8,43 @@
       <Project
           description="♾️ All the most important server functions in one!"
           githubUrl="https://github.com/EternalCodeTeam/EternalCore"
-          imageUrl="/assets/img/infinity.png"
+          imageUrl="/assets/img/projects/infinity.png"
           name="EternalCore"
       />
       <Project
           description="🎇 Simple plugin to check players!"
           githubUrl="https://github.com/EternalCodeTeam/EternalCheck"
-          imageUrl="/assets/img/fireworks.png"
+          imageUrl="/assets/img/projects/fireworks.png"
           name="EternalCheck"
       />
       <Project
           description="📝 The most intelligent chat formatting plugin with minimessages support!"
           githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
-          imageUrl="/assets/img/chat.png"
+          imageUrl="/assets/img/projects/chat.png"
           name="ChatFormatter"
       />
       <Project
           description="🗺️ A random teleport plugin that doesn't give you a headache."
           githubUrl="https://github.com/EternalCodeTeam/EternalRTP"
-          imageUrl="/assets/img/treasure-map.png"
+          imageUrl="/assets/img/projects/treasure-map.png"
           name="EternalRTP"
       />
       <Project
           description="👮‍♂️ EternalCode discord community officer!"
           githubUrl="https://github.com/EternalCodeTeam/DiscordOfficer"
-          imageUrl="/assets/img/police-officer.png"
+          imageUrl="/assets/img/projects/police-officer.png"
           name="DiscordOfficer"
       />
       <Project
           description="📖 All documentations of EternalCodeTeam Projects & Tutorials 😍"
           githubUrl="https://github.com/EternalCodeTeam/Docs"
-          imageUrl="/assets/img/folder.png"
+          imageUrl="/assets/img/projects/folder.png"
           name="Docs"
       />
       <Project
           description="🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!"
           githubUrl="https://github.com/EternalCodeTeam/EternalCode-WWW"
-          imageUrl="/assets/img/web.png"
+          imageUrl="/assets/img/projects/web.png"
           name="EternalCode-WWW"
       />
 
