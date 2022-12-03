@@ -29,12 +29,12 @@
             <a class="nav-link" href="https://docs.eternalcode.pl/">{{ $t("message.navbar.docs") }}</a>
           </li>
 
-          <li class="navbar-nav-lang nav-item" @click="$i18n.locale = 'pl'">
-            <img alt="PL" src="/assets/img/icon_pl.webp">
+          <li class="nav-item navbar-nav-lang" @click="$i18n.locale = 'pl'">
+            <img alt="PL" src="/assets/img/lang/icon_pl.webp">
           </li>
 
-          <li class="navbar-nav-lang nav-item" @click="$i18n.locale = 'en'">
-            <img alt="EN" src="/assets/img/icon_en.webp">
+          <li class="nav-item navbar-nav-lang" @click="$i18n.locale = 'en'">
+            <img alt="EN" src="/assets/img/lang/icon_en.webp">
           </li>
 
         </ul>
@@ -64,20 +64,31 @@
   border-radius: 15%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .navbar-nav {
     margin-top: 2%;
     border-radius: 12px;
     text-align: center;
   }
 
+  img {
+    align-items: center;
+    justify-content: center;
+  }
+
   .navbar-nav-lang {
     align-items: center;
+    justify-content: center;
   }
 
   .navbar-brand {
     color: white !important;
-    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10px
+  }
+
+  .navbar-toggler {
+    margin-top: 30px;
   }
 }
 
@@ -89,12 +100,13 @@
 }
 
 .nav-link {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #d3d4d5 !important;
-  margin-right: 19px;
+  margin-right: 3px;
   font-size: 15px;
   transition: 0.5s;
+  margin-top: 4px;
 }
 
 .nav-link:hover {
@@ -115,6 +127,6 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
 };
 </script>

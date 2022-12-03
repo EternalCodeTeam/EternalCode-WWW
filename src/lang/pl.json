@@ -1,44 +1,37 @@
 {
-    "message": {
-
-        "navbar": {
-            "projects": "Projekty",
-            "about": "O nas",
-            "status": "Monitor usług",
-            "repository": "Repozytorium",
-            "docs": "Dokumentacje"
-        },
-
-        "heading": {
-            "hello": "Witaj! 👋",
-            "motto": "EternalCode to fantastyczna społeczność programistów!"
-        },
-
-        "about": {
-            "title": "O nas 🎉",
-
-            "p1": "Jesteśmy zespołem programistów z wieloletnim doświadczeniem, oferującym mnóstwo usług związanych z branżą IT!",
-            "p2": "Zgrany zespół to coś, co nas wyróżnia, jesteśmy pionierem tego typu usług na rynku. Oferujemy między innymi pomoc dotyczącą serwerów gier, Linuxa oraz Windowsa, wsparcie związane z wyborem hostingu, zabezpieczenia maszyn serwerowych oraz uwielbiamy się dzielić wiedzą na temat programowania!",
-            "p3": "Potrzebujesz czegoś więcej? A może chcesz, abyśmy wykonali Ci projekt na najwyższym poziomie na zlecenie? Wszystko możemy bez większego trudu zrealizować! Jesteśmy otwarci na każdego typu współpracę!"
-        },
-
-        "skills": {
-            "title": "Nasze magiczne moce!",
-            "java": "W naszym składzie znajdziesz wielu programistów specjalizujących się w języku Java!",
-            "php": "Potrzebujesz autorskiego ItemShopu? Wykonujemy profesjonalny back-end!",
-            "javascript": "U nas możesz zamówić profesjonalne aplikacje, discord boty w javascript!",
-            "linux": "Skonfigurujemy serwer dedykowany/VPS specjalnie dla ciebie, zainstalujemy bazy danych i panele typu Pterodactyl."
-        },
-
-        "projects": {
-            "title": "Nasze projekty",
-            "subtitle": "Nasze projekty to nie tylko nasze usługi, ale również nasze hobby! Oferujemy wiele produktów z otwartym kodem źródłowym!",
-            "more": "Zobacz więcej"
-        },
-
-        "team": {
-            "title": "Nasz Team",
-            "subtitle": "Poniżej znajdziesz wszystkich członków naszego zespołu!"
-        }
+  "message": {
+    "navbar": {
+      "projects": "Projekty",
+      "about": "O nas",
+      "status": "Monitor usług",
+      "repository": "Repozytorium",
+      "docs": "Dokumentacje"
+    },
+    "heading": {
+      "hello": "Witaj! 👋",
+      "motto": "EternalCode to fantastyczna społeczność programistów!"
+    },
+    "about": {
+      "title": "O nas 🎉",
+      "p1": "Jesteśmy zespołem programistów z wieloletnim doświadczeniem, oferującym mnóstwo usług związanych z branżą IT!",
+      "p2": "Zgrany zespół to coś, co nas wyróżnia, jesteśmy pionierem tego typu usług na rynku. Oferujemy między innymi pomoc dotyczącą serwerów gier, Linuxa oraz Windowsa, wsparcie związane z wyborem hostingu, zabezpieczenia maszyn serwerowych oraz uwielbiamy się dzielić wiedzą na temat programowania!",
+      "p3": "Potrzebujesz czegoś więcej? A może chcesz, abyśmy wykonali Ci projekt na najwyższym poziomie na zlecenie? Wszystko możemy bez większego trudu zrealizować! Jesteśmy otwarci na każdego typu współpracę!"
+    },
+    "skills": {
+      "title": "Nasze magiczne moce!",
+      "java": "W naszym składzie znajdziesz wielu programistów specjalizujących się w języku Java!",
+      "php": "Potrzebujesz autorskiego ItemShopu? Wykonujemy profesjonalny back-end!",
+      "javascript": "U nas możesz zamówić profesjonalne aplikacje, discord boty w javascript!",
+      "linux": "Skonfigurujemy serwer dedykowany/VPS specjalnie dla ciebie, zainstalujemy bazy danych i panele typu Pterodactyl."
+    },
+    "projects": {
+      "title": "Nasze projekty",
+      "subtitle": "Nasze projekty to nie tylko nasze usługi, ale również nasze hobby! Oferujemy wiele produktów z otwartym kodem źródłowym!",
+      "more": "Zobacz więcej"
+    },
+    "team": {
+      "title": "Nasz Team",
+      "subtitle": "Poniżej znajdziesz wszystkich członków naszego zespołu!"
     }
+  }
 }

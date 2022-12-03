@@ -12,7 +12,7 @@
 
         </div>
         <div class="intellij-container col-lg-6 col-md-12">
-          <img alt="intellij" class="intellij" src="/assets/img/eternalcore-intellij.png">
+          <img alt="intellij" class="intellij" src="/assets/img/header/about/eternalcore-intellij.png">
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
 <script>
 
 export default {
-  name: "about"
+  name: "about",
 };
 </script>
 

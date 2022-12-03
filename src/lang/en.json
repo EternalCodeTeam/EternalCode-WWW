@@ -1,43 +1,37 @@
 {
-    "message": {
-        "navbar": {
-            "projects": "Projects",
-            "about": "About",
-            "status": "Status",
-            "repository": "Repository",
-            "docs": "Documentations"
-        },
-
-        "heading": {
-            "hello": "Hello there! 👋",
-            "motto": "EternalCode is a fantastic community of developers!"
-        },
-
-        "about": {
-            "title": "About 🎉",
-
-            "p1": "We are a team of programmers with many years of experience, offering a lot of services related to the IT industry!",
-            "p2": "A close-knit team is what sets us apart, we are a pioneer of this type of service in the market. Among other things, we offer help with games, Linux & Windows servers. support related to the choice of hosting, security of server machines and we love to share our programming knowledge!",
-            "p3": "Do you need something more? Or maybe you want us to do a top-notch design for you on commission? We can accomplish everything without much difficulty! We are open to any type of cooperation!"
-        },
-
-        "skills": {
-            "title": "Our magic powers!",
-            "java": "In our lineup you will find many programmers specializing in Java!",
-            "php": "Do you need a proprietary Itemshop? We can do a professional back-end!",
-            "javascript": "You can order professional applications and discord bots in JavaScript from us!",
-            "linux": "We will configure a Dedicated/VPS Server specifically for you, install database and panels etc."
-        },
-
-        "projects": {
-            "title": "Our projects",
-            "subtitle": "Our projects are not only our services, but also our hobby! We offer many open source products!",
-            "more": "See more"
-        },
-
-        "team": {
-            "title": "Our team",
-            "subtitle": "Below you will find all the members of our team!"
-        }
+  "message": {
+    "navbar": {
+      "projects": "Projects",
+      "about": "About",
+      "status": "Status",
+      "repository": "Repository",
+      "docs": "Documentations"
+    },
+    "heading": {
+      "hello": "Hello there! 👋",
+      "motto": "EternalCode is a fantastic community of developers!"
+    },
+    "about": {
+      "title": "About 🎉",
+      "p1": "We are a team of programmers with many years of experience, offering a lot of services related to the IT industry!",
+      "p2": "A close-knit team is what sets us apart, we are a pioneer of this type of service in the market. Among other things, we offer help with games, Linux & Windows servers. support related to the choice of hosting, security of server machines and we love to share our programming knowledge!",
+      "p3": "Do you need something more? Or maybe you want us to do a top-notch design for you on commission? We can accomplish everything without much difficulty! We are open to any type of cooperation!"
+    },
+    "skills": {
+      "title": "Our magic powers!",
+      "java": "In our lineup you will find many programmers specializing in Java!",
+      "php": "Do you need a proprietary Itemshop? We can do a professional back-end!",
+      "javascript": "You can order professional applications and discord bots in JavaScript from us!",
+      "linux": "We will configure a Dedicated/VPS Server specifically for you, install database and panels etc."
+    },
+    "projects": {
+      "title": "Our projects",
+      "subtitle": "Our projects are not only our services, but also our hobby! We offer many open source products!",
+      "more": "See more"
+    },
+    "team": {
+      "title": "Our team",
+      "subtitle": "Below you will find all the members of our team!"
     }
+  }
 }

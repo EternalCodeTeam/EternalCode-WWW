@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   height: 100%;
   overflow-x: hidden;
