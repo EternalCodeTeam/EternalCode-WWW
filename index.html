@@ -20,10 +20,23 @@
     <meta content="EternalCode is a fantastic community of developers!" name="twitter:description">
     <meta content="https://www.eternalcode.pl" name="twitter:image:src">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="app"></div>
+
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script>
+    const snowflakes = new Snowflakes({
+        color: "#ffffff",
+        count: 15,
+        speed: 1.2,
+        minOpacity: 1,
+        minSize: 13,
+        maxSize: 20,
+    });
+</script>
+
 <script src="/src/main.js" type="module"></script>
 </body>
 </html>

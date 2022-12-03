@@ -76,12 +76,12 @@ a:link {
 }
 
 header {
-  background-image: url('/assets/img/bg.png');
+  background-image: url('/assets/img/header/bg.png');
 }
 
 @media only screen and (max-width: 1000px) {
   header {
-    background-image: url('/assets/img/bg.png');
+    background-image: url('/assets/img/header/bg.png');
   }
 }
 
