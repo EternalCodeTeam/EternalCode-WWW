@@ -22,6 +22,7 @@ import Team from "./components/team/Team.vue";
     <Team/>
 
     <Footer/>
+
   </div>
 </template>
 
@@ -76,12 +77,15 @@ a:link {
 }
 
 header {
-  background-image: url('/assets/img/bg.png');
+  background-image: url('/assets/img/header/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1000px) {
   header {
-    background-image: url('/assets/img/bg.png');
+    background-image: url('/assets/img/header/bg.png');
   }
 }
 
