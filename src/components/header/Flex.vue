@@ -140,7 +140,7 @@
 
 <script>
 export default {
-  name: "Flex"
+  name: "Flex",
 };
 </script>
 

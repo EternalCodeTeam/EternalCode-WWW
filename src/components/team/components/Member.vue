@@ -5,13 +5,13 @@
       <h5 class="mb-0 team-card-title">{{ name }}</h5>
       <span class="small team-card-subtitle">{{ role }}</span>
       <ul class="social mb-0 list-inline mt-3">
-        <li class="list-inline-item">
-          <a class="social-link" :href="githubUrl">
+        <li v-if="githubUrl" class="list-inline-item">
+          <a :href="githubUrl" class="social-link">
             <font-awesome-icon icon="fa-brands fa-github"/>
           </a>
         </li>
-        <li class="list-inline-item" v-show="linkedinUrl">
-          <a class="social-link" :href="linkedinUrl">
+        <li v-if="linkedinUrl" class="list-inline-item">
+          <a :href="linkedinUrl" class="social-link">
             <font-awesome-icon icon="fa-brands fa-linkedin"/>
           </a>
         </li>
@@ -31,7 +31,6 @@ export default {
   },
 };
 </script>
-
 <style>
 .team-card {
   background: #2a2c2c;
