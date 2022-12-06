@@ -58,6 +58,11 @@
             role="Team Developer"
         />
         <Member
+            imageUrl="https://avatars.githubusercontent.com/u/101002732?v=4"
+            name="Dominik"
+            role="Video Editor"
+        />
+        <Member
             githubUrl="https://github.com/Kamicjusz"
             imageUrl="https://avatars.githubusercontent.com/u/66566758?v=4"
             name="Kamil Jęczeń"
