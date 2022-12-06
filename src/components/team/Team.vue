@@ -59,7 +59,7 @@
         />
         <Member
             imageUrl="https://avatars.githubusercontent.com/u/101002732?v=4"
-            name="Dominik"
+            name="Domin"
             role="Video Editor"
         />
         <Member
