@@ -39,15 +39,7 @@
 <style>
 @media only screen and (max-width: 1000px) {
   .skill {
-    animation: animateLogotype 6s ease-in-out infinite;
-    opacity: 0.1;
-    position: absolute;
-    margin-top: -100%;
-    z-index: -99;
-  }
-
-  .skill {
-    animation: animateLogotype 6s ease-in-out infinite;
+    display: none;
   }
 
   .flex {
