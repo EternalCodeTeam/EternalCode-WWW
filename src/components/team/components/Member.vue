@@ -35,7 +35,7 @@ export default {
 .team-card {
   background: #2a2c2c;
   transition: 0.3s;
-  height: 300px;
+  height: 100%;
 }
 
 .team-card:hover {

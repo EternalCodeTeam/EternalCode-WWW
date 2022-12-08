@@ -81,9 +81,9 @@ export default {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   transition: 0.5s;
-  height: 230px !important;
+  height: 95%;
 }
 
 .card-info:hover {
