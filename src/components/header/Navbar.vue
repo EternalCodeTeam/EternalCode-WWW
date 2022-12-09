@@ -57,7 +57,6 @@
   transform: scale(1.05);
   filter: grayscale(100%);
   border-radius: 12px;
-
 }
 
 .navbar-nav-lang img {
@@ -122,6 +121,10 @@
 .navbar-brand {
   color: white !important;
   font-weight: 700;
+}
+
+.navbar {
+  z-index: 100 !important;
 }
 </style>
 

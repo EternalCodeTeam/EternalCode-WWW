@@ -30,6 +30,12 @@
           name="EternalRTP"
       />
       <Project
+          description="⚔ Combat Logging system for Minecraft!"
+          githubUrl="https://github.com/EternalCodeTeam/EternalCombatLog"
+          imageUrl="/assets/img/projects/swords.png"
+          name="CombatLog"
+      />
+      <Project
           description="👮‍♂️ EternalCode discord community officer!"
           githubUrl="https://github.com/EternalCodeTeam/DiscordOfficer"
           imageUrl="/assets/img/projects/police-officer.png"

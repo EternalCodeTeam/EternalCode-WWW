@@ -28,7 +28,16 @@ const i18n = createI18n({
     messages: messages,
 });
 
+const snowflakes = new Snowflakes({
+    color: "#ffffff",
+    count: 35,
+    speed: 1.3,
+    minOpacity: 1,
+    minSize: 13,
+    maxSize: 20,
+});
 
 app.use(i18n);
+app.use(snowflakes);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.mount("#app");

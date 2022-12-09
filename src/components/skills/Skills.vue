@@ -7,38 +7,40 @@
       {{ $t("message.skills.title") }}
     </h1>
 
-    <div class="row">
-      <div class="col-lg-3 d-flex align-items-stretch">
+    <div class="row skills-row">
+
+      <div class="col-lg-3">
         <div class="card-info">
-          <img alt="" class="img-fluid rounded" src="/assets/img/skills/java.png"/>
+          <img src="/assets/img/skills/java.png"/>
           <h5>Java</h5>
           <p>{{ $t("message.skills.java") }}</p>
         </div>
       </div>
 
-      <div class="col-lg-3 d-flex align-items-stretch">
+      <div class="col-lg-3">
         <div class="card-info">
-          <img alt="" src="/assets/img/skills/php.png"/>
+          <img src="/assets/img/skills/php.png"/>
           <h5>PHP</h5>
           <p>{{ $t("message.skills.php") }}</p>
         </div>
       </div>
 
-      <div class="col-lg-3 d-flex align-items-stretch">
+      <div class="col-lg-3">
         <div class="card-info">
-          <img alt="" src="/assets/img/skills/javascript.png"/>
+          <img src="/assets/img/skills/javascript.png"/>
           <h5>JavaScript</h5>
           <p>{{ $t("message.skills.javascript") }}</p>
         </div>
       </div>
 
-      <div class="col-lg-3 d-flex align-items-stretch">
+      <div class="col-lg-3">
         <div class="card-info">
-          <img alt="" src="/assets/img/skills/linux64.png"/>
+          <img src="/assets/img/skills/linux64.png"/>
           <h5>Linux</h5>
           <p>{{ $t("message.skills.linux") }}</p>
         </div>
       </div>
+
     </div>
   </section>
 </template>
@@ -50,15 +52,10 @@ export default {
 </script>
 
 <style>
-@media only screen and (max-width: 1000px) {
-  #skills {
-    padding: 10% 7% 3% 8%;
-  }
-
-  #skills h1 {
-    font-size: large;
-    margin-bottom: 6%;
-  }
+.skills-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 .skills-icon {
@@ -81,12 +78,12 @@ export default {
   background-color: #2a2c2c;
   border-radius: 15px;
   padding: 10% 10% 10%;
-  display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   transition: 0.5s;
+  height: 95%;
 }
 
 .card-info:hover {
@@ -104,4 +101,16 @@ export default {
   color: #666666;
   font-size: small;
 }
+
+@media only screen and (max-width: 1000px) {
+  #skills {
+    padding: 10% 7% 3% 8%;
+  }
+
+  #skills h1 {
+    font-size: large;
+    margin-bottom: 6%;
+  }
+}
+
 </style>
