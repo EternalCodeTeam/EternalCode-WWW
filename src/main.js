@@ -21,9 +21,9 @@ const app = createApp(App);
 
 const i18n = createI18n({
     legacy: false,
-    globalInjection: true,
-    locale: "en",
+    locale: navigator.language.split('-')[0],
     fallbackLocale: "en",
+    globalInjection: true,
     availableLocales: ["en", "pl"],
     messages: messages,
 });
