@@ -11,5 +11,5 @@ npm run dev
 
 ## Recommended IDE Setup
 
-- [WebStrom or else JetBrains IDE](https://jetbrains.com) 
+- [WebStorm](https://jetbrains.com/webstorm/) 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
