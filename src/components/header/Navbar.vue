@@ -99,8 +99,8 @@
 }
 
 .nav-link {
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: capitalize;
   color: #d3d4d5 !important;
   margin-right: 3px;
   font-size: 15px;
