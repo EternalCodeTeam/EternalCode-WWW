@@ -16,7 +16,7 @@
     </div>
 
     <div class="info">
-      &copy; 2021-2022 EternalCode.pl All rights reserved.<br>
+      &copy; 2021-2023 EternalCode.pl All rights reserved.<br>
       All icons created by Freepik - Flaticon
     </div>
   </footer>
