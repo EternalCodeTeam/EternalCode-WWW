@@ -52,12 +52,6 @@
             role="Team Developer"
         />
         <Member
-            githubUrl="https://github.com/iNyatix"
-            imageUrl="https://avatars.githubusercontent.com/u/69016068?v=4"
-            name="Mateusz"
-            role="Team Developer"
-        />
-        <Member
             githubUrl="https://github.com/Kamicjusz"
             imageUrl="https://avatars.githubusercontent.com/u/66566758?v=4"
             name="Kamil Jęczeń"
