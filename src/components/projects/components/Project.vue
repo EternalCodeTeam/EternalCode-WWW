@@ -11,7 +11,7 @@
           <h6>{{ description }}</h6>
           <a :href="githubUrl" target="_blank">
             <font-awesome-icon icon="fa-solid fa-arrow-right-long"/>
-            {{ $t("message.projects.more") }}
+            {{ hrefText }}
           </a>
         </div>
       </div>
@@ -26,6 +26,7 @@ export default {
     description: String,
     githubUrl: String,
     imageUrl: String,
+    hrefText: String
   },
 };
 </script>
