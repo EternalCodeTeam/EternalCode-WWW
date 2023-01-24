@@ -11,7 +11,7 @@
 
       <div class="col-lg-3">
         <div class="card-info">
-          <img src="/assets/img/skills/java.png"/>
+          <img src="/assets/img/skills/java.png" alt="Java" />
           <h5>Java</h5>
           <p>{{ $t("message.skills.java") }}</p>
         </div>
@@ -19,7 +19,7 @@
 
       <div class="col-lg-3">
         <div class="card-info">
-          <img src="/assets/img/skills/php.png"/>
+          <img src="/assets/img/skills/php.png" alt="PHP" />
           <h5>PHP</h5>
           <p>{{ $t("message.skills.php") }}</p>
         </div>
@@ -27,7 +27,7 @@
 
       <div class="col-lg-3">
         <div class="card-info">
-          <img src="/assets/img/skills/javascript.png"/>
+          <img src="/assets/img/skills/javascript.png" alt="JavaScript" />
           <h5>JavaScript</h5>
           <p>{{ $t("message.skills.javascript") }}</p>
         </div>
@@ -35,7 +35,7 @@
 
       <div class="col-lg-3">
         <div class="card-info">
-          <img src="/assets/img/skills/linux64.png"/>
+          <img src="/assets/img/skills/linux64.png" alt="Linux logo" />
           <h5>Linux</h5>
           <p>{{ $t("message.skills.linux") }}</p>
         </div>
