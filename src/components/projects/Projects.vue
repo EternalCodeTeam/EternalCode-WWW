@@ -8,56 +8,56 @@
       <Project
           description="♾️ All the most important server functions in one!"
           githubUrl="https://github.com/EternalCodeTeam/EternalCore"
-          imageUrl="/assets/img/projects/infinity.png"
+          imageUrl="/assets/img/projects/infinity.webp"
           name="EternalCore"
           :hrefText="$t('message.projects.more')"
       />
       <Project
           description="🎇 Simple plugin to check players!"
           githubUrl="https://github.com/EternalCodeTeam/EternalCheck"
-          imageUrl="/assets/img/projects/fireworks.png"
+          imageUrl="/assets/img/projects/fireworks.webp"
           name="EternalCheck"
           :hrefText="$t('message.projects.more')"
       />
       <Project
           description="📝 The most intelligent chat formatting plugin with minimessages support!"
           githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
-          imageUrl="/assets/img/projects/chat.png"
+          imageUrl="/assets/img/projects/chat.webp"
           name="ChatFormatter"
           :hrefText="$t('message.projects.more')"
       />
       <Project
           description="🗺️ A random teleport plugin that doesn't give you a headache."
           githubUrl="https://github.com/EternalCodeTeam/EternalRTP"
-          imageUrl="/assets/img/projects/treasure-map.png"
+          imageUrl="/assets/img/projects/treasure-map.webp"
           name="EternalRTP"
           :hrefText="$t('message.projects.more')"
       />
       <Project
           description="⚔ Combat Logging system for Minecraft!"
           githubUrl="https://github.com/EternalCodeTeam/EternalCombatLog"
-          imageUrl="/assets/img/projects/swords.png"
+          imageUrl="/assets/img/projects/swords.webp"
           name="CombatLog"
           :hrefText="$t('message.projects.more')"
       />
       <Project
           description="👮‍♂️ EternalCode discord community officer!"
           githubUrl="https://github.com/EternalCodeTeam/DiscordOfficer"
-          imageUrl="/assets/img/projects/police-officer.png"
+          imageUrl="/assets/img/projects/police-officer.webp"
           name="DiscordOfficer"
           :hrefText="$t('message.projects.more')"
       />
       <Project
           description="📖 All documentations of EternalCodeTeam Projects & Tutorials 😍"
           githubUrl="https://github.com/EternalCodeTeam/Docs"
-          imageUrl="/assets/img/projects/folder.png"
+          imageUrl="/assets/img/projects/folder.webp"
           name="Docs"
           :hrefText="$t('message.projects.more')"
       />
       <Project
           description="🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!"
           githubUrl="https://github.com/EternalCodeTeam/EternalCode-WWW"
-          imageUrl="/assets/img/projects/web.png"
+          imageUrl="/assets/img/projects/web.webp"
           name="EternalCode-WWW"
           :hrefText="$t('message.projects.more')"
       />

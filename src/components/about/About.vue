@@ -12,7 +12,7 @@
 
         </div>
         <div class="intellij-container col-lg-6 col-md-12">
-          <img alt="intellij" class="intellij" src="/assets/img/header/about/eternalcore-intellij.png">
+          <img alt="intellij" class="intellij" src="/assets/img/header/about/eternalcore-intellij.webp">
         </div>
       </div>
     </div>
