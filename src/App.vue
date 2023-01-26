@@ -77,7 +77,7 @@ a:link {
 }
 
 header {
-  background-image: url('/assets/img/header/bg.png');
+  background-image: url('/assets/img/header/bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@ header {
 
 @media only screen and (max-width: 1000px) {
   header {
-    background-image: url('/assets/img/header/bg.png');
+    background-image: url('/assets/img/header/bg.webp');
   }
 }
 
