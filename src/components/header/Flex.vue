@@ -20,7 +20,7 @@
             <font-awesome-icon icon="fa-brands fa-youtube"/>
           </a>
 
-          <a href="https://www.tiktok.com/@eternalproject.pl?lang=pl-PL">
+          <a href="https://www.tiktok.com/@eternalcode.pl">
             <font-awesome-icon icon="fa-brands fa-tiktok"/>
           </a>
 
