@@ -10,7 +10,7 @@
       <a href="https://www.youtube.com/channel/UC-p0H9D82LLFuGXahoN9akA">
         <font-awesome-icon icon="fa-brands fa-youtube"/>
       </a>
-      <a href="https://www.tiktok.com/@eternalproject.pl?lang=pl-PL">
+      <a href="https://www.tiktok.com/@eternalcode.pl">
         <font-awesome-icon icon="fa-brands fa-tiktok"/>
       </a>
     </div>
