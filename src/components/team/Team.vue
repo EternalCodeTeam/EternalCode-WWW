@@ -46,12 +46,6 @@
             role="Team Developer"
         />
         <Member
-            githubUrl="https://github.com/VelvetDuck"
-            imageUrl="https://avatars-githubusercontent.webp.se/u/44951860?v=4"
-            name="Michał Wysocki"
-            role="Team Developer"
-        />
-        <Member
             githubUrl="https://github.com/Kamicjusz"
             imageUrl="https://avatars-githubusercontent.webp.se/u/66566758?v=4"
             name="Kamil Jęczeń"
