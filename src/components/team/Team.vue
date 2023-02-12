@@ -51,6 +51,12 @@
             name="Kamil Jęczeń"
             role="Student"
         />
+        <Member
+            githubUrl="https://github.com/Embrejs"
+            imageUrl="https://avatars.githubusercontent.com/u/80779749?v=4"
+            name="CitralFlo"
+            role="Student"
+        />
       </div>
     </div>
   </section>
