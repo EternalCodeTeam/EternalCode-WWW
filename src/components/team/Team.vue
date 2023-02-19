@@ -49,7 +49,7 @@
             githubUrl="https://github.com/Kamicjusz"
             imageUrl="https://avatars-githubusercontent.webp.se/u/66566758?v=4"
             name="Kamil Jęczeń"
-            role="Student"
+            role="Team Developer"
         />
         <Member
             githubUrl="https://github.com/Embrejs"
