@@ -15,6 +15,8 @@
       <Project
           description="📝 The most intelligent chat formatting plugin with minimessages support!"
           githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
+          spigotUrl="https://www.spigotmc.org/resources/102212/"
+          modrinth-url="https://modrinth.com/plugin/chatformatter"
           imageUrl="/assets/img/projects/chat.webp"
           name="ChatFormatter"
           :hrefText="$t('message.projects.more')"
@@ -167,5 +169,30 @@ export default {
   font-size: small;
   text-decoration: none;
   color: #a6abaf;
+}
+
+.project-card {
+  position: relative;
+  justify-items: auto;
+}
+
+.link-icons {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  position: relative;
+  bottom: -50px;
+  height: auto;
+  width: auto;
+}
+
+.link-icon {
+  filter: brightness(0) invert(0.50);
+  height: 50px;
+  width: 33%;
+}
+.link-icon:hover {
+  filter: brightness(0) invert(0.90) drop-shadow(0 0 0.75rem rgb(197, 197, 197));
 }
 </style>
