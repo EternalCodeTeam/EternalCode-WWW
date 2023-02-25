@@ -13,24 +13,10 @@
           :hrefText="$t('message.projects.more')"
       />
       <Project
-          description="🎇 Simple plugin to check players!"
-          githubUrl="https://github.com/EternalCodeTeam/EternalCheck"
-          imageUrl="/assets/img/projects/fireworks.webp"
-          name="EternalCheck"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
           description="📝 The most intelligent chat formatting plugin with minimessages support!"
           githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
           imageUrl="/assets/img/projects/chat.webp"
           name="ChatFormatter"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
-          description="🗺️ A random teleport plugin that doesn't give you a headache."
-          githubUrl="https://github.com/EternalCodeTeam/EternalRTP"
-          imageUrl="/assets/img/projects/treasure-map.webp"
-          name="EternalRTP"
           :hrefText="$t('message.projects.more')"
       />
       <Project
