@@ -6,7 +6,7 @@
 
     <div class="row projects-row">
       <Project
-          description="♾️ All the most important server functions in one!"
+          description="♾️ All the most important server functions in one! Made with love by EternalCodeTeam ❤️"
           githubUrl="https://github.com/EternalCodeTeam/EternalCore"
           imageUrl="/assets/img/projects/infinity.webp"
           name="EternalCore"
@@ -181,13 +181,12 @@ export default {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
-  position: relative;
-  bottom: -50px;
   height: auto;
   width: auto;
 }
 
 .link-icon {
+  bottom: -100px;
   filter: brightness(0) invert(0.50);
   height: 50px;
   width: 33%;
