@@ -11,6 +11,33 @@
           <div class="project-card">
             <h5>{{ name }}</h5>
             <h6>{{ description }}</h6>
+
+            <!-- GitHub Link -->
+            <ul class="src-buttons">
+              <a :href="githubUrl" target="_blank">
+                <button v-if="githubUrl" class="button-link">
+                  <img alt="githubUrl" src="/assets/img/projects/github-logo.webp">
+                </button>
+              </a>
+
+
+              <!-- Spigot Link -->
+              <button v-if="spigotUrl" class="button-link">
+                <a :href="spigotUrl" target="_blank">
+                  <img alt="spigotUrl" src="/assets/img/projects/spigot-logo.webp">
+                </a>
+              </button>
+
+              <!-- Modrinth Link -->
+              <button v-if="modrinthUrl" class="button-link">
+                <a :href="modrinthUrl" target="_blank">
+                  <img alt="modrinthUrl" src="/assets/img/projects/modrinth-logo.webp">
+                </a>
+              </button>
+            </ul>
+
+
+            <!-- Comment
             <ul class="link-icons">
               <li v-if="githubUrl" class="link-icon">
                 <a :href="githubUrl" target="_blank">
@@ -27,7 +54,7 @@
                   <img alt="modrinth" src="/assets/img/projects/modrinth-logo.webp">
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
