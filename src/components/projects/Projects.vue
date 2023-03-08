@@ -6,7 +6,7 @@
 
     <div class="row projects-row">
       <Project
-          description="♾️ All the most important server functions in one! Made with love by EternalCodeTeam ❤️"
+          description="♾️ All the most important server functions in one!️"
           githubUrl="https://github.com/EternalCodeTeam/EternalCore"
           imageUrl="/assets/img/projects/infinity.webp"
           name="EternalCore"
@@ -169,71 +169,6 @@ export default {
   font-size: small;
   text-decoration: none;
   color: #a6abaf;
-}
-
-.project-card {
-  position: relative;
-  justify-items: auto;
-}
-
-.link-icons {
-  padding: 10px;
-  display: flex;
-  justify-content: flex-start;
-  list-style-type: none;
-  height: auto;
-  width: auto;
-}
-
-.link-icon {
-  bottom: -100px;
-  filter: brightness(0) invert(0.50);
-  height: 50px;
-  width: 33%;
-}
-
-.link-icon:hover {
-  filter: brightness(0) invert(0.90) drop-shadow(0 0 0.75rem rgb(197, 197, 197));
-}
-
-
-
-.src-buttons{
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  list-style-type: none;
-  min-height: 100%;
-
-  width: 100%;
-  padding-top: 0%;
-
-
-  margin: 0;
-
-
-}
-.button-link{
-  max-width: 32%;
-  height: 30%;
-
-  border-radius: 15px;
-  background: none;
-
-
-
-
-
-}
-.src-buttons img{
-  filter: brightness(0) invert(0.50);
-  position: absolute;
-   width: 32%;
-  max-width: 32%;
-  object-fit: contain;
-
-
-
 }
 
 </style>

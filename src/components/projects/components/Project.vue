@@ -14,47 +14,33 @@
 
             <!-- GitHub Link -->
             <ul class="src-buttons">
-              <a :href="githubUrl" target="_blank">
-                <button v-if="githubUrl" class="button-link">
-                  <img alt="githubUrl" src="/assets/img/projects/github-logo.webp">
-                </button>
-              </a>
-
+              <li v-if="githubUrl">
+                <a :href="githubUrl" target="_blank">
+                  <button class="button-link">
+                    <img alt="githubUrl" src="/assets/img/projects/github-logo.webp">
+                  </button>
+                </a>
+              </li>
 
               <!-- Spigot Link -->
-              <button v-if="spigotUrl" class="button-link">
+              <li v-if="spigotUrl">
                 <a :href="spigotUrl" target="_blank">
-                  <img alt="spigotUrl" src="/assets/img/projects/spigot-logo.webp">
+                  <button class="button-link">
+                    <img alt="spigotUrl" src="/assets/img/projects/spigot-logo.webp">
+                  </button>
                 </a>
-              </button>
+              </li>
 
               <!-- Modrinth Link -->
-              <button v-if="modrinthUrl" class="button-link">
+              <li v-if="modrinthUrl">
                 <a :href="modrinthUrl" target="_blank">
-                  <img alt="modrinthUrl" src="/assets/img/projects/modrinth-logo.webp">
+                  <button class="button-link">
+                    <img alt="modrinthUrl" src="/assets/img/projects/modrinth-logo.webp">
+                  </button>
                 </a>
-              </button>
+              </li>
             </ul>
 
-
-            <!-- Comment
-            <ul class="link-icons">
-              <li v-if="githubUrl" class="link-icon">
-                <a :href="githubUrl" target="_blank">
-                  <img alt="github" src="/assets/img/projects/github-logo.webp">
-                </a>
-              </li>
-              <li v-if="spigotUrl" class="link-icon">
-                <a :href="spigotUrl" target="_blank">
-                  <img alt="spigot" src="/assets/img/projects/spigot-logo.webp">
-                </a>
-              </li>
-              <li v-if="modrinthUrl" class="link-icon">
-                <a :href="modrinthUrl" target="_blank">
-                  <img alt="modrinth" src="/assets/img/projects/modrinth-logo.webp">
-                </a>
-              </li>
-            </ul> -->
           </div>
         </div>
       </div>
@@ -76,3 +62,71 @@ export default {
 };
 </script>
 
+<style>
+
+@media only screen and (max-width: 1000px) {
+  .src-buttons {
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .src-buttons img {
+    margin-top: 10px;
+  }
+}
+
+.src-buttons {
+  display: flex;
+  /* W celu wyśrodkowania przycisków wyłącz z komentarza kod: i zmien `space-between` na center \/ */
+  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-items: center; */
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.src-buttons li {
+  width: 33.33%;
+  margin-right: 10px;
+}
+
+.src-buttons li:last-child {
+  margin-right: 0;
+}
+
+.button-link {
+  border-style: solid;
+  border-color: #6d6d6d;
+  border-radius: 20px;
+  border-width: 4px;
+  background: none;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.button-link:hover {
+  filter: drop-shadow(0 0 0.75rem rgb(150, 150, 150));
+  transform: translateY(-5px);
+  background-color: #6d6d6d;
+  border-color: #3d3d3d;
+}
+
+.button-link:hover img {
+  filter: brightness(0) invert(0.70);
+}
+
+.src-buttons img {
+  filter: brightness(0) invert(0.50);
+  width: 100%;
+  height: auto;
+}
+
+</style>
