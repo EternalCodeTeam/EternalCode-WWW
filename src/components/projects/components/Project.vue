@@ -89,7 +89,7 @@ export default {
 .src-buttons {
   display: flex;
   list-style: none;
-  gap: 5px;
+  gap: 1rem;
   padding: 0;
   width: 50%;
   margin-top: 15px;
