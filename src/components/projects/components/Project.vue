@@ -57,7 +57,7 @@ export default {
     spigotUrl: String,
     modrinthUrl: String,
     imageUrl: String,
-    hrefText: String
+    hrefText: String,
   },
 };
 </script>
@@ -67,39 +67,34 @@ export default {
 @media only screen and (max-width: 1000px) {
   .src-buttons {
     width: 70%;
-    position: center;
     display: flex;
     align-items: center;
-
   }
-  .src-buttons li{
-    width: 100%;
+
+  .src-buttons li {
     margin-right: 5px;
   }
+
   .button-link {
     height: 40px;
     width: 40px;
   }
+
   .src-buttons img {
     margin-top: 5px;
   }
 }
 
-
 .src-buttons {
   display: flex;
   list-style: none;
-  gap: 1rem;
   padding: 0;
   width: 50%;
   margin-top: 15px;
-  height: auto;
 }
 
 .src-buttons li {
-  width: 30%;
   margin-right: 10px;
-  height: 100%;
 }
 
 .src-buttons li:last-child {
@@ -114,11 +109,10 @@ export default {
   background-color: transparent;
   height: 50px;
   width: 50px;
-  max-width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 50px;
+  text-decoration: none;
 }
 
 .button-link:hover {
@@ -128,7 +122,6 @@ export default {
   border-color: #919191;
   color: #111;
   transition: 0.3s ease;
-
 }
 
 .button-link:hover img {
@@ -139,8 +132,8 @@ export default {
   filter: brightness(0) invert(0.50);
   max-width: 50px;
   max-height: 50px;
-  height: 70%;
   width: auto;
 }
+
 
 </style>
