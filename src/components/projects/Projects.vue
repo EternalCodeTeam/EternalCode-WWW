@@ -122,6 +122,7 @@ export default {
   color: #d3d3d380;
   font-size: 40px;
   border: 2px;
+  margin-bottom: 1%;
   text-align: center;
 }
 
