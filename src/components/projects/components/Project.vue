@@ -102,10 +102,7 @@ export default {
 }
 
 .button-link {
-  border-style: solid;
-  border-color: #6d6d6d;
-  border-radius: 50%;
-  border-width: 2px;
+  border: none;
   background-color: transparent;
   height: 50px;
   width: 50px;
@@ -113,19 +110,18 @@ export default {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .button-link:hover {
   /* FOR GLOW EFFECT */
-  /* filter: drop-shadow(0 0 0.60rem rgb(105, 104, 104)); */
-  background-color: #545454;
-  border-color: #919191;
+  filter: drop-shadow(0 0 0.7rem rgb(115, 115, 115)) drop-shadow(0 0 0.7rem rgb(115, 115, 115));
   color: #111;
-  transition: 0.3s ease;
 }
 
+
 .button-link:hover img {
-  filter: brightness(0) invert(0.65);
+  filter: brightness(0) invert(0.75);
 }
 
 .src-buttons img {
