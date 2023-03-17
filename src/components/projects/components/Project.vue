@@ -85,7 +85,7 @@ export default {
   }
 }
 
-.src-buttons {;
+.src-buttons {
   display: flex;
   list-style: none;
   padding: 0;
@@ -122,7 +122,6 @@ export default {
   color: #111;
 }
 
-
 .button-link:hover img {
   filter: brightness(0) invert(0.75);
 }
@@ -133,6 +132,4 @@ export default {
   max-height: 50px;
   width: auto;
 }
-
-
 </style>
