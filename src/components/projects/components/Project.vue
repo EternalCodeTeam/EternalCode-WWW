@@ -85,7 +85,7 @@ export default {
   }
 }
 
-.src-buttons {
+.src-buttons {;
   display: flex;
   list-style: none;
   padding: 0;
@@ -101,6 +101,9 @@ export default {
   margin-right: 0;
 }
 
+.src-buttons li:first-child {
+  margin-left: -10px;
+}
 .button-link {
   border: none;
   background-color: transparent;
