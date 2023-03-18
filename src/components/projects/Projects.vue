@@ -6,31 +6,19 @@
 
     <div class="row projects-row">
       <Project
-          description="♾️ All the most important server functions in one!"
+          description="♾️ All the most important server functions in one!️"
           githubUrl="https://github.com/EternalCodeTeam/EternalCore"
           imageUrl="/assets/img/projects/infinity.webp"
           name="EternalCore"
           :hrefText="$t('message.projects.more')"
       />
       <Project
-          description="🎇 Simple plugin to check players!"
-          githubUrl="https://github.com/EternalCodeTeam/EternalCheck"
-          imageUrl="/assets/img/projects/fireworks.webp"
-          name="EternalCheck"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
           description="📝 The most intelligent chat formatting plugin with minimessages support!"
           githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
+          spigotUrl="https://www.spigotmc.org/resources/102212/"
+          modrinth-url="https://modrinth.com/plugin/chatformatter"
           imageUrl="/assets/img/projects/chat.webp"
           name="ChatFormatter"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
-          description="🗺️ A random teleport plugin that doesn't give you a headache."
-          githubUrl="https://github.com/EternalCodeTeam/EternalRTP"
-          imageUrl="/assets/img/projects/treasure-map.webp"
-          name="EternalRTP"
           :hrefText="$t('message.projects.more')"
       />
       <Project
@@ -134,6 +122,7 @@ export default {
   color: #d3d3d380;
   font-size: 40px;
   border: 2px;
+  margin-bottom: 1%;
   text-align: center;
 }
 
@@ -182,4 +171,5 @@ export default {
   text-decoration: none;
   color: #a6abaf;
 }
+
 </style>
