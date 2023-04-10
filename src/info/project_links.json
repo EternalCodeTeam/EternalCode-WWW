@@ -1,0 +1,10 @@
+{
+  "ChatFormatter": {
+    "spigotmc": "https://www.spigotmc.org/resources/%EF%B8%8F-chatformatter-%E2%9C%94%EF%B8%8F-minimessages-%E2%9C%94%EF%B8%8F-template-system-%E2%9C%94%EF%B8%8F-placeholders-%E2%9C%94%EF%B8%8F-vault-support.102212/",
+    "modrinth": "https://modrinth.com/plugin/chatformatter"
+  },
+  "EternalCombat": {
+    "spigotmc": "https://www.spigotmc.org/resources/eternalcombat-%E2%9C%94%EF%B8%8Fenchance-your-combat-system-with-eternalcombat.109056/",
+    "modrinth": "https://modrinth.com/plugin/eternalcombat"
+  }
+}
