@@ -1,66 +1,44 @@
 <template>
   <section id="projects">
-
     <h1>{{ $t("message.projects.title") }}</h1>
     <p>{{ $t("message.projects.subtitle") }}</p>
-
     <div class="row projects-row">
       <Project
-          description="♾️ All the most important server functions in one!️"
-          githubUrl="https://github.com/EternalCodeTeam/EternalCore"
-          imageUrl="/assets/img/projects/infinity.webp"
-          name="EternalCore"
+          v-for="(project, index) in projects"
+          :key="index"
+          :description="project.description"
+          :githubUrl="project.link"
           :hrefText="$t('message.projects.more')"
+          :imageUrl="'/assets/img/projects/logo/' + project.repo + '_icon.webp'"
+          :spigotUrl="projectLinks[project.repo]?.spigotmc"
+          :modrinthUrl="projectLinks[project.repo]?.modrinth"
+          :name="project.repo"
       />
-      <Project
-          description="📝 The most intelligent chat formatting plugin with minimessages support!"
-          githubUrl="https://github.com/EternalCodeTeam/ChatFormatter"
-          spigotUrl="https://www.spigotmc.org/resources/102212/"
-          modrinth-url="https://modrinth.com/plugin/chatformatter"
-          imageUrl="/assets/img/projects/chat.webp"
-          name="ChatFormatter"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
-          description="⚔ Combat Logging system for Minecraft!"
-          githubUrl="https://github.com/EternalCodeTeam/EternalCombatLog"
-          imageUrl="/assets/img/projects/swords.webp"
-          name="CombatLog"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
-          description="👮‍♂️ EternalCode discord community officer!"
-          githubUrl="https://github.com/EternalCodeTeam/DiscordOfficer"
-          imageUrl="/assets/img/projects/police-officer.webp"
-          name="DiscordOfficer"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
-          description="📖 All documentations of EternalCodeTeam Projects & Tutorials 😍"
-          githubUrl="https://github.com/EternalCodeTeam/Docs"
-          imageUrl="/assets/img/projects/folder.webp"
-          name="Docs"
-          :hrefText="$t('message.projects.more')"
-      />
-      <Project
-          description="🏬 EternalCodeTeam website based on Bootstrap 5 and Vue.js!"
-          githubUrl="https://github.com/EternalCodeTeam/EternalCode-WWW"
-          imageUrl="/assets/img/projects/web.webp"
-          name="EternalCode-WWW"
-          :hrefText="$t('message.projects.more')"
-      />
-
     </div>
   </section>
 </template>
 
 <script>
 import Project from "./components/Project.vue";
+import projectLinks from "@/info/project_links.json"
 
 export default {
   name: "Projects",
   components: {
     Project,
+  },
+  data() {
+    return {
+      projects: [],
+      projectLinks: projectLinks
+    };
+  },
+  mounted() {
+    fetch("https://gh-pinned-repos.egoist.dev/?username=eternalcodeteam")
+        .then(response => response.json())
+        .then(data => {
+          this.projects = data;
+        });
   },
 };
 </script>
