@@ -44,7 +44,6 @@
 </template>
 
 <style>
-
 .navbar-nav-lang {
   margin: 7px;
   top: 0;
@@ -99,7 +98,7 @@
 }
 
 .nav-link {
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
   color: #d3d4d5 !important;
   margin-right: 3px;
