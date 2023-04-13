@@ -99,7 +99,7 @@
 }
 
 .nav-link {
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   text-transform: uppercase;
   color: #d3d4d5 !important;
   margin-right: 3px;
