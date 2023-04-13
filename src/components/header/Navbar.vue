@@ -44,6 +44,7 @@
 </template>
 
 <style>
+
 .navbar-nav-lang {
   margin: 7px;
   top: 0;
