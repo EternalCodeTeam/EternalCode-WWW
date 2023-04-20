@@ -22,10 +22,12 @@
 import Project from "./components/Project.vue";
 import projectLinks from "@/info/project_links.json"
 
+const pinnedRepos = [];
 export default {
   name: "Projects",
   components: {
     Project,
+    pinnedRepos,
   },
   data() {
     return {
@@ -38,9 +40,15 @@ export default {
         .then(response => response.json())
         .then(data => {
           this.projects = data;
+          data.forEach(project => {
+            pinnedRepos.push(project.repo);
+          });
         });
   },
 };
+
+export { pinnedRepos };
+
 </script>
 
 <style>
