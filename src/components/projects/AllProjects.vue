@@ -18,6 +18,7 @@
           <div class="project-info">
             <h2>{{ project.name }}</h2>
             <p>{{ project.description }}</p>
+            <p v-if="project.description === null">No description provided.</p>
           </div>
 
         </div>
@@ -64,7 +65,7 @@ export default {
 <style>
 .toggle-button {
   background-color: #ccc;
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   color: #333;
@@ -80,6 +81,7 @@ export default {
 }
 
 .projects-section {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,14 +93,14 @@ export default {
   width: 100%;
   margin: 20px;
   padding: 20px;
-  background-color: #656565;
+  background-color: #2f2f2f;
   border-radius: 40px;
   opacity: 0;
   display: flex;
   align-items: center;
   transform: translateY(50px);
   animation-name: slide-in;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 
@@ -107,11 +109,12 @@ export default {
 .project-info {
   flex-grow: 1;
   margin-left: 2rem;
+  color: #a1a1a1;
 }
 
 @keyframes slide-in {
   from {
-    scale: 0;
+    scale: 0.5;
     opacity: 0;
     transform: translateY(50px);
   }
