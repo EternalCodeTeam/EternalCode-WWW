@@ -54,7 +54,7 @@ export default {
                     description: project.description,
                   }));
             });
-      }, 2500);
+      }, 3000);
     } else {
       fetch("https://api.github.com/users/EternalCodeTeam/repos?type=public")
           .then((response) => response.json())
