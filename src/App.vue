@@ -1,9 +1,16 @@
+<script setup>
+import { RouterView } from "vue-router";
+
+import Navbar from "@/components/header/Navbar.vue";
+import Footer from "@/components/footer/Footer.vue";
+</script>
+
 <template>
+  <Navbar/>
   <router-view></router-view>
+  <Footer/>
 </template>
 
-<script setup>
-import { RouterView } from "vue-router";</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
