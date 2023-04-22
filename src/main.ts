@@ -5,6 +5,8 @@ import App from '@/App.vue'
 // @ts-ignore
 import router from '@/router'
 
+import "./style.css"
+
 // bootstrap
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap";
@@ -14,6 +16,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faArrowRightLong, faBars, faMeteor } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord, faGithub, faInstagram, faLinkedin, faTiktok, faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 // i18n
 import messages from "@intlify/unplugin-vue-i18n/messages";
 import { createI18n } from "vue-i18n";

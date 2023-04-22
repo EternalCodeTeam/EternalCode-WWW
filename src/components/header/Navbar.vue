@@ -90,7 +90,7 @@ export default {
   }
 
   .navbar-brand {
-    color: white !important;
+    color: var(--white) !important;
     margin-top: 30px;
     margin-left: 10px
   }
@@ -110,7 +110,7 @@ export default {
 .nav-link {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  color: #d3d4d5 !important;
+  color: var(--white-gray) !important;
   margin-right: 3px;
   font-size: 15px;
   transition: 0.5s;
@@ -119,16 +119,16 @@ export default {
 
 .nav-link:hover {
   transition: 0.5s;
-  color: #666666 !important;
+  color: var(--primary-dark-gray) !important;
   transform: scale(1.05);
 }
 
 .custom-toggler {
-  color: #d3d4d5;
+  color: var(--white-gray);
 }
 
 .navbar-brand {
-  color: white !important;
+  color: var(--white) !important;
   font-weight: 700;
 }
 

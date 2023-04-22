@@ -51,7 +51,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .skills-row {
   display: flex;
   justify-content: space-around;
@@ -68,14 +68,14 @@ export default {
 
 #skills h1 {
   font-weight: 800;
-  color: #92909080;
+  color: var(--primary-title);
   font-size: x-large;
   border: 2px;
   margin-bottom: 2%;
 }
 
 .card-info {
-  background-color: #2a2c2c;
+  background-color: var(--light-gray);
   border-radius: 15px;
   padding: 10% 10% 10%;
   align-items: center;
@@ -86,19 +86,14 @@ export default {
   height: 95%;
 }
 
-.card-info:hover {
-  background-color: #353838;
-  transition: 0.5s;
-}
-
 .card-info h5 {
-  color: rgb(196, 196, 196);
+  color: var(--primary-title);
   font-weight: 700;
   margin-top: 4%;
 }
 
 .card-info p {
-  color: #666666;
+  color: var(--secondary-title);
   font-size: small;
 }
 

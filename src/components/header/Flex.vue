@@ -79,11 +79,11 @@
 }
 
 .flex p {
-  color: #666666;
+  color: var(--primary-dark-gray);
 }
 
 .flex h1 {
-  color: #ffffff;
+  color: var(--white);
   font-weight: 800;
   font-size: 50px;
 }
@@ -94,13 +94,13 @@
 
 .social a {
   position: -ms-device-fixed;
-  color: #b8b8b8 !important;
+  color: var(--white-gray) !important;
   margin: 10px;
   font-size: large;
 }
 
 .social a:hover {
-  color: #666666;
+  color: var(--primary-dark-gray);
 }
 
 .skill {
