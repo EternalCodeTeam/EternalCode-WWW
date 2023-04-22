@@ -3,8 +3,9 @@
 
   <section id="AllProjects">
     <div class="projects-section">
+      <label class="others-status"> other repositories: {{ buttonText }}</label>
       <button class="toggle-button" :class="{ active: isActive }" @click="toggleActive">
-        other repositories: {{ buttonText }}
+         {{ buttonSymbol }}
       </button>
       <div class="All-projects-section" :class="{ active: isActive}">
         <div v-for="project in projects"
@@ -17,8 +18,8 @@
           </a>
           <div class="project-info">
             <h2>{{ project.name }}</h2>
-            <p>{{ project.description }}</p>
-            <p v-if="project.description === null">No description provided.</p>
+            <p v-if="project.description === null" >No description provided.</p>
+            <p v-else>{{ project.description }}</p>
           </div>
 
         </div>
@@ -36,26 +37,43 @@ export default {
     return {
       projects: [],
       isActive: false,
-      buttonText: "Off",
+      buttonText: "off",
+      buttonSymbol: "▼",
     };
   },
   mounted() {
-    fetch("https://api.github.com/users/EternalCodeTeam/repos?type=public")
-        .then((response) => response.json())
-        .then((data) => {
-          this.projects = data
-              .filter((project) => !pinnedRepos.includes(project.name))
-              .map((project) => ({
-                name: project.name,
-                description: project.description,
-              }));
-        });
+    if (pinnedRepos.length === 0) {
+      setTimeout(() => {
+        fetch("https://api.github.com/users/EternalCodeTeam/repos?type=public")
+            .then((response) => response.json())
+            .then((data) => {
+              this.projects = data
+                  .filter((project) => !pinnedRepos.includes(project.name))
+                  .map((project) => ({
+                    name: project.name,
+                    description: project.description,
+                  }));
+            });
+      }, 2500);
+    } else {
+      fetch("https://api.github.com/users/EternalCodeTeam/repos?type=public")
+          .then((response) => response.json())
+          .then((data) => {
+            this.projects = data
+                .filter((project) => !pinnedRepos.includes(project.name))
+                .map((project) => ({
+                  name: project.name,
+                  description: project.description,
+                }));
+          });
+    }
 
   },
   methods: {
     toggleActive() {
       this.isActive = !this.isActive;
       this.buttonText = this.isActive ? "on" : "off";
+      this.buttonSymbol = this.isActive ? "▲" : "▼";
     }
 
   },
@@ -63,15 +81,41 @@ export default {
 </script>
 
 <style>
+
+.others-status {
+  width: 90%;
+  display: inline-block;
+  position: relative;
+  color: #a1a1a1;
+}
+
+.others-status::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+
+}
+
 .toggle-button {
+  position: relative;
+  bottom: 20px;
   background-color: #ccc;
-  padding: 15px;
+
+  padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
+  height: 45px;
+  width: 45px;
   color: #333;
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 3rem;
+  z-index: 3;
 }
 
 .toggle-button.active {
@@ -81,7 +125,9 @@ export default {
 }
 
 .projects-section {
-
+  margin: auto;
+  width: 80%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,6 +149,12 @@ export default {
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
+  transition: transform 0.3s;
+}
+
+.single-project.active:hover {
+  background-color: #3f3f3f;
+  transition: all 0.2s ease;
 
 }
 
@@ -142,6 +194,7 @@ export default {
 }
 
 
+
 .All-projects-section {
   display: none;
   transform: translateY(-50px);
@@ -153,6 +206,7 @@ export default {
   display: block;
   transform: translateY(0);
 }
+
 @media only screen and (max-width: 1000px) {
   .projects-section {
     position: center;
@@ -165,15 +219,15 @@ export default {
     padding: 5px;
   }
 
- .project-info{
+  .project-info {
     margin-left: 1rem;
   }
 
- .project-info h2{
+  .project-info h2 {
     font-size: 1.5rem;
   }
 
- .project-info p{
+  .project-info p {
     font-size: 1rem;
   }
 
@@ -183,5 +237,9 @@ export default {
     margin-left: 1rem;
   }
 
+  .toggle-button {
+    position: relative;
+    left: 110px;
+  }
 }
 </style>
