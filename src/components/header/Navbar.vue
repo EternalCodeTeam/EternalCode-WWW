@@ -135,3 +135,4 @@ export default {
 .navbar {
   z-index: 100 !important;
 }
+</style>
