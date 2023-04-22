@@ -45,6 +45,19 @@
 
 <style>
 
+.navbar {
+  width: 100% !important;
+  position: fixed !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.container {
+  padding: 17px 22px !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .navbar-nav-lang {
   margin: 7px;
   top: 0;
@@ -89,13 +102,6 @@
   .navbar-toggler {
     margin-top: 30px;
   }
-}
-
-.container {
-  padding: 3% 8%;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .nav-link {
