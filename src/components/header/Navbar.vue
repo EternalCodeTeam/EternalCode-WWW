@@ -14,6 +14,12 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
+            <router-link class="nav-link" to="/#about">{{ $t("message.navbar.about") }}</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/#projects">{{ $t("message.navbar.projects") }}</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" to="/team">{{ $t("message.navbar.team") }}</router-link>
           </li>
           <li class="nav-item">
@@ -39,6 +45,12 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  name: "Navbar",
+};
+</script>
 
 <style>
 
@@ -123,10 +135,3 @@
 .navbar {
   z-index: 100 !important;
 }
-</style>
-
-<script>
-export default {
-  name: "Navbar",
-};
-</script>
