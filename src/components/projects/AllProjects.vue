@@ -108,7 +108,7 @@ export default {
   width: 100%;
   margin: 20px;
   padding: 20px;
-  background-color: #2f2f2f;
+  background-color: #2a2c2c;
   border-radius: 40px;
   opacity: 0;
   display: flex;
