@@ -27,7 +27,8 @@
     "projects": {
       "title": "Nasze projekty",
       "subtitle": "Nasze projekty to nie tylko nasze usługi, ale również nasze hobby! Oferujemy wiele produktów z otwartym kodem źródłowym!",
-      "more": "Repozytorium GitHub"
+      "more": "Repozytorium GitHub",
+      "other": "Pozostałe repozytoria"
     },
     "team": {
       "title": "Nasz Team",

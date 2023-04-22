@@ -27,7 +27,8 @@
     "projects": {
       "title": "Our projects",
       "subtitle": "Our projects are not only our services, but also our hobby! We offer many open source products!",
-      "more": "GitHub repository"
+      "more": "GitHub repository",
+      "other": "Other repositories"
     },
     "team": {
       "title": "Our team",

@@ -1,10 +1,9 @@
 <template>
   <section id="AllProjects">
     <div class="projects-section">
-      <label class="others-status" @click="toggleActive"> Other repositories:
-        <button class="toggle-button" :class="{ active: isActive }" @click="toggleActive">
-          {{ buttonSymbol }}
-        </button>
+      <label class="others-status" @click="toggleActive">
+        {{ $t("message.projects.other") }}
+        {{ buttonSymbol }}
       </label>
       <div class="All-projects-section" :class="{ active: isActive}">
         <div v-for="project in projects"
@@ -88,26 +87,11 @@ export default {
   font-family: "Inter", sans-serif;
   font-size: 1.9rem;
   cursor: pointer;
+  margin-bottom: 1.5rem;
 }
 
 
-.toggle-button {
-  background: none;
-  border: none;
-  padding: 10px;
-  height: 45px;
-  width: 45px;
-  color: #d7d7d7;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 3rem;
-  z-index: 3;
-}
 
-.toggle-button.active {
-  color: #d7d7d7;
-  margin-bottom: 1rem;
-}
 
 .projects-section {
   margin: auto;
@@ -221,9 +205,5 @@ export default {
     margin-left: 1rem;
   }
 
-  .toggle-button {
-    position: relative;
-    left: 110px;
-  }
 }
 </style>
