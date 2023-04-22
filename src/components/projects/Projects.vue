@@ -10,9 +10,9 @@
           :githubUrl="project.link"
           :hrefText="$t('message.projects.more')"
           :imageUrl="'/assets/img/projects/logo/' + project.repo + '_icon.webp'"
-          :spigotUrl="projectLinks[project.repo]?.spigotmc"
           :modrinthUrl="projectLinks[project.repo]?.modrinth"
           :name="project.repo"
+          :spigotUrl="projectLinks[project.repo]?.spigotmc"
       />
     </div>
   </section>
@@ -20,7 +20,7 @@
 
 <script>
 import Project from "./components/Project.vue";
-import projectLinks from "@/info/project_links.json"
+import projectLinks from "@/info/project_links.json";
 
 export default {
   name: "Projects",
@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       projects: [],
-      projectLinks: projectLinks
+      projectLinks: projectLinks,
     };
   },
   mounted() {
