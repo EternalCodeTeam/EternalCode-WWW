@@ -1,12 +1,11 @@
 <template>
-
-
   <section id="AllProjects">
     <div class="projects-section">
-      <label class="others-status"> other repositories: {{ buttonText }}</label>
-      <button class="toggle-button" :class="{ active: isActive }" @click="toggleActive">
-         {{ buttonSymbol }}
-      </button>
+      <label class="others-status" @click="toggleActive"> Other repositories:
+        <button class="toggle-button" :class="{ active: isActive }" @click="toggleActive">
+          {{ buttonSymbol }}
+        </button>
+      </label>
       <div class="All-projects-section" :class="{ active: isActive}">
         <div v-for="project in projects"
              :key="project.name"
@@ -18,7 +17,7 @@
           </a>
           <div class="project-info">
             <h2>{{ project.name }}</h2>
-            <p v-if="project.description === null" >No description provided.</p>
+            <p v-if="project.description === null">No description provided.</p>
             <p v-else>{{ project.description }}</p>
           </div>
 
@@ -37,7 +36,6 @@ export default {
     return {
       projects: [],
       isActive: false,
-      buttonText: "off",
       buttonSymbol: "▼",
     };
   },
@@ -72,7 +70,6 @@ export default {
   methods: {
     toggleActive() {
       this.isActive = !this.isActive;
-      this.buttonText = this.isActive ? "on" : "off";
       this.buttonSymbol = this.isActive ? "▲" : "▼";
     }
 
@@ -83,35 +80,24 @@ export default {
 <style>
 
 .others-status {
+  position: center;
   width: 90%;
   display: inline-block;
-  position: relative;
+  text-align: center;
   color: #a1a1a1;
+  font-family: "Inter", sans-serif;
+  font-size: 1.9rem;
+  cursor: pointer;
 }
 
-.others-status::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: black;
-
-}
 
 .toggle-button {
-  position: relative;
-  bottom: 20px;
-  background-color: #ccc;
-
-  padding: 10px;
+  background: none;
   border: none;
-  border-radius: 15px;
+  padding: 10px;
   height: 45px;
   width: 45px;
-  color: #333;
+  color: #d7d7d7;
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 3rem;
@@ -119,8 +105,7 @@ export default {
 }
 
 .toggle-button.active {
-  background-color: green;
-  color: white;
+  color: #d7d7d7;
   margin-bottom: 1rem;
 }
 
@@ -192,7 +177,6 @@ export default {
 .single-project.active {
   transform: translateX(0);
 }
-
 
 
 .All-projects-section {
