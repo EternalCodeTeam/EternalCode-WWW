@@ -14,12 +14,6 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">{{ $t("message.navbar.about") }}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">{{ $t("message.navbar.projects") }}</a>
-          </li>
-          <li class="nav-item">
             <router-link class="nav-link" to="/team">{{ $t("message.navbar.team") }}</router-link>
           </li>
           <li class="nav-item">
