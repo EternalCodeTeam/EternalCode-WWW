@@ -3,7 +3,7 @@
     <div class="card-pro">
       <div class="row cent">
         <div class="col-lg-3">
-          <img :src="imageUrl" alt="512" class="img-fluid rounded"/>
+          <img v-if="isPinned" :src="imageUrl" alt="512" class="img-fluid rounded"/>
         </div>
 
 
@@ -11,7 +11,7 @@
           <div class="project-card">
             <h5>{{ name }}</h5>
             <h6>{{ description }}</h6>
-
+            <img v-if="isPinned" class="star" alt="stars" src="/assets/img/projects/star.webp">
             <!-- GitHub Link -->
             <ul class="src-buttons">
               <li v-if="githubUrl">
@@ -58,6 +58,7 @@ export default {
     modrinthUrl: String,
     imageUrl: String,
     hrefText: String,
+    isPinned: Boolean,
   },
 };
 </script>

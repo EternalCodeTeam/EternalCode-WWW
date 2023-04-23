@@ -5,14 +5,15 @@
     <div class="row projects-row">
       <Project
           v-for="(project, index) in projects"
+          :isPinned = "pinnedRepos.includes(project.name)"
           :key="index"
           :description="project.description"
           :githubUrl="project.link"
           :hrefText="$t('message.projects.more')"
-          :imageUrl="'/assets/img/projects/logo/' + project.repo + '_icon.webp'"
-          :spigotUrl="projectLinks[project.repo]?.spigotmc"
-          :modrinthUrl="projectLinks[project.repo]?.modrinth"
-          :name="project.repo"
+          :imageUrl="'/assets/img/projects/logo/' + project.name + '_icon.webp'"
+          :spigotUrl="projectLinks[project.name]?.spigotmc"
+          :modrinthUrl="projectLinks[project.name]?.modrinth"
+          :name="project.name"
       />
     </div>
   </section>
@@ -20,34 +21,56 @@
 
 <script>
 import Project from "./components/Project.vue";
-import projectLinks from "@/info/project_links.json"
+import projectLinks from "@/info/project_links.json";
 
 const pinnedRepos = [];
+
 export default {
   name: "Projects",
   components: {
     Project,
-    pinnedRepos,
   },
   data() {
     return {
       projects: [],
-      projectLinks: projectLinks
+      projectLinks: projectLinks,
+      pinnedRepos: [],
     };
   },
   mounted() {
-    fetch("https://gh-pinned-repos.egoist.dev/?username=eternalcodeteam")
-        .then(response => response.json())
-        .then(data => {
-          this.projects = data;
-          data.forEach(project => {
-            pinnedRepos.push(project.repo);
+    this.loadRepositories();
+    this.loadPinnedRepos();
+  },
+  methods: {
+    loadRepositories() {
+      fetch("https://api.github.com/users/EternalCodeTeam/repos?type=public")
+          .then((response) => response.json())
+          .then((data) => {
+            this.projects = data
+                .map((project) => {
+                  if (project.name === ".github") {
+                    return null; // ignore .github repository
+                  }
+                  return {
+                    name: project.name,
+                    description: project.description,
+                    link: project.link,
+                  };
+                })
+                .filter(Boolean);
           });
-        });
+
+    },
+    loadPinnedRepos() {
+      const response = fetch("https://gh-pinned-repos.egoist.dev/?username=eternalcodeteam");
+      const data = response.json();
+      data.forEach(project => {
+        pinnedRepos.push(project.repo);
+      });
+    },
   },
 };
 
-export { pinnedRepos };
 
 </script>
 
