@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
 
-      <a class="navbar-brand" href="#">EternalCode.pl</a>
+      <router-link class="navbar-brand" to="/">EternalCode.pl</router-link>
 
       <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
               data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
@@ -14,10 +14,13 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">{{ $t("message.navbar.about") }}</a>
+            <router-link class="nav-link" to="/#about">{{ $t("message.navbar.about") }}</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">{{ $t("message.navbar.projects") }}</a>
+            <router-link class="nav-link" to="/#projects">{{ $t("message.navbar.projects") }}</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/team">{{ $t("message.navbar.team") }}</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://status.eternalcode.pl/">{{ $t("message.navbar.status") }}</a>
@@ -42,6 +45,12 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  name: "Navbar",
+};
+</script>
 
 <style>
 
@@ -133,9 +142,3 @@
   z-index: 100 !important;
 }
 </style>
-
-<script>
-export default {
-  name: "Navbar",
-};
-</script>
