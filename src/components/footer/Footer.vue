@@ -22,48 +22,40 @@
   </footer>
 </template>
 
-<style>
+<style scoped>
 @media only screen and (max-width: 1000px) {
   footer {
-    background-color: #11111100;
+    background-color: var(--dark-gray);
     margin: 7% 11% 7% 8%;
     padding: 2%;
     font-size: small;
-    color: #444444;
+    color: var(--primary-dark-gray);
   }
 }
 
 footer {
-  background-color: #111111;
+  background-color: var(--dark-gray);
   border-radius: 12px;
   margin: 2% 11% 2% 8%;
   padding: 2%;
   font-size: small;
-  color: #444444;
+  color: var(--primary-dark-gray);
 }
 
 footer .info {
   margin-top: 15px;
   transition: 0.5s;
-  color: #d3d4d5 !important;
+  color: var(--white-gray) !important;
   margin-right: 19px;
   font-size: 14px;
 }
 
-footer .info:hover {
-  color: #666666 !important;
-}
-
 footer a {
-  color: rgb(133, 133, 133);
-}
-
-footer a:hover {
-  color: rgb(100, 100, 100);
+  color: var(--secondary-title);
 }
 
 .footer-social a {
-  color: rgb(190, 190, 190) !important;
+  color: var(--primary-title) !important;
   margin: 5px;
   font-size: large;
 }

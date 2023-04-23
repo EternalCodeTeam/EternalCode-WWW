@@ -38,7 +38,7 @@ export default {
   }
 
   .card-ab h1 {
-    border-left: 5px solid #0f0f0f;
+    border-left: 5px solid var(--black);
   }
 
   .card-ab p {
@@ -55,12 +55,12 @@ export default {
   background: -webkit-linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
   background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#fc466b", GradientType=1);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .card-ab h1 {
   font-weight: 800;
-  border-left: 5px solid #ffffff;
+  border-left: 5px solid var(--white);
 }
 
 .card-ab p {
@@ -80,7 +80,7 @@ export default {
 
 
 .intellij {
-  box-shadow: rgba(0, 0, 0, 0.8) 0 0 15px;
+  box-shadow: var(--black) 0 0 15px;
   width: 100%;
   border-radius: 15px;
 }

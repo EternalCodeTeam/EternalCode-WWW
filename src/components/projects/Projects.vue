@@ -44,7 +44,6 @@ export default {
 </script>
 
 <style>
-
 .projects-row {
   display: flex;
   justify-content: space-around;
@@ -83,11 +82,11 @@ export default {
   }
 
   .card-pro h5 {
-    color: rgb(167, 167, 167);
+    color: var(--primary-title);
   }
 
   .card-pro h6 {
-    color: rgb(153, 150, 150);
+    color: var(--secondary-title);
   }
 }
 
@@ -97,7 +96,7 @@ export default {
 
 #projects h1 {
   font-weight: 800;
-  color: #d3d3d380;
+  color: var(--primary-title);
   font-size: 40px;
   border: 2px;
   margin-bottom: 1%;
@@ -106,7 +105,7 @@ export default {
 
 #projects p {
   font-weight: 500;
-  color: #d3d3d354;
+  color: var(--secondary-title);
   font-size: medium;
   margin-top: -10px;
   border: 2px;
@@ -119,7 +118,7 @@ export default {
 }
 
 .card-pro {
-  background-color: #2a2c2c;
+  background-color: var(--light-gray);
   border-radius: 12px;
   margin-bottom: 2%;
   padding: 6% 10%;
@@ -133,7 +132,7 @@ export default {
 }
 
 .card-pro h5 {
-  color: rgb(114, 114, 114);
+  color: var(--secondary-title);
   font-weight: 600;
 }
 
