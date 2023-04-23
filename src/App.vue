@@ -1,34 +1,19 @@
 <script setup>
-import Navbar from "./components/header/Navbar.vue";
-import Flex from "./components/header/Flex.vue";
-import About from "./components/about/About.vue";
-import Skills from "./components/skills/Skills.vue";
-import Projects from "./components/projects/Projects.vue";
-import Footer from "./components/footer/Footer.vue";
-import Team from "./components/team/Team.vue";
+import { RouterView } from "vue-router";
+
+import Navbar from "@/components/header/Navbar.vue";
+import Footer from "@/components/footer/Footer.vue";
 </script>
 
 <template>
-  <div>
-
-    <header>
-      <Navbar/>
-      <Flex/>
-    </header>
-
-    <About/>
-    <Skills/>
-    <Projects/>
-    <Team/>
-
-    <Footer/>
-
-  </div>
+  <Navbar/>
+  <router-view></router-view>
+  <Footer/>
 </template>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 ::-webkit-scrollbar {
@@ -64,12 +49,11 @@ body {
   font-weight: 500;
   height: 100%;
   overflow-x: hidden;
-  background: rgb(30,31,31);
-  background: -moz-linear-gradient(146deg, rgba(30,31,31,1) 45%, rgba(2,2,2,1) 100%);
+  background: rgb(30, 31, 31);
+  background: -moz-linear-gradient(146deg, rgba(30, 31, 31, 1) 45%, rgba(2, 2, 2, 1) 100%);
   background: -webkit-linear-gradient(right, rgb(30, 31, 31), #020202);
   background: linear-gradient(to right, #1e1f1f, #020202);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1f1f",endColorstr="#020202",GradientType=1);
-
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1f1f", endColorstr="#020202", GradientType=1);
 }
 
 a:link {
