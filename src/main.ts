@@ -33,7 +33,6 @@ library.add(
     faArrowRightLong
 );
 
-
 const availableLocales = [ "en", "pl" ];
 const locale = navigator.language.split("-")[0];
 const fallbackLocale = "en";
