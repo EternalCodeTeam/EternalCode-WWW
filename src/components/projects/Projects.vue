@@ -5,7 +5,7 @@
     <div class="row projects-row">
       <Project
           v-for="(project, index) in projects"
-          :isPinned = "pinnedRepos.includes(project.name)"
+          :isPinned = "pinnedProjects.includes(project.name)"
           :key="index"
           :description="project.description"
           :githubUrl="project.link"
@@ -22,8 +22,7 @@
 <script>
 import Project from "./components/Project.vue";
 import projectLinks from "@/info/project_links.json";
-
-const pinnedRepos = [];
+import { loadRepositories, loadPinnedProjects, orderProjects } from "@/components/projects/projects.ts";
 
 export default {
   name: "Projects",
@@ -33,41 +32,21 @@ export default {
   data() {
     return {
       projects: [],
+      pinnedProjects: [],
+      orderedProjects: [],
       projectLinks: projectLinks,
-      pinnedRepos: [],
     };
   },
-  mounted() {
-    this.loadRepositories();
-    this.loadPinnedRepos();
-  },
-  methods: {
-    loadRepositories() {
-      fetch("https://api.github.com/users/EternalCodeTeam/repos?type=public")
-          .then((response) => response.json())
-          .then((data) => {
-            this.projects = data
-                .map((project) => {
-                  if (project.name === ".github") {
-                    return null; // ignore .github repository
-                  }
-                  return {
-                    name: project.name,
-                    description: project.description,
-                    link: project.link,
-                  };
-                })
-                .filter(Boolean);
-          });
+  mounted: function () {
+    loadRepositories().then((projects) => {
+      this.projects = projects;
+    });
+    loadPinnedProjects().then((pinnedProjects) => {
+      this.pinnedProjects = pinnedProjects;
+    });
 
-    },
-    loadPinnedRepos() {
-      const response = fetch("https://gh-pinned-repos.egoist.dev/?username=eternalcodeteam");
-      const data = response.json();
-      data.forEach(project => {
-        pinnedRepos.push(project.repo);
-      });
-    },
+      this.orderedProjects = orderProjects(this.projects, this.pinnedProjects);
+
   },
 };
 

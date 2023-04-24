@@ -4,6 +4,7 @@
       <div class="row cent">
         <div class="col-lg-3">
           <img v-if="isPinned" :src="imageUrl" alt="512" class="img-fluid rounded"/>
+          <img v-if="!isPinned" class="placeholder" alt="placeholder" src="/assets/img/projects/data-repository.jpg">
         </div>
 
 
