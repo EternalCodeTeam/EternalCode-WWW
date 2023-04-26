@@ -88,4 +88,4 @@ const orderProjects = () => {
 
 };
 
-export {loadRepositories, loadPinnedProjects, orderProjects};
+export default {loadRepositories, loadPinnedProjects, orderProjects};
