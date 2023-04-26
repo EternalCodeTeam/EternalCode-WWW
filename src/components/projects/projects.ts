@@ -1,6 +1,6 @@
 const projects = [];
 const pinnedProjects = [];
-let orderedProjects = [];
+const orderedProjects = [];
 
 let isProjectLoaded = false;
 let isPinnedProjectLoaded = false;
@@ -22,7 +22,7 @@ const loadRepositories = async () => {
                     return {
                         name: project.name,
                         description: project.description,
-                        link: project.link,
+                        link: project.html_url,
 
                     };
                 })
@@ -46,8 +46,9 @@ const loadPinnedProjects = async () => {
     fetch("https://gh-pinned-repos.egoist.dev/?username=eternalcodeteam")
         .then((response) => response.json())
         .then((data) => {
-            data.forEach(project => {
-                pinnedProjects.push(project.repo);
+            data.forEach((project, description, link) => {
+                pinnedProjects.push({name: project.repo, description: "", link: ""})
+
             });
         });
 
@@ -58,18 +59,28 @@ const loadPinnedProjects = async () => {
 
 };
 
-const orderProjects = (pinnedProjects, projects) => {
+const orderProjects = () => {
     if (isOrdered) {
-        return projects;
+        return orderedProjects;
     }
 
     // First, filter out the pinned projects from the main list
     const nonPinnedProjects = projects.filter((project) =>
-        !pinnedProjects.some((pinnedProject) => pinnedProject.repo === project.name)
+        !pinnedProjects.some((pinnedProject) => pinnedProject.name === project.name)
     );
 
-    // Then, merge the pinned projects with the rest of the projects
-    orderedProjects = [...pinnedProjects, ...nonPinnedProjects];
+
+
+
+
+    for (const pinnedProject of pinnedProjects) {
+        orderedProjects.push(pinnedProject);
+    }
+
+    for (const nonPinnedProject of nonPinnedProjects) {
+        orderedProjects.push(nonPinnedProject);
+    }
+
 
     console.log(orderedProjects);
     isOrdered = true;

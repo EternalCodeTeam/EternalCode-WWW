@@ -2,10 +2,10 @@
   <section id="projects">
     <h1>{{ $t("message.projects.title") }}</h1>
     <p>{{ $t("message.projects.subtitle") }}</p>
-    <div class="row projects-row">
+    <div v-if="dataReady" class="row projects-row">
       <Project
           v-for="(project, index) in projects"
-          :isPinned = "pinnedProjects.includes(project.name)"
+          :isPinned=pinnedProjects.includes(project.name)
           :key="index"
           :description="project.description"
           :githubUrl="project.link"
@@ -35,19 +35,25 @@ export default {
       pinnedProjects: [],
       orderedProjects: [],
       projectLinks: projectLinks,
+      dataReady: false,
     };
   },
-  mounted: function () {
-    loadRepositories().then((projects) => {
+  computed: {
+   function () {
+     this.orderedProjects = orderProjects(this.projects, this.pinnedProjects);
+   },
+  },
+  async mounted() {
+    await loadRepositories().then((projects) => {
       this.projects = projects;
     });
-    loadPinnedProjects().then((pinnedProjects) => {
+    await loadPinnedProjects().then((pinnedProjects) => {
       this.pinnedProjects = pinnedProjects;
+      console.log(this.pinnedProjects , "pinnedProjects");
     });
-
-      this.orderedProjects = orderProjects(this.projects, this.pinnedProjects);
-
+    this.dataReady = true;
   },
+
 };
 
 
