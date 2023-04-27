@@ -14,15 +14,84 @@
         <div class="intellij-container col-lg-6 col-md-12">
           <img alt="intellij" class="intellij" src="/assets/img/header/about/eternalcore-intellij.webp">
         </div>
+
+
       </div>
     </div>
+    <div class="panel-zmiany">
+    <h2>Zmina długości opisów:</h2>
+    <button class="toggle-btn"  @click="toggleShort" :class="{short: isShortDesc}"></button>
+    <h2>Usunięcie karty z grami:</h2>
+    <button class="toggle-btn"  @click="toggleGamesSection" :class="{short: isGamesSection}"></button>
+    </div>
+    <div class="gallery">
+      <!-- Ludzie -->
+      <Gallery
+          :title="$t('message.about-us.title1') "
+          :description="$t('message.about-us.desc1')"
+          :description-short="$t('message.about-us.desc1short')"
+          :isShortDesc="isShortDesc"
+          icon="/assets/img/about/ninja.png"
+          image="/assets/img/about/members.webp"
+      />
+      <!-- Repos -->
+      <Gallery
+          :title="$t('message.about-us.title2') "
+          :description="$t('message.about-us.desc2')"
+          :description-short="$t('message.about-us.desc2short')"
+          :isShortDesc="isShortDesc"
+          icon="/assets/img/about/monitor.png"
+          image="/assets/img/about/ReposWork.webp"
+      />
+      <!-- Discord -->
+      <Gallery
+          :title="$t('message.about-us.title3') "
+          :description="$t('message.about-us.desc3')"
+          :description-short="$t('message.about-us.desc3short')"
+          :isShortDesc="isShortDesc"
+          icon="/assets/img/about/discord.png"
+          image="/assets/img/about/discord.webp"
+      />
+      <!-- Games -->
+      <Gallery
+          v-if="!isGamesSection"
+          :title="$t('message.about-us.title4') "
+          :description="$t('message.about-us.desc4')"
+          :description-short="$t('message.about-us.desc4short')"
+          :isShortDesc="isShortDesc"
+          icon="/assets/img/about/gamepad.png"
+          image="/assets/img/about/games.webp"
+      />
+
+    </div>
+
+
   </section>
 </template>
 
 <script>
 
+import Gallery from "@/components/about/components/Gallery.vue";
+
 export default {
   name: "about",
+  components: {Gallery},
+  data() {
+    return {
+      isGamesSection: false,
+      isShortDesc: false,
+    };
+  },
+  methods: {
+    toggleGamesSection() {
+      this.isGamesSection = !this.isGamesSection;
+    },
+    toggleShort() {
+      this.isShortDesc = !this.isShortDesc;
+    }
+
+  }
+
 };
 </script>
 
@@ -45,6 +114,19 @@ export default {
     margin-top: 8%;
   }
 }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  overflow: hidden;
+  width: 100%;
+
+
+}
+
 
 .card-ab {
   border-radius: 12px;
@@ -84,5 +166,36 @@ export default {
   width: 100%;
   border-radius: 15px;
 }
+
+.toggle-btn {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 15px;
+  position: relative;
+}
+
+.toggle-btn:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.toggle-btn.short:before {
+  transform: translateX(30px);
+}
+.panel-zmiany {
+  background: #666666;
+  margin : 10px;
+  padding: 10px;
+}
+
 
 </style>
