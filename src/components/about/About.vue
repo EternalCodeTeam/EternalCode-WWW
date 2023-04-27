@@ -31,8 +31,8 @@
           :description="$t('message.about-us.desc1')"
           :description-short="$t('message.about-us.desc1short')"
           :isShortDesc="isShortDesc"
-          icon="/assets/img/about/ninja.png"
-          image="/assets/img/about/members.webp"
+          icon="/assets/img/about/ninja-icon.webp"
+          image="/assets/img/about/raports-screenshot.webp"
       />
       <!-- Repos -->
       <Gallery
@@ -40,8 +40,8 @@
           :description="$t('message.about-us.desc2')"
           :description-short="$t('message.about-us.desc2short')"
           :isShortDesc="isShortDesc"
-          icon="/assets/img/about/monitor.png"
-          image="/assets/img/about/ReposWork.webp"
+          icon="/assets/img/about/monitor-icon.webp"
+          image="/assets/img/about/repos-screenshot.webp"
       />
       <!-- Discord -->
       <Gallery
@@ -49,8 +49,8 @@
           :description="$t('message.about-us.desc3')"
           :description-short="$t('message.about-us.desc3short')"
           :isShortDesc="isShortDesc"
-          icon="/assets/img/about/discord.png"
-          image="/assets/img/about/discord.webp"
+          icon="/assets/img/about/discord-icon.webp"
+          image="/assets/img/about/discord-screenshot.webp"
       />
       <!-- Games -->
       <Gallery
@@ -59,8 +59,8 @@
           :description="$t('message.about-us.desc4')"
           :description-short="$t('message.about-us.desc4short')"
           :isShortDesc="isShortDesc"
-          icon="/assets/img/about/gamepad.png"
-          image="/assets/img/about/games.webp"
+          icon="/assets/img/about/gamepad-icon.webp"
+          image="/assets/img/about/games-screenshot.webp  "
       />
     </div>
   </section>
