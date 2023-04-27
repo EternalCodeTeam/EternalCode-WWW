@@ -19,10 +19,10 @@
       </div>
     </div>
     <div class="panel-zmiany">
-    <h2>Zmina długości opisów:</h2>
-    <button class="toggle-btn"  @click="toggleShort" :class="{short: isShortDesc}"></button>
-    <h2>Usunięcie karty z grami:</h2>
-    <button class="toggle-btn"  @click="toggleGamesSection" :class="{short: isGamesSection}"></button>
+      <h2>Zmina długości opisów:</h2>
+      <button class="toggle-btn" @click="toggleShort" :class="{short: isShortDesc}"></button>
+      <h2>Usunięcie karty z grami:</h2>
+      <button class="toggle-btn" @click="toggleGamesSection" :class="{short: isGamesSection}"></button>
     </div>
     <div class="gallery">
       <!-- Ludzie -->
@@ -62,10 +62,7 @@
           icon="/assets/img/about/gamepad.png"
           image="/assets/img/about/games.webp"
       />
-
     </div>
-
-
   </section>
 </template>
 
@@ -89,14 +86,11 @@ export default {
     toggleShort() {
       this.isShortDesc = !this.isShortDesc;
     }
-
   }
-
 };
 </script>
 
 <style>
-
 
 .gallery {
   display: flex;
@@ -106,15 +100,11 @@ export default {
   padding: 5px;
   overflow: hidden;
   width: 100%;
-
-
 }
-
 
 .card-ab {
   border-radius: 12px;
   padding: 5% 5%;
-
   background: rgb(63, 94, 251);
   background: -moz-linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
@@ -142,7 +132,6 @@ export default {
   justify-content: center;
   margin-top: 10px !important;
 }
-
 
 .intellij {
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 15px;
@@ -174,11 +163,13 @@ export default {
 .toggle-btn.short:before {
   transform: translateX(30px);
 }
+
 .panel-zmiany {
   background: #666666;
-  margin : 10px;
+  margin: 10px;
   padding: 10px;
 }
+
 @media only screen and (max-width: 1000px) {
   #about {
     padding: 0 7% 3% 8%;
@@ -196,10 +187,10 @@ export default {
   .card-ab p {
     margin-top: 8%;
   }
+
   .gallery {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     padding: 5px;
