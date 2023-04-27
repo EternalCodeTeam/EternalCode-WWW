@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="panel-zmiany">
-      <h2>Zmina długości opisów:</h2>
+      <h2>Zmiana długości opisów:</h2>
       <button class="toggle-btn" @click="toggleShort" :class="{short: isShortDesc}"></button>
       <h2>Usunięcie karty z grami:</h2>
       <button class="toggle-btn" @click="toggleGamesSection" :class="{short: isGamesSection}"></button>
