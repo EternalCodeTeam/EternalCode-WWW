@@ -156,5 +156,35 @@ export default {
   transition: .4s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 
+@media only screen and (max-width: 1000px) {
+  .gallery-section {
+    width: 100%;
+    height: 80vh;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    flex-grow: inherit;
 
+  }
+  .icon {
+    display: none;
+  }
+  .description {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 10px;
+    background: #666666;
+  }
+
+  .gallery-section:not(.active) {
+    flex-grow: inherit;
+    max-width: none;
+    border-radius: 30px;
+  }
+}
 </style>

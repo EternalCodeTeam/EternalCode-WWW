@@ -96,24 +96,7 @@ export default {
 </script>
 
 <style>
-@media only screen and (max-width: 1000px) {
-  #about {
-    padding: 0 7% 3% 8%;
-  }
 
-  .card-ab {
-    border-radius: 12px;
-    padding: 15% 15% 4% 10%;
-  }
-
-  .card-ab h1 {
-    border-left: 5px solid #0f0f0f;
-  }
-
-  .card-ab p {
-    margin-top: 8%;
-  }
-}
 
 .gallery {
   display: flex;
@@ -196,6 +179,33 @@ export default {
   margin : 10px;
   padding: 10px;
 }
+@media only screen and (max-width: 1000px) {
+  #about {
+    padding: 0 7% 3% 8%;
+  }
 
+  .card-ab {
+    border-radius: 12px;
+    padding: 15% 15% 4% 10%;
+  }
+
+  .card-ab h1 {
+    border-left: 5px solid #0f0f0f;
+  }
+
+  .card-ab p {
+    margin-top: 8%;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
 
 </style>
