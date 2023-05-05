@@ -7,8 +7,7 @@
     </div>
     <div class="description" :class="{ active: isActive }">
       <h1>{{ title }}</h1>
-      <p v-if="!isShortDesc" class="text">{{ description }}</p>
-      <p v-if="isShortDesc" class="text">{{ descriptionShort }}</p>
+      <p class="text">{{ description }}</p>
     </div>
   </div>
 </template>
@@ -24,10 +23,8 @@ export default {
   props: {
     title: String,
     description: String,
-    descriptionShort: String,
     icon: String,
     image: String,
-    isShortDesc: Boolean,
   },
   methods: {
     toggleActive() {
