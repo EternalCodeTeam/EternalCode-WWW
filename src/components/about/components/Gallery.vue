@@ -32,7 +32,10 @@ export default {
       activeElements.forEach((el) => {
         el.classList.remove('active');
       });
+
       this.isActive = !this.isActive;
+
+
     }
   }
 
@@ -53,12 +56,12 @@ export default {
   background-repeat: no-repeat;
   background-size: auto 120%;
   background-position: center;
-  border: 5px solid #696969;
+  border: 5px solid var(--light-gray);
   cursor: pointer;
   min-width: 150px;
   margin: 10px;
   padding: 10px;
-  transition: .4s cubic-bezier(0.05, 0.61, 0.41, 0.95) all;
+  transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95) all;
 }
 
 
@@ -84,9 +87,9 @@ export default {
   z-index: 3;
   width: 80px;
   height: 80px;
-  background: white;
+  background: transparent;
   border-radius: 50%;
-  border: black 2px solid;
+  border: var(--primary-dark-gray) 4px solid;
   padding: 5px;
   position: relative;
 }
@@ -97,10 +100,10 @@ export default {
 }
 
 .gallery-icon {
-  width: 80%;
+  width: 60%;
   height: auto;
   z-index: 3;
-  filter: brightness(0) invert(0.50);
+  filter: brightness(0) invert(0.40);
   position: absolute; /* position the gallery-icon absolutely */
   top: 50%; /* position it at 50% from the top of the parent div */
   left: 50%; /* position it at 50% from the left of the parent div */
@@ -121,9 +124,9 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: white;
+  color: var(--white-gray);
   padding: 10px;
-  background: #666666;
+  background: var(--primary-dark-gray);
 }
 
 .shadow {
@@ -132,13 +135,13 @@ export default {
   left: 0;
   right: 0;
   height: 120px;
-  transition: .4s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 
 @media only screen and (max-width: 1000px) {
   .gallery-section {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     margin: 10px;
     align-items: center;
     justify-content: center;
@@ -156,9 +159,9 @@ export default {
     position: absolute;
     bottom: 0;
     left: 0;
-    color: white;
+    color: var(--white-gray);
     padding: 10px;
-    background: #666666;
+    background: var(--primary-dark-gray);
   }
 
   .gallery-section:not(.active) {

@@ -85,7 +85,7 @@ export default {
 
 #team h1 {
   font-weight: 800;
-  color: #d3d3d380;
+  color: var(--white-gray);
   font-size: 40px;
   border: 2px;
   text-align: center;
@@ -93,7 +93,7 @@ export default {
 
 #team p {
   font-weight: 500;
-  color: #d3d3d354;
+  color: var(--white-gray);
   font-size: medium;
   border: 2px;
   text-align: center;
