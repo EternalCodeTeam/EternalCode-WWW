@@ -1,6 +1,7 @@
 <template>
   <section id="about">
     <h1 class="title">{{ $t("message.about-us.title") }}</h1>
+    <p class="desc">{{$t("message.about-us.desc")}}</p>
     <font-awesome-icon icon="fa-solid fa-dinosaur"/>
     <div class="gallery">
       <Gallery
@@ -68,6 +69,10 @@ export default {
 <style>
 .title {
   color: var(--white);
+}
+
+.desc {
+  color: var(--primary-dark-gray);
 }
 
 .gallery {

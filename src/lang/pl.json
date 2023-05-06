@@ -13,7 +13,8 @@
       "motto": "EternalCode to fantastyczna społeczność programistów!"
     },
     "about-us": {
-      "title": "O nas ",
+      "title": "O nas 🎉",
+      "desc": "Poznaj naszą organizację open source i dowiedz się, co robimy i jak możemy ci pomóc!",
       "title1": "Członkowie:",
       "desc1": "Nasza organizacja open source składa się z ośmiu entuzjastów IT, w tym kilku doświadczonych programistów. Głównym obszarem naszej pracy są pluginy do Minecrafta napisane w Javie oraz projekty w innych językach, takich jak PHP i HTML. Otworzyliśmy kilkanaście repozytoriów na GitHubie, które są stale rozwijane i ulepszane, aby zapewnić jak najlepsze doświadczenie użytkownikom Minecrafta.",
       "title2": "Repozytoria:",

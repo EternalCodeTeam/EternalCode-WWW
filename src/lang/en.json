@@ -14,6 +14,7 @@
     },
     "about-us": {
       "title": "About us 🎉",
+      "desc": "Learn more about our organization and our members!",
       "title1": "Members:",
       "desc1": "Our open source organization consists of eight IT enthusiasts, including several experienced programmers. Our main area of work is Minecraft plugins written in Java and projects in other languages such as PHP and HTML. We have opened several repositories on GitHub, which are constantly being developed and improved to provide the best possible Minecraft experience for users.",
       "title2": "Repositories:",
