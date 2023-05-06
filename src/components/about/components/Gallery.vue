@@ -1,11 +1,11 @@
 <template>
-  <div class="gallery-section" @click="toggleActive" :class="{ active: isActive }"
+  <div class="gallery-section" @click="toggleActive" :class="isActive ? 'active' : '' "
        :style="{ backgroundImage: 'url(' + image + ')' }">
     <div class="shadow"></div>
-    <div class="icon" :class="{ active: isActive }">
+    <div class="icon" :class="isActive ? 'active' : '' ">
       <img :src="icon" alt="Gallery Image" class="gallery-icon"/>
     </div>
-    <div class="description" :class="{ active: isActive }">
+    <div class="description" :class="isActive ? 'active' : '' ">
       <h1>{{ title }}</h1>
       <p class="text">{{ description }}</p>
     </div>
@@ -13,32 +13,48 @@
 </template>
 
 <script>
+
+
 export default {
   name: "Gallery",
-  data() {
-    return {
-      isActive: false,
-    };
-  },
   props: {
-    title: String,
-    description: String,
+    key: Number,
+    title: "",
+    description: "",
     icon: String,
     image: String,
+    isActive: Boolean
   },
   methods: {
     toggleActive() {
-      const activeElements = document.querySelectorAll('.active');
-      activeElements.forEach((el) => {
-        el.classList.remove('active');
-      });
-
-      this.isActive = !this.isActive;
-
-
+      this.$emit('toggle-active', this.key);
     }
   }
 
+
+  /*
+        let activeElements = document.querySelectorAll('.active');
+        //if this element is active remove class only from this element
+        if (this.isActive) {
+          console.log('method #1');
+          this.isActive = !this.isActive;
+
+          console.log("activated");
+        }
+        //if this element is not active remove class from all active elements and then add class to this element
+        else {
+          console.log('method #2');
+          activeElements.forEach((el) => {
+            el.classList.remove('active');
+            console.log("deactivated");
+          });
+          this.isActive = !this.isActive;
+
+          console.log("activated");
+        }
+      }
+    }
+  */
 };
 </script>
 
