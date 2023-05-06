@@ -1,9 +1,8 @@
 <template>
   <section id="about">
-
     <h1 class="title">{{ $t("message.about-us.title") }}</h1>
+    <font-awesome-icon icon="fa-solid fa-dinosaur"/>
     <div class="gallery">
-
       <Gallery
           v-for="(item, index) in items"
           :key="index"
@@ -15,7 +14,6 @@
           @toggle-active="handleToggleActive(index)"
 
       />
-
     </div>
   </section>
 </template>
@@ -31,12 +29,12 @@ export default {
     return {
       items: [
         {
-          icon: "/assets/img/about/ninja-icon.webp",
+          icon: "/assets/img/about/people-icon.webp",
           image: "/assets/img/about/raports-screenshot.webp",
           isActive: false
         },
         {
-          icon: "/assets/img/about/monitor-icon.webp",
+          icon: "/assets/img/about/repositories-icon.webp",
           image: "/assets/img/about/repos-screenshot.webp",
           isActive: false
         },
