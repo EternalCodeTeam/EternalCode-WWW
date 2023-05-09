@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
 
-      <a class="navbar-brand" href="#">EternalCode.pl</a>
+      <router-link class="navbar-brand" to="/">EternalCode.pl</router-link>
 
       <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
               data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
@@ -14,10 +14,13 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">{{ $t("message.navbar.about") }}</a>
+            <router-link class="nav-link" to="/#about">{{ $t("message.navbar.about") }}</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">{{ $t("message.navbar.projects") }}</a>
+            <router-link class="nav-link" to="/#projects">{{ $t("message.navbar.projects") }}</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/team">{{ $t("message.navbar.team") }}</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://status.eternalcode.pl/">{{ $t("message.navbar.status") }}</a>
@@ -43,7 +46,26 @@
   </nav>
 </template>
 
+<script>
+export default {
+  name: "Navbar",
+};
+</script>
+
 <style>
+
+.navbar {
+  width: 100% !important;
+  position: fixed !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.container {
+  padding: 17px 22px !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .navbar-nav-lang {
   margin: 7px;
@@ -81,7 +103,7 @@
   }
 
   .navbar-brand {
-    color: white !important;
+    color: var(--white) !important;
     margin-top: 30px;
     margin-left: 10px
   }
@@ -91,17 +113,10 @@
   }
 }
 
-.container {
-  padding: 3% 8%;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .nav-link {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  color: #d3d4d5 !important;
+  color: var(--white-gray) !important;
   margin-right: 3px;
   font-size: 15px;
   transition: 0.5s;
@@ -110,16 +125,16 @@
 
 .nav-link:hover {
   transition: 0.5s;
-  color: #666666 !important;
+  color: var(--primary-dark-gray) !important;
   transform: scale(1.05);
 }
 
 .custom-toggler {
-  color: #d3d4d5;
+  color: var(--white-gray);
 }
 
 .navbar-brand {
-  color: white !important;
+  color: var(--white) !important;
   font-weight: 700;
 }
 
@@ -127,9 +142,3 @@
   z-index: 100 !important;
 }
 </style>
-
-<script>
-export default {
-  name: "Navbar",
-};
-</script>

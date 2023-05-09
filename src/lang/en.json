@@ -5,7 +5,8 @@
       "about": "About",
       "status": "Status",
       "repository": "Repository",
-      "docs": "Documentations"
+      "docs": "Documentations",
+      "team": "Team"
     },
     "heading": {
       "hello": "Hello there! 👋",

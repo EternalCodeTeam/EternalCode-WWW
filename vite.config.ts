@@ -1,10 +1,19 @@
-import { fileURLToPath, URL } from "node:url";
-import { dirname, resolve } from "node:path";
-import { defineConfig } from "vite";
+import { fileURLToPath, URL } from "url";
+import { dirname, resolve } from "path";
+import { UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 
-export default defineConfig({
+interface ViteConfig extends UserConfig {
+    resolve: {
+        alias: {
+            "@": string;
+        };
+    };
+    plugins: any[];
+}
+
+const config: ViteConfig = {
     plugins: [
         vue(),
         VueI18nPlugin({
@@ -16,4 +25,6 @@ export default defineConfig({
             "@": fileURLToPath(new URL("./src", import.meta.url)),
         },
     },
-});
+};
+
+export default config;

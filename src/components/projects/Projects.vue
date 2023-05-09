@@ -10,9 +10,9 @@
           :githubUrl="project.link"
           :hrefText="$t('message.projects.more')"
           :imageUrl="'/assets/img/projects/logo/' + project.repo + '_icon.webp'"
-          :spigotUrl="projectLinks[project.repo]?.spigotmc"
           :modrinthUrl="projectLinks[project.repo]?.modrinth"
           :name="project.repo"
+          :spigotUrl="projectLinks[project.repo]?.spigotmc"
       />
     </div>
   </section>
@@ -20,7 +20,7 @@
 
 <script>
 import Project from "./components/Project.vue";
-import projectLinks from "@/info/project_links.json"
+import projectLinks from "@/info/project_links.json";
 
 const pinnedRepos = [];
 export default {
@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       projects: [],
-      projectLinks: projectLinks
+      projectLinks: projectLinks,
     };
   },
   mounted() {
@@ -52,7 +52,6 @@ export { pinnedRepos };
 </script>
 
 <style>
-
 .projects-row {
   display: flex;
   justify-content: space-around;
@@ -91,11 +90,11 @@ export { pinnedRepos };
   }
 
   .card-pro h5 {
-    color: rgb(167, 167, 167);
+    color: var(--primary-title);
   }
 
   .card-pro h6 {
-    color: rgb(153, 150, 150);
+    color: var(--secondary-title);
   }
 }
 
@@ -105,7 +104,7 @@ export { pinnedRepos };
 
 #projects h1 {
   font-weight: 800;
-  color: #d3d3d380;
+  color: var(--primary-title);
   font-size: 40px;
   border: 2px;
   margin-bottom: 1%;
@@ -114,7 +113,7 @@ export { pinnedRepos };
 
 #projects p {
   font-weight: 500;
-  color: #d3d3d354;
+  color: var(--secondary-title);
   font-size: medium;
   margin-top: -10px;
   border: 2px;
@@ -127,7 +126,7 @@ export { pinnedRepos };
 }
 
 .card-pro {
-  background-color: #2a2c2c;
+  background-color: var(--light-gray);
   border-radius: 12px;
   margin-bottom: 2%;
   padding: 6% 10%;
@@ -141,7 +140,7 @@ export { pinnedRepos };
 }
 
 .card-pro h5 {
-  color: rgb(114, 114, 114);
+  color: var(--secondary-title);
   font-weight: 600;
 }
 

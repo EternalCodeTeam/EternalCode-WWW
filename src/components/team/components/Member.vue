@@ -33,7 +33,7 @@ export default {
 </script>
 <style>
 .team-card {
-  background: #2a2c2c;
+  background: var(--light-gray);
   transition: 0.3s;
   height: 100%;
 }
@@ -43,11 +43,11 @@ export default {
 }
 
 .team-card-title {
-  color: #fff;
+  color: var(--white);
 }
 
 .team-card-subtitle {
-  color: #fff;
+  color: var(--white);
 }
 
 .list-inline-item {
