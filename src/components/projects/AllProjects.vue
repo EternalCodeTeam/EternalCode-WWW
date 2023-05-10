@@ -91,7 +91,7 @@ export default {
   font-family: "Inter", sans-serif;
   font-size: 1.9rem;
   cursor: pointer;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-pro {
@@ -112,10 +112,18 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
+  margin: 0;
+  padding: 0;
 }
 
 .all-projects-section > div {
   margin: 10px 0;
+}
+
+.others-status {
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
 @keyframes slide-in {
