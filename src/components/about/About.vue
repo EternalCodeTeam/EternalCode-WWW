@@ -1,6 +1,6 @@
 <template>
   <section id="about">
-    <h1 class="title">{{ $t("message.about-us.title") }}</h1>
+    <h3 class="title">{{ $t("message.about-us.title") }}</h3>
     <p class="desc">{{$t("message.about-us.desc")}}</p>
     <font-awesome-icon icon="fa-solid fa-dinosaur"/>
     <div class="gallery">

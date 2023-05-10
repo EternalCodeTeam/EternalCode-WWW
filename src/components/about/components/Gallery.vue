@@ -6,7 +6,7 @@
       <img :src="icon" alt="Gallery Image" class="gallery-icon"/>
     </div>
     <div class="description" :class="isActive ? 'active' : '' ">
-      <h1>{{ title }}</h1>
+      <h3>{{ title }}</h3>
       <p class="text">{{ description }}</p>
     </div>
   </div>
@@ -30,31 +30,6 @@ export default {
       this.$emit('toggle-active', this.key);
     }
   }
-
-
-  /*
-        let activeElements = document.querySelectorAll('.active');
-        //if this element is active remove class only from this element
-        if (this.isActive) {
-          console.log('method #1');
-          this.isActive = !this.isActive;
-
-          console.log("activated");
-        }
-        //if this element is not active remove class from all active elements and then add class to this element
-        else {
-          console.log('method #2');
-          activeElements.forEach((el) => {
-            el.classList.remove('active');
-            console.log("deactivated");
-          });
-          this.isActive = !this.isActive;
-
-          console.log("activated");
-        }
-      }
-    }
-  */
 };
 </script>
 
@@ -86,14 +61,14 @@ export default {
   transform: scale(1);
   max-width: 1000px;
   margin: 0;
-  border-radius: 40px;
+  border-radius: 15px;
   background-size: auto 100%;
 }
 
 .gallery-section:not(.active) {
   flex-grow: 1;
   max-width: 100px;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .icon {
@@ -120,10 +95,10 @@ export default {
   height: auto;
   z-index: 3;
   filter: brightness(0) invert(0.40);
-  position: absolute; /* position the gallery-icon absolutely */
-  top: 50%; /* position it at 50% from the top of the parent div */
-  left: 50%; /* position it at 50% from the left of the parent div */
-  transform: translate(-50%, -50%); /* center it precisely by translating it -50% from both top and left */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
 }
@@ -140,10 +115,15 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: var(--white-gray);
+  color: var(--secondary-title);
   padding: 10px;
-  background: var(--primary-dark-gray);
+  background: var(--light-gray);
 }
+
+.description.active h3 {
+  color: var(--primary-title);
+}
+
 
 .shadow {
   position: absolute;
@@ -175,15 +155,19 @@ export default {
     position: absolute;
     bottom: 0;
     left: 0;
-    color: var(--white-gray);
+    color: var(--secondary-title);
     padding: 10px;
-    background: var(--primary-dark-gray);
+    background: var(--light-gray);
+  }
+
+  .description h3 {
+    color: var(--primary-title);
   }
 
   .gallery-section:not(.active) {
     flex-grow: inherit;
     max-width: none;
-    border-radius: 30px;
+    border-radius: 15px;
   }
 }
 </style>
