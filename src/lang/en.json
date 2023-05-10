@@ -15,16 +15,16 @@
     "about-us": {
       "title": "About us 🎉",
       "desc": "Learn more about our organization and our members!",
-      "title1": "Members:",
+      "title1": "Members",
       "desc1": "Our open source organization consists of eight computer science enthusiasts, including several experienced programmers. Our main area of work is Minecraft plugins written in Java and projects in other languages such as Vue and JavaScript. We have opened several repositories on GitHub, which are constantly being developed and improved to provide the best possible experience for users.",
 
-      "title2": "Repositories:",
-      "desc2": "Thanks to our openness and commitment, our organization is constantly growing and becoming more and more known in the programming community and among open-source developers. We are proud of our work and always strive to provide high-quality solutions for our users.",
+      "title2": "Our work",
+      "desc2": "The foundation of our development lies in the work we put into plugins, extensions, and open-source projects. We prioritize self-improvement, which we measure by our skills. Help us shape our potential by providing new project ideas and enhancing our existing solutions.\n\n",
 
-      "title3": "Discord:",
-      "desc3": "As an open-source organization, we value openness and collaboration. We often sit on Discord, giving advice and sharing knowledge about creating Minecraft servers. We want to help other developers and enthusiasts like us develop their projects and achieve success in this field.",
+      "title3": "Discord",
+      "desc3": "Discord serves as our primary platform for communication, where we are active. We provide guidance, share memes, and play games. We aim to create an inclusive community open to everyone, encouraging interaction with us. We strive to assist other developers in advancing their projects, don't hesitate to ask us for help!",
 
-      "title4": "Entertainment:",
+      "title4": "Entertainment",
       "desc4": "In addition to working on open-source projects, our members also value their free time and entertainment. We often play Minecraft and Fortnite to relax and enjoy playing together. Moreover, we like to play many games, such as Sons of the Forest and Witcher, as well as watch anime and other movies to broaden our horizons and draw inspiration for creating our projects."
 
       },
