@@ -62,41 +62,7 @@ export { pinnedRepos };
   margin: 10px 0;
 }
 
-@media only screen and (max-width: 1000px) {
-  #projects {
-    padding: 3% 12%;
-  }
 
-  #projects h1 {
-    font-size: 30px;
-  }
-
-  #projects p {
-    font-size: small;
-    margin-bottom: 15%;
-  }
-
-  #projects img {
-    width: 40%;
-    margin-bottom: 10%;
-  }
-
-  #projects .card-pro {
-    margin-bottom: 5%;
-    padding: 15% 10% 15% 12%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card-pro h5 {
-    color: var(--primary-title);
-  }
-
-  .card-pro h6 {
-    color: var(--secondary-title);
-  }
-}
 
 #projects {
   padding: 3% 12% 3% 12%;
@@ -157,4 +123,39 @@ export { pinnedRepos };
   color: #a6abaf;
 }
 
+@media only screen and (max-width: 1000px) {
+  #projects {
+    padding: 3% 12%;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  #projects p {
+    font-size: small;
+    margin-bottom: 15%;
+  }
+
+  #projects img {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+
+  #projects .card-pro {
+    margin-bottom: 5%;
+    padding: 15% 10% 15% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-pro h5 {
+    color: var(--primary-title);
+  }
+
+  .card-pro h6 {
+    color: var(--secondary-title);
+  }
+}
 </style>

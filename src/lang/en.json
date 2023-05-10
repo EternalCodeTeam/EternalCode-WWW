@@ -29,7 +29,8 @@
       "title": "Our projects",
       "subtitle": "Our projects are not only our services, but also our hobby! We offer many open source products!",
       "more": "GitHub repository",
-      "other": "Other repositories"
+      "other": "Other repositories",
+      "noDescription": "No description provided."
     },
     "team": {
       "title": "Our team",

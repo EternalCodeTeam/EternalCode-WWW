@@ -1,25 +1,20 @@
 <template>
-  <section id="AllProjects">
+  <section id="all-projects">
     <div class="projects-section">
       <label class="others-status" @click="toggleActive">
         {{ $t("message.projects.other") }}
         {{ buttonSymbol }}
       </label>
-      <div class="All-projects-section" :class="{ active: isActive}">
-        <div v-for="project in projects"
-             :key="project.name"
-             class="single-project"
-             :class="{ active: isActive}">
-          <a :href="`https://github.com/EternalCodeTeam/${project.name}`"
-             target="_blank">
-            <img class="github-logo" alt="githubUrl" src="/assets/img/projects/GitHub-logo-short.webp">
-          </a>
-          <div class="project-info">
-            <h2>{{ project.name }}</h2>
-            <p v-if="project.description === null">No description provided.</p>
-            <p v-else>{{ project.description }}</p>
-          </div>
-
+      <div class="all-projects-section" :class="{ active: isActive}">
+        <div class="row projects-row">
+          <Project v-for="(project, index) in projects"
+                   :key="index"
+                   :name="project.name"
+                   :description="project.description"
+                   :githubUrl="`https://github.com/EternalCodeTeam/${project.name}`"
+                   :hrefText="$t('message.projects.more')"
+                   :imageUrl="'/assets/img/projects/placeholder.webp'"
+          />
         </div>
       </div>
     </div>
@@ -28,9 +23,15 @@
 
 <script>
 import {pinnedRepos} from "@/components/projects/Projects.vue";
+import Project from "@/components/projects/components/Project.vue";
+//ignored repositories:
+const ignoredRepos = [".github"];
 
 export default {
   name: "Projects",
+  components: {
+    Project
+  },
   data() {
     return {
       projects: [],
@@ -46,18 +47,21 @@ export default {
             .then((data) => {
               this.projects = data
                   .filter((project) => !pinnedRepos.includes(project.name))
+                  .filter((project) => !ignoredRepos.includes(project.name))
                   .map((project) => ({
                     name: project.name,
                     description: project.description,
                   }));
             });
       }, 3000);
+
     } else {
       fetch("https://api.github.com/users/EternalCodeTeam/repos?type=public")
           .then((response) => response.json())
           .then((data) => {
             this.projects = data
                 .filter((project) => !pinnedRepos.includes(project.name))
+                .filter((project) => !ignoredRepos.includes(project.name))
                 .map((project) => ({
                   name: project.name,
                   description: project.description,
@@ -90,47 +94,28 @@ export default {
   margin-bottom: 1.5rem;
 }
 
-
-
+.card-pro {
+  background-color: var(--light-gray);
+  border-radius: 12px;
+  margin-bottom: 2%;
+  padding: 6% 10%;
+  transition: 0.5s;
+  height: 100%;
+}
 
 .projects-section {
-  margin: auto;
-  width: 80%;
-  position: relative;
+  padding: 3% 12% 3% 12%;
+
+}
+
+.all-projects-section.active {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  justify-content: space-around;
+  align-items: stretch;
 }
 
-.single-project {
-  width: 100%;
-  margin: 20px;
-  padding: 20px;
-  background-color: #2a2c2c;
-  border-radius: 40px;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  transform: translateY(50px);
-  animation-name: slide-in;
-  animation-duration: 0.7s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  transition: transform 0.3s;
-}
-
-.single-project.active:hover {
-  background-color: #3f3f3f;
-  transition: all 0.2s ease;
-
-}
-
-.project-info {
-  flex-grow: 1;
-  margin-left: 2rem;
-  color: #a1a1a1;
+.all-projects-section > div {
+  margin: 10px 0;
 }
 
 @keyframes slide-in {
@@ -146,31 +131,14 @@ export default {
   }
 }
 
-.github-logo {
-  background-color: transparent;
-  filter: brightness(0) invert(0);
-  width: 50px;
-  height: 50px;
-  margin-left: 1rem;
-}
-
-.single-project:nth-child(2n) {
-  transform: translateX(-100%);
-}
-
-.single-project.active {
-  transform: translateX(0);
-}
-
-
-.All-projects-section {
+.all-projects-section {
   display: none;
   transform: translateY(-50px);
   transition: all 0.5s ease;
   z-index: 0;
 }
 
-.All-projects-section.active {
+.all-projects-section.active {
   display: block;
   transform: translateY(0);
 }
@@ -179,30 +147,6 @@ export default {
   .projects-section {
     position: center;
     padding: 5px;
-  }
-
-  .single-project {
-    align-items: center;
-    width: 90%;
-    padding: 5px;
-  }
-
-  .project-info {
-    margin-left: 1rem;
-  }
-
-  .project-info h2 {
-    font-size: 1.5rem;
-  }
-
-  .project-info p {
-    font-size: 1rem;
-  }
-
-  .github-logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 1rem;
   }
 
 }

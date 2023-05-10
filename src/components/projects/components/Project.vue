@@ -10,7 +10,8 @@
         <div class="col-lg-9">
           <div class="project-card">
             <h5>{{ name }}</h5>
-            <h6>{{ description }}</h6>
+            <h6 v-if="description">{{ description }}</h6>
+            <h6 v-else>{{ $t("message.projects.noDescription") }}</h6>
 
             <!-- GitHub Link -->
             <ul class="src-buttons">
@@ -64,26 +65,6 @@ export default {
 
 <style>
 
-@media only screen and (max-width: 1000px) {
-  .src-buttons {
-    width: 70%;
-    display: flex;
-    align-items: center;
-  }
-
-  .src-buttons li {
-    margin-right: 5px;
-  }
-
-  .button-link {
-    height: 40px;
-    width: 40px;
-  }
-
-  .src-buttons img {
-    margin-top: 5px;
-  }
-}
 
 .src-buttons {
   display: flex;
@@ -132,5 +113,26 @@ export default {
   max-width: 50px;
   max-height: 50px;
   width: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .src-buttons {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .src-buttons li {
+    margin-right: 5px;
+  }
+
+  .button-link {
+    height: 40px;
+    width: 40px;
+  }
+
+  .src-buttons img {
+    margin-top: 5px;
+  }
 }
 </style>
