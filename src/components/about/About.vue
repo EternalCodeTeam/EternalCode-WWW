@@ -68,11 +68,11 @@ export default {
 
 <style>
 .title {
-  color: var(--white);
+  color: var(--primary-title);
 }
 
 .desc {
-  color: var(--primary-dark-gray);
+  color: var(--secondary-title);
 }
 
 .gallery {
