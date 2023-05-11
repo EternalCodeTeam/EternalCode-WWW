@@ -72,18 +72,9 @@ export default {
 </script>
 
 <style>
-@media only screen and (max-width: 1000px) {
-  #team h1 {
-    font-size: 30px;
-  }
-
-  #team p {
-    font-size: small;
-    margin-bottom: 15%;
-  }
-}
 
 #team h1 {
+  padding-top: 6.5rem;
   font-weight: 800;
   color: var(--white-gray);
   font-size: 40px;
@@ -104,5 +95,16 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
+}
+
+@media only screen and (max-width: 1000px) {
+  #team h1 {
+    font-size: 30px;
+  }
+
+  #team p {
+    font-size: small;
+    margin-bottom: 15%;
+  }
 }
 </style>
