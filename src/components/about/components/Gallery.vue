@@ -10,7 +10,6 @@
 
 <script>
 
-
 export default {
   name: "Gallery",
   props: {
@@ -49,7 +48,6 @@ export default {
   transition: .5s cubic-bezier(.68,.04,0,.91) all;
 }
 
-
 .gallery-section.active {
   flex-grow: 10000;
   transform: scale(0.98);
@@ -58,7 +56,6 @@ export default {
   border-radius: 15px;
   background-size: auto 110%;
   background-position: center;
-
 }
 
 .gallery-section:not(.active) {

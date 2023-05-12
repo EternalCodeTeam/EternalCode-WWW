@@ -17,18 +17,15 @@
     </div>
     <div class="description-box">
       <div class="description" :class="isActive ? 'active' : '' ">
-        <h3> {{ $t("message.about-us.gallery-parts[" + activeIndex + "].title")}}  </h3>
-        <p> {{ $t("message.about-us.gallery-parts[" + activeIndex + "].desc")}} </p>
-
+        <h3> {{ $t("message.about-us.gallery-parts[" + activeIndex + "].title") }} </h3>
+        <p> {{ $t("message.about-us.gallery-parts[" + activeIndex + "].desc") }} </p>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-
 import Gallery from "@/components/about/components/Gallery.vue";
-
 
 export default {
   name: "about",
@@ -78,7 +75,7 @@ export default {
       });
     },
     autoToggleActive() {
-      setTimeout( () => {
+      setTimeout(() => {
         this.autoToggleActive();
 
         if (!this.isMobileScreenWidth()) {
@@ -117,8 +114,6 @@ export default {
   overflow: hidden;
   gap: 15px;
   margin-bottom: 10px;
-
-
 }
 
 #about {
