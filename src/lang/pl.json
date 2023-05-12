@@ -15,19 +15,25 @@
     "about-us": {
       "title": "O nas 🎉",
       "desc": "Poznaj naszą organizację open source i dowiedz się, co robimy i jak możemy ci pomóc!",
-      "title1": "Członkowie",
-      "desc1": "Nasza organizacja open source składa się z ośmiu entuzjastów IT, w tym kilku doświadczonych programistów. Głównym obszarem naszej pracy są pluginy do Minecrafta napisane w Javie oraz projekty w innych językach, takich jak Vue i JavaScript. Otworzyliśmy kilkanaście repozytoriów na GitHubie, które są stale rozwijane i ulepszane, aby zapewnić jak najlepsze doświadczenie użytkownikom Minecrafta.",
-
-      "title2": "Nasza praca",
-      "desc2": "Podstawą naszego rozwoju jest praca, którą wkładamy w projekty, pluginy i rozszerzenia. Chcemy tworzyć co raz lepszy kod, który posłuży innym, dlatego pracujemy Agile'owo dokładając starań, by to co tworzymy było jak najlepsze.",
-
-      "title3": "Discord",
-      "desc3": "Główną platformą naszego kontaktu jest Discord, gdzie jesteśmy aktywni. Udzielamy porad, dzielimy się memami czy gramy w gry. Chcemy stworzyć społeczność otwartą dla każdego, dlatego zachęcamy do interakcji z nami. Chcemy pomagać innym pasjonatom programowania w rozwijaniu ich projektów, dlatego piszcie śmiało!",
-
-      "title4": "Rozrywka",
-      "desc4": "Poza pracą nad projektami open-source, nasi członkowie również cenią sobie czas wolny i rozrywkę. Często gramy w Minecrafta i Fortnite, aby odprężyć się i cieszyć się grą ze sobą. Ponadto, lubimy grać w Sons of the Forest oraz wiedźmina, a także oglądać anime i inne filmy, aby poszerzać nasze horyzonty i czerpać inspirację do tworzenia naszych projektów."
-
-      },
+      "gallery-parts": [
+        {
+          "title": "Członkowie",
+          "desc": "Nasza organizacja open source składa się z ośmiu entuzjastów IT, w tym kilku doświadczonych programistów. Głównym obszarem naszej pracy są pluginy do Minecrafta napisane w Javie oraz projekty w innych językach, takich jak Vue i JavaScript. Otworzyliśmy kilkanaście repozytoriów na GitHubie, które są stale rozwijane i ulepszane, aby zapewnić jak najlepsze doświadczenie użytkownikom Minecrafta."
+        },
+        {
+          "title": "Nasza praca",
+          "desc": "Podstawą naszego rozwoju jest praca, którą wkładamy w projekty, pluginy i rozszerzenia. Chcemy tworzyć co raz lepszy kod, który posłuży innym, dlatego pracujemy Agile'owo dokładając starań, by to co tworzymy było jak najlepsze."
+        },
+        {
+          "title": "Discord",
+          "desc": "Główną platformą naszego kontaktu jest Discord, gdzie jesteśmy aktywni. Udzielamy porad, dzielimy się memami czy gramy w gry. Chcemy stworzyć społeczność otwartą dla każdego, dlatego zachęcamy do interakcji z nami. Chcemy pomagać innym pasjonatom programowania w rozwijaniu ich projektów, dlatego piszcie śmiało!"
+        },
+        {
+          "title": "Rozrywka",
+          "desc": "Poza pracą nad projektami open-source, nasi członkowie również cenią sobie czas wolny i rozrywkę. Często gramy w Minecrafta i Fortnite, aby odprężyć się i cieszyć się grą ze sobą. Ponadto, lubimy grać w Sons of the Forest oraz wiedźmina, a także oglądać anime i inne filmy, aby poszerzać nasze horyzonty i czerpać inspirację do tworzenia naszych projektów."
+        }
+      ]
+    },
     "skills": {
       "title": "Nasze magiczne moce!",
       "java": "W naszym składzie znajdziesz wielu programistów specjalizujących się w języku Java!",

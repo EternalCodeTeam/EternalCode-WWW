@@ -15,19 +15,25 @@
     "about-us": {
       "title": "About us 🎉",
       "desc": "Learn more about our organization and our members!",
-      "title1": "Members",
-      "desc1": "Our open source organization consists of eight computer science enthusiasts, including several experienced programmers. Our main area of work is Minecraft plugins written in Java and projects in other languages such as Vue and JavaScript. We have opened several repositories on GitHub, which are constantly being developed and improved to provide the best possible experience for users.",
-
-      "title2": "Our work",
-      "desc2": "The basis of our development lies in the work we invest in projects, plugins, and extensions. We strive to create increasingly better code that will benefit others. That is why we adopt an Agile approach, putting in efforts to ensure that what we create is of the highest quality.",
-
-      "title3": "Discord",
-      "desc3": "Discord serves as our primary platform for communication, where we are active. We provide guidance, share memes, and play games. We aim to create an inclusive community open to everyone, encouraging interaction with us. We strive to assist other developers in advancing their projects, don't hesitate to ask us for help!",
-
-      "title4": "Entertainment",
-      "desc4": "In addition to working on open-source projects, our members also value their free time and entertainment. We often play Minecraft and Fortnite to relax and enjoy playing together. Moreover, we like to play many games, such as Sons of the Forest and Witcher, as well as watch anime and other movies to broaden our horizons and draw inspiration for creating our projects."
-
-      },
+      "gallery-parts": [
+        {
+          "title": "Members",
+          "desc": "Our open source organization consists of eight computer science enthusiasts, including several experienced programmers. Our main area of work is Minecraft plugins written in Java and projects in other languages such as Vue and JavaScript. We have opened several repositories on GitHub, which are constantly being developed and improved to provide the best possible experience for users."
+        },
+        {
+          "title": "Our work",
+          "desc": "The basis of our development lies in the work we invest in projects, plugins, and extensions. We strive to create increasingly better code that will benefit others. That is why we adopt an Agile approach, putting in efforts to ensure that what we create is of the highest quality."
+        },
+        {
+          "title": "Discord",
+          "desc": "Discord serves as our primary platform for communication, where we are active. We provide guidance, share memes, and play games. We aim to create an inclusive community open to everyone, encouraging interaction with us. We strive to assist other developers in advancing their projects, don't hesitate to ask us for help!"
+        },
+        {
+          "title": "Entertainment",
+          "desc": "In addition to working on open-source projects, our members also value their free time and entertainment. We often play Minecraft and Fortnite to relax and enjoy playing together. Moreover, we like to play many games, such as Sons of the Forest and Witcher, as well as watch anime and other movies to broaden our horizons and draw inspiration for creating our projects."
+        }
+      ]
+    },
     "skills": {
       "title": "Our magic powers!",
       "java": "In our lineup you will find many programmers specializing in Java!",

@@ -5,10 +5,6 @@
     <div class="icon" :class="isActive ? 'active' : '' ">
       <img :src="icon" alt="Gallery Image" class="gallery-icon"/>
     </div>
-    <div class="description" :class="isActive ? 'active' : '' ">
-      <h3>{{ title }}</h3>
-      <p class="text">{{ description }}</p>
-    </div>
   </div>
 </template>
 
@@ -37,10 +33,9 @@ export default {
 
 .gallery-section {
   position: relative;
-  width: 15%;
+  width: 20%;
   overflow: hidden;
-  max-height: 70vh;
-  height: 700px;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -49,32 +44,33 @@ export default {
   background-position: center;
   border: 5px solid var(--light-gray);
   cursor: pointer;
-  min-width: 150px;
-  margin: 10px;
-  padding: 10px;
-  transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95) all;
+  min-width: 100px;
+  margin: 0 ;
+  transition: .5s cubic-bezier(.68,.04,0,.91) all;
 }
 
 
 .gallery-section.active {
   flex-grow: 10000;
-  transform: scale(1);
-  max-width: 1000px;
+  transform: scale(0.98);
+  max-width: 100%;
   margin: 0;
   border-radius: 15px;
-  background-size: auto 100%;
+  background-size: auto 110%;
+  background-position: center;
+
 }
 
 .gallery-section:not(.active) {
   flex-grow: 1;
-  max-width: 100px;
+  max-width: 150px;
   border-radius: 15px;
 }
 
 .icon {
   align-items: center;
   top: 80%;
-  left: 17%;
+  left: 20%;
   z-index: 3;
   width: 80px;
   height: 80px;
@@ -103,28 +99,6 @@ export default {
   justify-content: center;
 }
 
-.description {
-  display: none;
-  z-index: 3;
-  width: 100%;
-}
-
-.description.active {
-  display: block;
-  z-index: 3;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: var(--secondary-title);
-  padding: 10px;
-  background: var(--light-gray);
-}
-
-.description.active h3 {
-  color: var(--primary-title);
-}
-
-
 .shadow {
   position: absolute;
   bottom: 0;
@@ -143,28 +117,15 @@ export default {
     justify-content: center;
     max-width: max-content;
     flex-grow: inherit;
+    transform: matrix();
   }
 
   .icon {
     display: none;
   }
 
-  .description {
-    display: block;
-    z-index: 3;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: var(--secondary-title);
-    padding: 10px;
-    background: var(--light-gray);
-  }
-
-  .description h3 {
-    color: var(--primary-title);
-  }
-
   .gallery-section:not(.active) {
+    display: none;
     flex-grow: inherit;
     max-width: none;
     border-radius: 15px;
