@@ -133,12 +133,12 @@ export default {
 
 .description h3 {
   color: var(--primary-title);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .description p {
   color: var(--secondary-title);
-  font-size: 1.2rem;
+  font-size: 0.95rem;
 }
 
 @media only screen and (max-width: 1000px) {
