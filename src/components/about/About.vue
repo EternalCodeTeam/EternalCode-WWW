@@ -138,7 +138,7 @@ export default {
 
 .description h3 {
   color: var(--primary-title);
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .description p {
