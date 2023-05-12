@@ -50,7 +50,7 @@ export default {
 
 .gallery-section.active {
   flex-grow: 10000;
-  transform: scale(0.98);
+  transform: scale(1);
   max-width: 100%;
   margin: 0;
   border-radius: 15px;
