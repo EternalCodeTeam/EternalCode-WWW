@@ -52,7 +52,7 @@
             role="Team Developer"
         />
         <Member
-            githubUrl="https://github.com/Embrejs"
+            githubUrl="https://github.com/CitralFlo"
             imageUrl="https://avatars.githubusercontent.com/u/80779749?v=4"
             name="Michał Wojtas"
             role="Student"
