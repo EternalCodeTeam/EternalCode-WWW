@@ -4,15 +4,14 @@
     <p>{{ $t("message.projects.subtitle") }}</p>
     <div class="row projects-row">
       <Project
-          v-for="(project, index) in projects"
+          v-for="(project, index) in this.projects"
           :key="index"
+          :name="project.name"
           :description="project.description"
+          :imageUrl="'/assets/img/projects/logo/' + project.name + '_icon.webp'"
           :githubUrl="project.link"
-          :hrefText="$t('message.projects.more')"
-          :imageUrl="'/assets/img/projects/logo/' + project.repo + '_icon.webp'"
-          :modrinthUrl="projectLinks[project.repo]?.modrinth"
-          :name="project.repo"
-          :spigotUrl="projectLinks[project.repo]?.spigotmc"
+          :spigotUrl="projectLinks[project.name]?.spigotmc"
+          :modrinthUrl="projectLinks[project.name]?.modrinth"
       />
     </div>
   </section>
@@ -21,13 +20,12 @@
 <script>
 import Project from "./components/Project.vue";
 import projectLinks from "@/info/project_links.json";
+import {pinnedProjects} from "@/components/projects/ProjectsFetch.ts";
 
-const pinnedRepos = [];
 export default {
   name: "Projects",
   components: {
     Project,
-    pinnedRepos,
   },
   data() {
     return {
@@ -36,19 +34,9 @@ export default {
     };
   },
   mounted() {
-    fetch("https://gh-pinned-repos.egoist.dev/?username=eternalcodeteam")
-        .then(response => response.json())
-        .then(data => {
-          this.projects = data;
-          data.forEach(project => {
-            pinnedRepos.push(project.repo);
-          });
-        });
-  },
+    pinnedProjects.then((projects) => this.projects = projects);
+  }
 };
-
-export { pinnedRepos };
-
 </script>
 
 <style>
@@ -61,8 +49,6 @@ export { pinnedRepos };
 .projects-row > div {
   margin: 10px 0;
 }
-
-
 
 #projects {
   padding: 3% 12% 3% 12%;
@@ -91,41 +77,12 @@ export { pinnedRepos };
   width: 65%;
 }
 
-.card-pro {
-  background-color: var(--light-gray);
-  border-radius: 12px;
-  margin-bottom: 2%;
-  padding: 6% 10%;
-  transition: 0.5s;
-  height: 100%;
-}
-
-.card-pro a:hover {
-  color: #707070;
-  transition: 0.5s;
-}
-
-.card-pro h5 {
-  color: var(--secondary-title);
-  font-weight: 600;
-}
-
-
-.card-pro h6 {
-  color: rgb(114, 114, 114);
-  font-weight: 400;
-  font-size: small;
-}
-
-.card-pro a {
-  font-size: small;
-  text-decoration: none;
-  color: #a6abaf;
-}
-
 @media only screen and (max-width: 1000px) {
   #projects {
     padding: 3% 12%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   #projects h1 {
@@ -138,24 +95,9 @@ export { pinnedRepos };
   }
 
   #projects img {
-    width: 50%;
+    width: 70%;
     margin-bottom: 10%;
   }
 
-  #projects .card-pro {
-    margin-bottom: 5%;
-    padding: 15% 10% 15% 12%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card-pro h5 {
-    color: var(--primary-title);
-  }
-
-  .card-pro h6 {
-    color: var(--secondary-title);
-  }
 }
 </style>

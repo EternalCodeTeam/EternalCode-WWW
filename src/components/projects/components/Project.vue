@@ -58,13 +58,42 @@ export default {
     spigotUrl: String,
     modrinthUrl: String,
     imageUrl: String,
-    hrefText: String,
   },
 };
 </script>
 
-<style>
+<style >
+.card-pro {
+  background-color: var(--light-gray);
+  border-radius: 12px;
+  margin-bottom: 2%;
+  padding: 6% 10%;
+  transition: 0.5s;
+  height: 100%;
+}
 
+.card-pro a:hover {
+  color: #707070;
+  transition: 0.5s;
+}
+
+.card-pro h5 {
+  color: var(--secondary-title);
+  font-weight: 600;
+}
+
+
+.card-pro h6 {
+  color: rgb(114, 114, 114);
+  font-weight: 400;
+  font-size: small;
+}
+
+.card-pro a {
+  font-size: small;
+  text-decoration: none;
+  color: #a6abaf;
+}
 
 .src-buttons {
   display: flex;
@@ -120,6 +149,13 @@ export default {
     width: 70%;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .col-lg-3 {
+    margin-bottom: 10%;
   }
 
   .src-buttons li {
@@ -133,6 +169,27 @@ export default {
 
   .src-buttons img {
     margin-top: 5px;
+  }
+
+  .card-pro {
+    margin-bottom: 5%;
+    padding: 15% 10% 15% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-pro * {
+    text-align: center;
+    position: center;
+  }
+
+  .card-pro h5 {
+    color: var(--primary-title);
+  }
+
+  .card-pro h6 {
+    color: var(--secondary-title);
   }
 }
 </style>
