@@ -13,7 +13,7 @@
                      :name="project.name"
                      :description="project.description"
                      :githubUrl="`https://github.com/EternalCodeTeam/${project.name}`"
-                     :imageUrl="'/assets/img/projects/placeholder.webp'"
+                     :imageUrl="'/assets/img/projects/language/' + project.language + '.webp'"
             />
           </div>
         </div>

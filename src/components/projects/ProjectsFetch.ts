@@ -23,6 +23,7 @@ type GithubApiProject = {
     name: string,
     description: string,
     html_url: string,
+    language: string,
 }
 const ignoredRepos = [".github"];
 
@@ -33,6 +34,7 @@ const allProjects: Promise<Array<Project>> = fetch(GITHUB_API_URL)
         name: project.name,
         description: project.description,
         link: project.html_url,
+        language: project.language,
     })));
 
 const notPinnedProjects: Promise<Array<Project>> = Promise.all([allProjects, pinnedProjects])
