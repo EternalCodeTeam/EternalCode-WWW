@@ -10,7 +10,8 @@
         <div class="col-lg-9">
           <div class="project-card">
             <h5>{{ name }}</h5>
-            <h6>{{ description }}</h6>
+            <h6 v-if="description">{{ description }}</h6>
+            <h6 v-else>{{ $t("message.projects.noDescription") }}</h6>
 
             <!-- GitHub Link -->
             <ul class="src-buttons">
@@ -57,32 +58,41 @@ export default {
     spigotUrl: String,
     modrinthUrl: String,
     imageUrl: String,
-    hrefText: String,
   },
 };
 </script>
 
-<style>
+<style >
+.card-pro {
+  background-color: var(--light-gray);
+  border-radius: 12px;
+  margin-bottom: 2%;
+  padding: 6% 10%;
+  transition: 0.5s;
+  height: 100%;
+}
 
-@media only screen and (max-width: 1000px) {
-  .src-buttons {
-    width: 70%;
-    display: flex;
-    align-items: center;
-  }
+.card-pro a:hover {
+  color: #707070;
+  transition: 0.5s;
+}
 
-  .src-buttons li {
-    margin-right: 5px;
-  }
+.card-pro h5 {
+  color: var(--secondary-title);
+  font-weight: 600;
+}
 
-  .button-link {
-    height: 40px;
-    width: 40px;
-  }
 
-  .src-buttons img {
-    margin-top: 5px;
-  }
+.card-pro h6 {
+  color: rgb(114, 114, 114);
+  font-weight: 400;
+  font-size: small;
+}
+
+.card-pro a {
+  font-size: small;
+  text-decoration: none;
+  color: #a6abaf;
 }
 
 .src-buttons {
@@ -132,5 +142,50 @@ export default {
   max-width: 50px;
   max-height: 50px;
   width: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .src-buttons {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .src-buttons li {
+    margin-right: 5px;
+  }
+
+  .button-link {
+    height: 40px;
+    width: 40px;
+  }
+
+  .src-buttons img {
+    margin-top: 5px;
+  }
+
+  .card-pro {
+    margin-bottom: 5%;
+    padding: 15% 10% 15% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-pro * {
+    text-align: center;
+    position: center;
+  }
+
+  .card-pro h5 {
+    color: var(--primary-title);
+  }
+
+  .card-pro h6 {
+    color: var(--secondary-title);
+  }
 }
 </style>
