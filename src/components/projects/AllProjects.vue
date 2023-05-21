@@ -3,7 +3,17 @@
     <div class="all-projects-section">
       <label class="others-status" @click="toggleActive">
         {{ $t("message.projects.other") }}
-        {{ buttonSymbol }}
+        <svg
+            class="arrow" :class="{ active: isActive}"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+          <path
+              clip-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              fill-rule="evenodd"></path>
+        </svg>
       </label>
       <div class="all-projects-tab-container">
         <div class="all-projects-tab" :class="{ active: isActive}">
@@ -36,7 +46,6 @@ export default {
     return {
       projects: [],
       isActive: false,
-      buttonSymbol: "▼",
     };
   },
   mounted() {
@@ -45,7 +54,6 @@ export default {
   methods: {
     toggleActive() {
       this.isActive = !this.isActive;
-      this.buttonSymbol = this.isActive ? "▲" : "▼";
       document.scrollIntoView({behavior: "smooth"});
     },
 
@@ -57,6 +65,18 @@ export default {
 #all-projects {
   padding: 0% 12% 3% 12%;
 }
+
+.arrow {
+  width: 60px;
+  height: auto;
+  transition: 0.3s ease-in-out
+}
+
+.arrow.active {
+  transition: 0.3s ease-in-out;
+  transform: rotate(-180deg) ;
+}
+
 
 .all-projects-tab-container {
   overflow: hidden;
