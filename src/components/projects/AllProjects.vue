@@ -63,7 +63,7 @@ export default {
 
 <style>
 #all-projects {
-  padding: 0% 12% 3% 12%;
+  padding: 0 12% 3% 12%;
 }
 
 .arrow {
@@ -73,7 +73,6 @@ export default {
 }
 
 .arrow.active {
-  transition: 0.3s ease-in-out;
   transform: rotate(-180deg) ;
 }
 
@@ -83,16 +82,12 @@ export default {
 }
 
 .others-status {
-  position: center;
-  width: 90%;
   display: inline-block;
-  text-align: center;
   color: var(--primary-title);
   font-weight: 800;
   user-select: none;
   font-size: 30px;
   cursor: pointer;
-  margin-bottom: 1rem;
 }
 
 .all-projects-tab {
