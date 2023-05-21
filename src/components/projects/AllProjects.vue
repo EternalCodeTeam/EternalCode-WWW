@@ -16,7 +16,7 @@
         </svg>
       </label>
       <div class="all-projects-tab-container">
-        <div class="all-projects-tab" :class="{ active: isActive}">
+        <div id="all-projects-tab" class="all-projects-tab" :class="{ active: isActive}">
           <div class="row projects-row">
             <Project v-for="(project, index) in projects"
                      :key="index"
@@ -54,9 +54,12 @@ export default {
   methods: {
     toggleActive() {
       this.isActive = !this.isActive;
-      document.scrollIntoView({behavior: "smooth"});
+      if (this.isActive) {
+        setTimeout(() => {
+          document.getElementById("all-projects-tab").scrollIntoView({behavior: "auto"});
+        }, 290);
+      }
     },
-
   },
 };
 </script>
@@ -73,7 +76,7 @@ export default {
 }
 
 .arrow.active {
-  transform: rotate(-180deg) ;
+  transform: rotate(-180deg);
 }
 
 
