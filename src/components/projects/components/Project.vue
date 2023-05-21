@@ -154,10 +154,6 @@ export default {
     margin: auto;
   }
 
-  .col-lg-3 {
-    margin-bottom: 10%;
-  }
-
   .src-buttons li {
     margin-right: 5px;
   }
