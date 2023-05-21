@@ -12,11 +12,27 @@
       "hello": "Hello there! 👋",
       "motto": "EternalCode is a fantastic community of developers!"
     },
-    "about": {
-      "title": "About 🎉",
-      "p1": "We are a team of programmers with many years of experience, offering a lot of services related to the IT industry!",
-      "p2": "A close-knit team is what sets us apart, we are a pioneer of this type of service in the market. Among other things, we offer help with games, Linux & Windows servers. support related to the choice of hosting, security of server machines and we love to share our programming knowledge!",
-      "p3": "Do you need something more? Or maybe you want us to do a top-notch design for you on commission? We can accomplish everything without much difficulty! We are open to any type of cooperation!"
+    "about-us": {
+      "title": "About us 🎉",
+      "desc": "Learn more about our organization and our members!",
+      "gallery-parts": [
+        {
+          "title": "Members",
+          "desc": "Our open source organization consists of eight computer science enthusiasts, including several experienced programmers. Our main area of work is Minecraft plugins written in Java and projects in other languages such as Vue and JavaScript. We have opened several repositories on GitHub, which are constantly being developed and improved to provide the best possible experience for users."
+        },
+        {
+          "title": "Our work",
+          "desc": "The basis of our development lies in the work we invest in projects, plugins, and extensions. We strive to create increasingly better code that will benefit others. That is why we adopt an Agile approach, putting in efforts to ensure that what we create is of the highest quality."
+        },
+        {
+          "title": "Discord",
+          "desc": "Discord serves as our primary platform for communication, where we are active. We provide guidance, share memes, and play games. We aim to create an inclusive community open to everyone, encouraging interaction with us. We strive to assist other developers in advancing their projects, don't hesitate to ask us for help!"
+        },
+        {
+          "title": "Entertainment",
+          "desc": "In addition to working on open-source projects, our members also value their free time and entertainment. We often play Minecraft and Fortnite to relax and enjoy playing together. Moreover, we like to play many games, such as Sons of the Forest and Witcher, as well as watch anime and other movies to broaden our horizons and draw inspiration for creating our projects."
+        }
+      ]
     },
     "skills": {
       "title": "Our magic powers!",

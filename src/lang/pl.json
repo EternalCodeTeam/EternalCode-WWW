@@ -12,11 +12,27 @@
       "hello": "Witaj! 👋",
       "motto": "EternalCode to fantastyczna społeczność programistów!"
     },
-    "about": {
+    "about-us": {
       "title": "O nas 🎉",
-      "p1": "Jesteśmy zespołem programistów z wieloletnim doświadczeniem, oferującym mnóstwo usług związanych z branżą IT!",
-      "p2": "Zgrany zespół to coś, co nas wyróżnia, jesteśmy pionierem tego typu usług na rynku. Oferujemy między innymi pomoc dotyczącą serwerów gier, Linuxa oraz Windowsa, wsparcie związane z wyborem hostingu, zabezpieczenia maszyn serwerowych oraz uwielbiamy się dzielić wiedzą na temat programowania!",
-      "p3": "Potrzebujesz czegoś więcej? A może chcesz, abyśmy wykonali Ci projekt na najwyższym poziomie na zlecenie? Wszystko możemy bez większego trudu zrealizować! Jesteśmy otwarci na każdego typu współpracę!"
+      "desc": "Poznaj naszą organizację open source i dowiedz się, co robimy i jak możemy ci pomóc!",
+      "gallery-parts": [
+        {
+          "title": "Członkowie",
+          "desc": "Nasza organizacja open source składa się z ośmiu entuzjastów IT, w tym kilku doświadczonych programistów. Głównym obszarem naszej pracy są pluginy do Minecrafta napisane w Javie oraz projekty w innych językach, takich jak Vue i JavaScript. Otworzyliśmy kilkanaście repozytoriów na GitHubie, które są stale rozwijane i ulepszane, aby zapewnić jak najlepsze doświadczenie użytkownikom Minecrafta."
+        },
+        {
+          "title": "Nasza praca",
+          "desc": "Podstawą naszego rozwoju jest praca, którą wkładamy w projekty, pluginy i rozszerzenia. Chcemy tworzyć co raz lepszy kod, który posłuży innym, dlatego pracujemy Agile'owo dokładając starań, by to co tworzymy było jak najlepsze."
+        },
+        {
+          "title": "Discord",
+          "desc": "Główną platformą naszego kontaktu jest Discord, gdzie jesteśmy aktywni. Udzielamy porad, dzielimy się memami czy gramy w gry. Chcemy stworzyć społeczność otwartą dla każdego, dlatego zachęcamy do interakcji z nami. Chcemy pomagać innym pasjonatom programowania w rozwijaniu ich projektów, dlatego piszcie śmiało!"
+        },
+        {
+          "title": "Rozrywka",
+          "desc": "Poza pracą nad projektami open-source, nasi członkowie również cenią sobie czas wolny i rozrywkę. Często gramy w Minecrafta i Fortnite, aby odprężyć się i cieszyć się grą ze sobą. Ponadto, lubimy grać w Sons of the Forest oraz wiedźmina, a także oglądać anime i inne filmy, aby poszerzać nasze horyzonty i czerpać inspirację do tworzenia naszych projektów."
+        }
+      ]
     },
     "skills": {
       "title": "Nasze magiczne moce!",
