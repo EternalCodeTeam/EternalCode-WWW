@@ -89,7 +89,7 @@ export default {
   text-align: center;
   color: var(--primary-title);
   font-weight: 800;
-
+  user-select: none;
   font-size: 30px;
   cursor: pointer;
   margin-bottom: 1rem;
